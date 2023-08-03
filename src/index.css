@@ -58,7 +58,7 @@
     @apply h-5 w-5 text-primary xl:mr-8 xl:h-7 xl:w-7;
   }
   .footerIcon {
-    @apply flex h-7 w-7 items-center justify-center rounded-full bg-primary text-white;
+    @apply flex h-7 w-7 items-center justify-center rounded-full bg-primary text-white ease-in hover:bg-white hover:text-primary hover:border-2 hover:border-primary;
   }
   .socialMediaIcon {
     @apply h-4 w-4;
