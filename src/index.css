@@ -191,3 +191,21 @@ a.header-hover:hover {
 a.header-hover-x:hover {
   color: rgb(80, 5, 68);
 }
+
+.FAQcontainer {
+  max-height: 100px; 
+  overflow: hidden;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.FAQcontainer.open {
+  max-height: 1000px; 
+  padding: 1.2rem; 
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.FAQcontainer:not(.open) {
+  max-height: 100px; 
+  padding: 1rem; 
+  transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53); 
+}
