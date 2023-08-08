@@ -4,6 +4,7 @@ import Home from './components/Home';
 import NotFound from './components/NotFound';
 import Locations from './pages/Locations';
 import AboutUs from './pages/AboutUs';
+import WeightLossProgram from './pages/WeightLossProgram';
 
 function App(): JSX.Element {
   return (
@@ -14,6 +15,7 @@ function App(): JSX.Element {
           <Route path="/" element={<Home />} />
           <Route path="/locations" element={<Locations />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/weight-loss" element={<WeightLossProgram />} />
           <Route path="*" element={<Navigate to="/not-found" />} />
         </Routes>
       </BrowserRouter>
