@@ -7,6 +7,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "typecheck": "tsc",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,css}\"",
     "lint": "eslint \"src/**/*.{ts,tsx,js}\" --fix",
     "ci:format": "prettier --check \"src/**/*.{ts,tsx,js,css}\"",
