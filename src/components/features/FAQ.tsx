@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import '../../index.css';
 
 const FAQ = ({ question }: { question: string }): JSX.Element => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -10,7 +11,9 @@ const FAQ = ({ question }: { question: string }): JSX.Element => {
 
   return (
     <div
-      className="FAQcontainer cursor-pointer space-y-4 transition-all duration-300 ease-in hover:bg-gray-200"
+      className={`FAQcontainer cursor-pointer space-y-4 transition-all duration-600 ease-in-out hover:bg-gray-200 ${
+        isOpen ? 'open' : ''
+      }`}
       onClick={toggleDropdown}
     >
       <p className="flex justify-between">

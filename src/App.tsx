@@ -15,7 +15,7 @@ function App(): JSX.Element {
           <Route path="/" element={<Home />} />
           <Route path="/locations" element={<Locations />} />
           <Route path="/about-us" element={<AboutUs />} />
-          <Route path="//weight-loss" element={<WeightLossProgram />} />
+          <Route path="/weight-loss" element={<WeightLossProgram />} />
           <Route path="*" element={<Navigate to="/not-found" />} />
         </Routes>
       </BrowserRouter>

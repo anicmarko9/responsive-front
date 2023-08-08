@@ -14,6 +14,9 @@ module.exports = {
         countdown: "#4D85B0",
         customWhite: "#f9f5f6",
       },
+      transitionDelay: {
+          'custom':'120ms',
+      },
       animation: {
         slideInRightSM: "slideInRightSM 1s ease-in-out",
         slideInRight: "slideInRight 1s ease-in-out",
