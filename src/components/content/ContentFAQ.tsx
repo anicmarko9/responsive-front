@@ -8,8 +8,6 @@ const ContentFAQ = (): JSX.Element => {
       <p className="mb-8 text-2xl tracking-wide sm:text-4xl xl:mb-12 xl:mt-4">
         Frequently Asked Questions
       </p>
-      {/* Dynamically, it should be: <FAQ question="str", answer="str" />  */}
-      {/* But answers are simple static lorem ipsum texts */}
       <FAQ question="Why is it free?" />
       <FAQ
         question="Do I need this if I've had my yearly medical check? What is the
