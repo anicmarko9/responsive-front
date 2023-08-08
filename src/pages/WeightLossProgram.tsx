@@ -55,7 +55,7 @@ const WeightLossProgram = (): JSX.Element => {
           />
 
           <Testimony
-            imgSrc={'./WeightLossProgram/2.png'}
+            imgSrc={'./WeightLossProgram/marko-program.png'}
             name={'anicmarko'}
             testimony={
               "I'm so happy for having so much help and improving my health. I really recommend the beginner's course"
