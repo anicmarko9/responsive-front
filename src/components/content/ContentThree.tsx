@@ -11,9 +11,9 @@ const ContentThree = (): JSX.Element => {
       </p>
       <div className="flex flex-wrap justify-around space-y-8 xl:space-y-0">
         <div className="contentThreeContainer popUpAnimation">
-          <p className="text-center text-2xl text-secondary xl:text-3xl">
+          <h2 className="text-center text-2xl text-secondary xl:text-3xl">
             Body Mass Index
-          </p>
+          </h2>
           <hr className="border-1 border-secondary" />
           <ul className="space-y-4">
             <li className="flex text-base xl:text-lg">
@@ -31,9 +31,9 @@ const ContentThree = (): JSX.Element => {
           </ul>
         </div>
         <div className="contentThreeContainer popUpAnimation">
-          <p className="text-center text-2xl text-primary xl:text-3xl">
+          <h2 className="text-center text-2xl text-primary xl:text-3xl">
             Vital Signs Check
-          </p>
+          </h2>
           <hr className="border-1 border-primary" />
           <ul className="space-y-4">
             <li className="flex text-base xl:text-lg">
