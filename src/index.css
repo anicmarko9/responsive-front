@@ -30,7 +30,7 @@
   .popUpAnimation {
     @apply duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer hover:bg-secondary hover:text-white sm:space-y-6;
   }
-  
+
   .popUpAnimation:hover
     > .statIconAndTitleContainer
     > .statNumber
@@ -79,8 +79,16 @@
     @apply w-full space-y-4 rounded-3xl bg-white p-4 shadow-lg sm:px-20 xl:w-5/12 xl:space-y-8 xl:p-8;
   }
 
-  .contentThreeContainer ul li {
-    color: black;
+  .contentThreeContainer:hover {
+    @apply text-white bg-primary;
+  }
+
+  .contentThreeContainer:hover > h2 {
+    @apply text-white;
+  }
+
+  .contentThreeContainer:hover > hr {
+    @apply border-white;
   }
 
   .bulletPoint {
@@ -197,19 +205,19 @@ a.header-hover-x:hover {
 }
 
 .FAQcontainer {
-  max-height: 100px; 
+  max-height: 100px;
   overflow: hidden;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .FAQcontainer.open {
-  max-height: 1000px; 
-  padding: 1.2rem; 
+  max-height: 1000px;
+  padding: 1.2rem;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .FAQcontainer:not(.open) {
-  max-height: 100px; 
-  padding: 1rem; 
-  transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53); 
+  max-height: 100px;
+  padding: 1rem;
+  transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
