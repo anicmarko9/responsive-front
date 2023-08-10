@@ -79,16 +79,20 @@
     @apply w-full space-y-4 rounded-3xl bg-white p-4 shadow-lg sm:px-20 xl:w-5/12 xl:space-y-8 xl:p-8;
   }
 
-  .contentThreeContainer:hover {
+  .contentThreeContainer:first-child:hover {
+    @apply text-white bg-secondary;
+  }
+
+  .contentThreeContainer:last-child:hover {
     @apply text-white bg-primary;
   }
 
   .contentThreeContainer:hover > h2 {
-    @apply text-white;
+    @apply text-white transition-all duration-300 ease-in;
   }
 
   .contentThreeContainer:hover > hr {
-    @apply border-white;
+    @apply border-white transition-all duration-300 ease-in;
   }
 
   .bulletPoint {
