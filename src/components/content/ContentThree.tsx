@@ -1,8 +1,34 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import MainButton from '../features/MainButton';
 import { BsDot } from 'react-icons/bs';
 
 const ContentThree = (): JSX.Element => {
+  const [isCardHovered, setIsCardHovered] = useState<boolean>(false);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const hrRef = useRef<HTMLHRElement>(null);
+
+  const handleCardHover = () => {
+    setIsCardHovered(true);
+    setTimeout(() => {
+      setIsCardHovered(false);
+    }, 500);
+    if(titleRef.current){
+      titleRef.current.classList.remove('text-secondary')
+      }
+    if(hrRef.current){
+      hrRef.current.classList.remove('border-secondary')
+    }
+  }
+
+  const handleCardLeave = () => {
+    if (titleRef.current) {
+      titleRef.current.classList.add('text-secondary');
+    }
+    if (hrRef.current) {
+      hrRef.current.classList.add('border-secondary');
+    }
+  };
+
   return (
     <div className="relative flex h-full flex-col items-center space-y-8 bg-customWhite px-8 py-8 text-lg  sm:px-36 xl:space-y-16 xl:px-36 xl:py-16">
       <p className="my-2 text-start text-3xl tracking-wide sm:my-4 xl:text-center xl:text-4xl">
@@ -10,11 +36,17 @@ const ContentThree = (): JSX.Element => {
         Consultation
       </p>
       <div className="flex flex-wrap justify-around space-y-8 xl:space-y-0">
-        <div className="contentThreeContainer popUpAnimation">
-          <p className="text-center text-2xl text-secondary xl:text-3xl">
+      <div
+        className={`contentThreeContainer popUpAnimation ${
+          isCardHovered ? '' : 'text-secondary'
+        }`}
+        onMouseEnter={handleCardHover}
+        onMouseLeave={handleCardLeave}
+      >
+          <h2 ref={titleRef} className="text-center text-2xl text-secondary xl:text-3xl">
             Body Mass Index
-          </p>
-          <hr className="border-1 border-secondary" />
+          </h2>
+          <hr ref={hrRef} className="border-1 border-secondary"/>
           <ul className="space-y-4">
             <li className="flex text-base xl:text-lg">
               <BsDot className="bulletPoint" />
@@ -31,9 +63,9 @@ const ContentThree = (): JSX.Element => {
           </ul>
         </div>
         <div className="contentThreeContainer popUpAnimation">
-          <p className="text-center text-2xl text-primary xl:text-3xl">
+          <h2 className="text-center text-2xl text-primary xl:text-3xl">
             Vital Signs Check
-          </p>
+          </h2>
           <hr className="border-1 border-primary" />
           <ul className="space-y-4">
             <li className="flex text-base xl:text-lg">
