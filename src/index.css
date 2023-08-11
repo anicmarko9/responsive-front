@@ -79,6 +79,22 @@
     @apply w-full space-y-4 rounded-3xl bg-white p-4 shadow-lg sm:px-20 xl:w-5/12 xl:space-y-8 xl:p-8;
   }
 
+  .contentThreeContainer:first-child:hover {
+    @apply text-white bg-secondary;
+  }
+
+  .contentThreeContainer:last-child:hover {
+    @apply text-white bg-primary;
+  }
+
+  .contentThreeContainer:hover > h2 {
+    @apply text-white transition-all duration-300 ease-in;
+  }
+
+  .contentThreeContainer:hover > hr {
+    @apply border-white transition-all duration-300 ease-in;
+  }
+
   .bulletPoint {
     @apply mr-1 mt-2 h-3 w-3 min-w-[12px] max-w-[12px];
   }
@@ -102,110 +118,4 @@
   .contactIcon {
     @apply mr-2 mt-1 min-h-[20px] min-w-[20px] text-primary xl:h-6 xl:w-6;
   }
-}
-:root {
-  --purple: rgb(123, 31, 162);
-  --violet: rgb(103, 58, 183);
-  --pink: rgb(244, 143, 177);
-  --yellow: #f1c93b;
-  --hover-pink: #dc74c3;
-
-  /* --red: #F31559;
-  --magenta: #FF52A2;
-  --orange: #FFB07F;
-
-  --green: #1A5D1A;
-  --yellow: #F1C93B;
-  --blue: #78C1F3; */
-}
-
-@keyframes background-pan {
-  from {
-    background-position: 0% center;
-  }
-
-  to {
-    background-position: -200% center;
-  }
-}
-
-@keyframes scale {
-  from,
-  to {
-    transform: scale(0);
-  }
-
-  50% {
-    transform: scale(1);
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(180deg);
-  }
-}
-
-p > .magic {
-  display: inline-block;
-  position: relative;
-}
-
-p > .magic > .magic-text {
-  animation: background-pan 3s linear infinite;
-  background: linear-gradient(
-    to right,
-    var(--purple),
-    var(--violet),
-    var(--yellow),
-    var(--purple)
-  );
-  background-size: 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  white-space: nowrap;
-}
-.nav-link {
-  transition: transform 300ms ease;
-}
-.nav-link:hover {
-  transform: translateY(-5px);
-  cursor: pointer;
-  /* background: #f9f5f6;
-  color: #F1C93B; */
-}
-
-a:hover {
-  color: var(--hover-pink);
-  /* opacity: 0.3; */
-}
-
-a.header-hover:hover {
-  color: var(--hover-pink);
-}
-
-a.header-hover-x:hover {
-  color: rgb(80, 5, 68);
-}
-
-.FAQcontainer {
-  max-height: 100px; 
-  overflow: hidden;
-  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.FAQcontainer.open {
-  max-height: 1000px; 
-  padding: 1.2rem; 
-  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.FAQcontainer:not(.open) {
-  max-height: 100px; 
-  padding: 1rem; 
-  transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53); 
 }
