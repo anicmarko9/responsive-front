@@ -122,9 +122,8 @@
   .loading-container {
     @apply flex justify-center items-center h-screen;
   }
-  
+
   .loading-spinner {
     @apply animate-customSpin border-primary rounded-full h-16 w-16 border-b-4 border-l-4;
   }
-  
 }
