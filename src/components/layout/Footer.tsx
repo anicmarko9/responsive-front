@@ -10,7 +10,7 @@ const Footer = (): JSX.Element => {
       <div className="mb-4 flex flex-wrap justify-between xl:mb-24 xl:mt-4">
         <section className="w-full space-y-8 pb-8 sm:w-1/2 xl:w-5/12">
           <a href="/">
-              <img src="/logo.png" alt="Logo" width={140} height={65} />
+            <img src="/logo.png" alt="Logo" width={140} height={65} />
           </a>
           <p>
             A Better Weigh Medical Weight Loss Center offers a weight loss
@@ -18,24 +18,23 @@ const Footer = (): JSX.Element => {
             success with the use of FDA approved medication.
           </p>
           <address>
-          <div className="flex">
-            <IoLocationSharp className="contactIcon" />
-            <div className="xl:flex xl:flex-wrap">
-              <p className="font-bold xl:mr-1 xl:min-w-fit">Head Office:</p>
-              <p className="xl:min-w-fit">
-                1931 W 95th Street Chicago IL, 60643
-              </p>
+            <div className="flex">
+              <IoLocationSharp className="contactIcon" />
+              <div className="xl:flex xl:flex-wrap">
+                <p className="font-bold xl:mr-1 xl:min-w-fit">Head Office:</p>
+                <p className="xl:min-w-fit">
+                  1931 W 95th Street Chicago IL, 60643
+                </p>
+              </div>
             </div>
-          </div>
-          <br></br>
-          <div className="flex">
-            <FaPhoneAlt className="contactIcon" />
-            <div className="xl:flex xl:space-x-1">
-              <p className="font-bold">Phone:</p>
-              <p>773-496-4222</p>
+            <br></br>
+            <div className="flex">
+              <FaPhoneAlt className="contactIcon" />
+              <div className="xl:flex xl:space-x-1">
+                <p className="font-bold">Phone:</p>
+                <p>773-496-4222</p>
+              </div>
             </div>
-          </div>
-
           </address>
         </section>
         <div className="flex flex-wrap xl:space-x-16">
