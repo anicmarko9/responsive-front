@@ -124,8 +124,7 @@
   }
   
   .loading-spinner {
-    @apply animate-spin border-t-4 border-blue-500 border-opacity-50 rounded-full h-16 w-16
-            border-r-4 border-b-4 border-l-4 border-transparent;
+    @apply animate-customSpin border-primary rounded-full h-16 w-16 border-b-4 border-l-4;
   }
   
 }
