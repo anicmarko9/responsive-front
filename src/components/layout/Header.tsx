@@ -72,19 +72,19 @@ const Header = (): JSX.Element => {
             Locations
           </a>
           <a
-            className="hover:text-primary hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-300 ease-in-x nav-link rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter text-white bg-opacity-70"
+            className="hover:text-primary hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-300 ease-in nav-link rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter text-white bg-opacity-70"
             href="/blogs"
           >
             Blog
           </a>
           <a
-            className="hidden 2xl:block hover:text-primary hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-300 ease-in-x nav-link rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter text-white bg-opacity-70"
+            className="hidden 2xl:block hover:text-primary hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-300 ease-in nav-link rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter text-white bg-opacity-70"
             href="/shop"
           >
             Shop
           </a>
           <a
-            className="hidden 2xl:block hover:text-primary hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-300 ease-in-x nav-link rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter text-white bg-opacity-70"
+            className="hidden 2xl:block hover:text-primary hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-300 ease-in nav-link rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter text-white bg-opacity-70"
             href="/subscription"
           >
             Subscription

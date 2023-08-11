@@ -35,7 +35,8 @@ The app has been developed using the following technologies:
 - Redux: State management for predictable state updates.
 - Chart.js: For creating interactive and visually appealing charts.
 - React Router: Handling routing within the app.
--TailwindCss: Using for desgin the css.
+  -TailwindCss: Using for desgin the css.
+
 ## 4. Installation
 
 To run the "Better Weigh Inc" app on your local machine, follow these steps:
@@ -48,10 +49,10 @@ To run the "Better Weigh Inc" app on your local machine, follow these steps:
 
 3. Install the required dependencies using npm (Node Package Manager):
 
-  `npm install` or `npm ci`
+`npm install` or `npm ci`
 
 4. Run the app locally:
-  `npm run start`
+   `npm run start`
 
 The app should now be running at `http://localhost:3000/` in your browser.
 
@@ -74,6 +75,3 @@ We welcome contributions to improve "Better Weigh Inc." If you find any bugs or 
 ## 7. License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). Feel free to use, modify, and distribute the code as per the terms of the license.
-
-
-
