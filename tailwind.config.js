@@ -22,6 +22,7 @@ module.exports = {
         slideInRight: "slideInRight 1s ease-in-out",
         slideOutRightSM: "slideOutRightSM 1s ease-in-out",
         slideOutRight: "slideOutRight 1s ease-in-out",
+        customSpin: "customSpin 1s linear infinite",
       },
       keyframes: {
         slideInRightSM: {
@@ -40,7 +41,7 @@ module.exports = {
           "100%": { transform: "translateX(100%)" },
           "0%": { transform: "translateX(-16px)" },
         },
-           spin: {
+           customSpin: {
             "0%": { transform: "rotate(0deg)"},
             "100%": { transform: "rotate(360deg)"},
            },
