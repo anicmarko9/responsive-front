@@ -11,7 +11,6 @@ const AboutUs = (): JSX.Element => {
 
       <main className="mt-10 h-auto p-5 ">
         <section className="m-auto flex flex-col gap-2 md:w-4/6 md:flex-row">
-          
           <figure className="flex justify-center md:w-3/5 md:p-5">
             <img
               className="rounded-md shadow-md shadow-yellow-300"
@@ -19,7 +18,7 @@ const AboutUs = (): JSX.Element => {
               alt="about us"
             ></img>
           </figure>
-          
+
           <div className="md:w-2/5 md:p-5 ">
             <div className="flex w-full justify-center">
               <h2 className="w-4/5 rounded-2xl bg-blue-400 p-3 text-center text-4xl font-bold text-yellow-300 md:w-[200px]">
@@ -106,7 +105,7 @@ const AboutUs = (): JSX.Element => {
           </div>
         </section>
       </main>
-      
+
       <Footer />
     </>
   );
