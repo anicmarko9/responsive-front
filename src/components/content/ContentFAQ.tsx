@@ -4,10 +4,10 @@ import MainButton from '../features/MainButton';
 
 const ContentFAQ = (): JSX.Element => {
   return (
-    <div className="relative flex h-full flex-col bg-white px-8 py-8 text-lg sm:px-36 xl:px-36 xl:py-16">
-      <p className="mb-8 text-2xl tracking-wide sm:text-4xl xl:mb-12 xl:mt-4">
+    <section className="relative flex h-full flex-col bg-white px-8 py-8 text-lg sm:px-36 xl:px-36 xl:py-16">
+      <h2 className="mb-8 text-2xl tracking-wide sm:text-4xl xl:mb-12 xl:mt-4">
         Frequently Asked Questions
-      </p>
+      </h2>
       <FAQ question="Why is it free?" />
       <FAQ
         question="Do I need this if I've had my yearly medical check? What is the
@@ -23,7 +23,7 @@ const ContentFAQ = (): JSX.Element => {
       <FAQ question="Will I have to exhaust myself in the gym to make it work?" />
       <FAQ question="Where are you located?" />
       <MainButton overwrite="self-center mt-8 xl:mt-12 sm:mb-0 max-sm:hidden" />
-    </div>
+    </section>
   );
 };
 

@@ -37,7 +37,7 @@ const Counter = (): JSX.Element => {
   }, []);
 
   return (
-    <div className="counterBlock">
+    <section className="counterBlock">
       <p className="mb-6 text-center text-sm tracking-wider sm:text-lg xl:mb-14">
         Your offer ends in:
       </p>
@@ -59,7 +59,7 @@ const Counter = (): JSX.Element => {
           <span className="counterNumber">{countdown.seconds}</span>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

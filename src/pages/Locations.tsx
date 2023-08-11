@@ -10,7 +10,7 @@ const Locations = (): JSX.Element => {
       <Header />
       <div className="mt-10 h-[200px] px-5 text-center">
         THIS IS LOCATIONS PAGE
-        <p>IM DOING SOMETHING</p>
+        <h1>IM DOING SOMETHING</h1>
       </div>
       <Footer />
     </>

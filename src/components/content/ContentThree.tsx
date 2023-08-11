@@ -4,11 +4,11 @@ import { BsDot } from 'react-icons/bs';
 
 const ContentThree = (): JSX.Element => {
   return (
-    <div className="relative flex h-full flex-col items-center space-y-8 bg-customWhite px-8 py-8 text-lg  sm:px-36 xl:space-y-16 xl:px-36 xl:py-16">
-      <p className="my-2 text-start text-3xl tracking-wide sm:my-4 xl:text-center xl:text-4xl">
+    <section className="relative flex h-full flex-col items-center space-y-8 bg-customWhite px-8 py-8 text-lg  sm:px-36 xl:space-y-16 xl:px-36 xl:py-16">
+      <h2 className="my-2 text-start text-3xl tracking-wide sm:my-4 xl:text-center xl:text-4xl">
         What You&apos;ll Get At Your <span className="text-primary">Free</span>{' '}
         Consultation
-      </p>
+      </h2>
       <div className="flex flex-wrap justify-around space-y-8 xl:space-y-0">
         <div className="contentThreeContainer popUpAnimation">
           <h2 className="text-center text-2xl text-secondary xl:text-3xl">
@@ -56,7 +56,7 @@ const ContentThree = (): JSX.Element => {
         </div>
       </div>
       <MainButton overwrite="xl:self-center" />
-    </div>
+    </section>
   );
 };
 
