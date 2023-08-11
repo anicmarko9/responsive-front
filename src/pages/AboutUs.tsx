@@ -2,10 +2,11 @@ import React from 'react';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import ProfilePics from '../components/AboutUs/ProfilePics';
+import Layout from '../components/layout/Layout';
 
 const AboutUs = (): JSX.Element => {
   return (
-    <>
+    <Layout>
       <div className="yellowBlock"></div>
       <Header />
 
@@ -107,7 +108,7 @@ const AboutUs = (): JSX.Element => {
       </main>
 
       <Footer />
-    </>
+    </Layout>
   );
 };
 

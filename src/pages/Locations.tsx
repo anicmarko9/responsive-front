@@ -1,10 +1,11 @@
 import React from 'react';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
+import Layout from '../components/layout/Layout';
 
 const Locations = (): JSX.Element => {
   return (
-    <>
+    <Layout>
       <div className="yellowBlock"></div>
 
       <Header />
@@ -13,7 +14,7 @@ const Locations = (): JSX.Element => {
         <h1>IM DOING SOMETHING</h1>
       </div>
       <Footer />
-    </>
+    </Layout>
   );
 };
 
