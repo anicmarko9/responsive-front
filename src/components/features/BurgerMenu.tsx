@@ -50,28 +50,28 @@ const BurgerMenu = ({
         </div>
         <hr className="border-1" />
         <div className="flex w-full flex-col space-y-4 py-4 text-xl tracking-wide">
-          <a className=" hover:font-bold hover:underline" href="/about-us">
+          <a className=" hover:text-primary hover:no-no-underline transition duration-300 ease-in" href="/about-us">
             About Us
           </a>
-          <a className=" hover:font-bold hover:underline" href="/bookings">
+          <a className=" hover:text-primary hover:no-underline transition duration-300 ease-in" href="/bookings">
             Book Online
           </a>
-          <a className=" hover:font-bold hover:underline" href="/weight-loss">
+          <a className=" hover:text-primary hover:no-underline transition duration-300 ease-in" href="/weight-loss">
             Weight Loss Programs
           </a>
-          <a className=" hover:font-bold hover:underline" href="/stories">
+          <a className=" hover:text-primary hover:no-underline transition duration-300 ease-in" href="/stories">
             Real Patient Stories
           </a>
-          <a className=" hover:font-bold hover:underline" href="/locations">
+          <a className=" hover:text-primary hover:no-underline transition duration-300 ease-in" href="/locations">
             Locations
           </a>
-          <a className=" hover:font-bold hover:underline" href="/blogs">
+          <a className=" hover:text-primary hover:no-underline transition duration-300 ease-in" href="/blogs">
             Blog
           </a>
-          <a className=" hover:font-bold hover:underline" href="/shop">
+          <a className=" hover:text-primary hover:no-underline transition duration-300 ease-in" href="/shop">
             Shop
           </a>
-          <a className=" hover:font-bold hover:underline" href="/subscription">
+          <a className=" hover:text-primary hover:no-underline transition duration-300 ease-in" href="/subscription">
             Subscription
           </a>
         </div>
