@@ -118,4 +118,24 @@
   .contactIcon {
     @apply mr-2 mt-1 min-h-[20px] min-w-[20px] text-primary xl:h-6 xl:w-6;
   }
+
+  .loading-container {
+    @apply flex justify-center items-center h-screen;
+  }
+  
+  .loading-spinner {
+    @apply animate-spin border-t-4 border-blue-500 border-opacity-50 rounded-full h-16 w-16;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }
