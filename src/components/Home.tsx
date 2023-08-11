@@ -9,7 +9,7 @@ import Footer from './layout/Footer';
 
 const Home = (): JSX.Element => {
   return (
-    <div className="relative">
+    <main className="relative">
       <LandingPage />
       <StatCards />
       <ContentOne />
@@ -17,7 +17,7 @@ const Home = (): JSX.Element => {
       <ContentThree />
       <ContentFAQ />
       <Footer />
-    </div>
+    </main>
   );
 };
 

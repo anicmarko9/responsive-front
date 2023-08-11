@@ -10,20 +10,20 @@ const FAQ = ({ question }: { question: string }): JSX.Element => {
   };
 
   return (
-    <div
+    <details
       className={`FAQcontainer cursor-pointer space-y-4 transition-all duration-600 ease-in-out hover:bg-gray-200 ${
         isOpen ? 'open' : ''
       }`}
       onClick={toggleDropdown}
     >
-      <p className="flex justify-between">
+      <summary className="flex justify-between">
         <span className="w-[85%]">{question}</span>
         {isOpen ? (
           <IoIosArrowUp className="FAQarrow self-center" />
         ) : (
           <IoIosArrowDown className="FAQarrow self-center" />
         )}
-      </p>
+      </summary>
       {isOpen && (
         <p className="w-full text-sm xl:text-base">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos
@@ -38,7 +38,7 @@ const FAQ = ({ question }: { question: string }): JSX.Element => {
           soluta quod, doloribus non exercitationem. Libero, voluptatem.
         </p>
       )}
-    </div>
+    </details>
   );
 };
 

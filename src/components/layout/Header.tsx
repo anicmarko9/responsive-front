@@ -31,7 +31,7 @@ const Header = (): JSX.Element => {
   }, []);
 
   return (
-    <nav className="relative flex h-14 w-full items-center justify-between px-4 pt-2 sm:h-16 sm:px-16 sm:pt-4 xl:px-36">
+    <header className="relative flex h-14 w-full items-center justify-between px-4 pt-2 sm:h-16 sm:px-16 sm:pt-4 xl:px-36">
       <a href="/">
         <img
           src="/logo.png"
@@ -40,7 +40,7 @@ const Header = (): JSX.Element => {
         />
       </a>
       {windowWidth >= 1024 ? (
-        <div className="flex w-full items-center justify-between">
+        <nav className="flex w-full items-center justify-between">
           <a
             className="header-hover nav-link rounded bg-yellow-400 px-2 py-1 opacity-75"
             href="/about-us"
@@ -89,7 +89,7 @@ const Header = (): JSX.Element => {
           >
             Subscription
           </a>
-        </div>
+        </nav>
       ) : (
         <RxHamburgerMenu
           className="h-8 w-8 cursor-pointer text-primary hover:opacity-60"
@@ -101,7 +101,7 @@ const Header = (): JSX.Element => {
         isMenuOpen={isMenuOpen}
         isMenuOpenLate={isMenuOpenLate}
       />
-    </nav>
+    </header>
   );
 };
 
