@@ -118,4 +118,13 @@
   .contactIcon {
     @apply mr-2 mt-1 min-h-[20px] min-w-[20px] text-primary xl:h-6 xl:w-6;
   }
+
+  .loading-container {
+    @apply flex justify-center items-center h-screen;
+  }
+  
+  .loading-spinner {
+    @apply animate-customSpin border-primary rounded-full h-16 w-16 border-b-4 border-l-4;
+  }
+  
 }
