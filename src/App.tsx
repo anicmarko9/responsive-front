@@ -8,7 +8,7 @@ import WeightLossProgram from './pages/WeightLossProgram';
 
 function App(): JSX.Element {
   return (
-    <div className="font-libre-baskerville">
+    <div className="font-libre-baskerville relative">
       <BrowserRouter>
         <Routes>
           <Route path="/not-found" element={<NotFound />} />
