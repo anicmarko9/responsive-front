@@ -5,7 +5,6 @@ import ContentOne from './content/ContentOne';
 import ContentTwo from './content/ContentTwo';
 import ContentThree from './content/ContentThree';
 import ContentFAQ from './content/ContentFAQ';
-import Footer from './layout/Footer';
 import Layout from './layout/Layout';
 
 const Home = (): JSX.Element => {
@@ -17,7 +16,6 @@ const Home = (): JSX.Element => {
       <ContentTwo />
       <ContentThree />
       <ContentFAQ />
-      <Footer />
     </Layout>
   );
 };

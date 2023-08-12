@@ -7,11 +7,9 @@ import { ReactNode } from 'react';
 const Layout = ({ children }: { children: ReactNode }): React.ReactElement => {
   return (
     <>
-      <div className="relative">
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </div>
+      <Header />
+      <main className="relative">{children}</main>
+      <Footer />
     </>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../layout/Header';
+
 import Counter from '../features/Counter';
 import MainButton from '../features/MainButton';
 
@@ -8,7 +8,7 @@ const LandingPage = (): JSX.Element => {
     <div>
       <div className="yellowBlock"></div>
       {/* yellowBlock and other styles are in file: index.css */}
-      <Header />
+
       <section className="z-10 flex flex-col px-8 py-8 sm:px-16 xl:px-36 xl:py-16">
         <div className="flex flex-wrap justify-between">
           <h1 className="mb-6 w-full break-words text-center text-3xl leading-normal tracking-wide sm:mb-8 sm:w-3/4 sm:text-start sm:text-4xl lg:text-4xl lg:leading-relaxed xl:mb-0 xl:w-2/5 xl:text-5xl xl:leading-relaxed">
