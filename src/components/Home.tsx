@@ -5,19 +5,18 @@ import ContentOne from './content/ContentOne';
 import ContentTwo from './content/ContentTwo';
 import ContentThree from './content/ContentThree';
 import ContentFAQ from './content/ContentFAQ';
-import Footer from './layout/Footer';
+import Layout from './layout/Layout';
 
 const Home = (): JSX.Element => {
   return (
-    <div className="relative">
+    <Layout>
       <LandingPage />
       <StatCards />
       <ContentOne />
       <ContentTwo />
       <ContentThree />
       <ContentFAQ />
-      <Footer />
-    </div>
+    </Layout>
   );
 };
 
