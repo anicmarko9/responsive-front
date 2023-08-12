@@ -1,14 +1,12 @@
 import React from 'react';
 import Program from '../components/WeightLossProgram/Program';
 import Testimony from '../components/WeightLossProgram/Testimony';
-import Header from '../components/layout/Header';
-import Footer from '../components/layout/Footer';
+
 import Layout from '../components/layout/Layout';
 
 const WeightLossProgram = (): JSX.Element => {
   return (
     <Layout>
-      <Header />
       <section className="w-full h-auto mt-5 py-10 bg-primary">
         <div className=" mx-auto flex flex-row gap-5 flex-wrap justify-center items-center md:w-3/5 w-5/6">
           <Program
@@ -80,7 +78,6 @@ const WeightLossProgram = (): JSX.Element => {
           />
         </div>
       </section>
-      <Footer />
     </Layout>
   );
 };
