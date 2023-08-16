@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { IoClose } from 'react-icons/io5';
 
-
 const BurgerMenu = ({
   toggleMenu,
   isMenuOpen,
@@ -68,9 +67,9 @@ const BurgerMenu = ({
           </a>
           <a className="hoverEffect" href="/blogs">
             Blog
-          </a>{'Effect'}
+          </a>
           <a className="hoverEffect" href="/shop">
-            Shop hoverEffect{' '}
+            Shop
           </a>
           <a className="hoverEffect" href="/subscription">
             Subscription
