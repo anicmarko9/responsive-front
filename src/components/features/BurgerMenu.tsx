@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { IoClose } from 'react-icons/io5';
 
+
 const BurgerMenu = ({
   toggleMenu,
   isMenuOpen,
@@ -50,28 +51,28 @@ const BurgerMenu = ({
         </div>
         <hr className="border-1" />
         <div className="flex w-full flex-col space-y-4 py-4 text-xl tracking-wide">
-          <a className=" hover:text-primary hover:no-no-underline transition duration-300 ease-in" href="/about-us">
+          <a className="hoverEffect" href="/about-us">
             About Us
           </a>
-          <a className=" hover:text-primary hover:no-underline transition duration-300 ease-in" href="/bookings">
+          <a className="hoverEffect" href="/bookings">
             Book Online
           </a>
-          <a className=" hover:text-primary hover:no-underline transition duration-300 ease-in" href="/weight-loss">
+          <a className="hoverEffect" href="/weight-loss">
             Weight Loss Programs
           </a>
-          <a className=" hover:text-primary hover:no-underline transition duration-300 ease-in" href="/stories">
+          <a className="hoverEffect" href="/stories">
             Real Patient Stories
           </a>
-          <a className=" hover:text-primary hover:no-underline transition duration-300 ease-in" href="/locations">
+          <a className="hoverEffect" href="/locations">
             Locations
           </a>
-          <a className=" hover:text-primary hover:no-underline transition duration-300 ease-in" href="/blogs">
+          <a className="hoverEffect" href="/blogs">
             Blog
+          </a>{'Effect'}
+          <a className="hoverEffect" href="/shop">
+            Shop hoverEffect{' '}
           </a>
-          <a className=" hover:text-primary hover:no-underline transition duration-300 ease-in" href="/shop">
-            Shop
-          </a>
-          <a className=" hover:text-primary hover:no-underline transition duration-300 ease-in" href="/subscription">
+          <a className="hoverEffect" href="/subscription">
             Subscription
           </a>
         </div>
