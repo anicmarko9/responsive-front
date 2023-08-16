@@ -42,19 +42,19 @@ const Footer = (): JSX.Element =>{
             <h5 className="mb-4 text-3xl xl:mb-8">About</h5>
             <ul className="space-y-4">
               <li>
-                <a className='hover:text-primary hover:no-underline transition duration-300 ease-in' href="/about-us">About Us</a>
+                <a className= "hoverEffect" href="/about-us">About Us</a>
               </li>
               <li>
-                <a className='hover:text-primary hover:no-underline transition duration-300 ease-in' href="/bookings">Book Online</a>
+                <a className='hoverEffect' href="/bookings">Book Online</a>
               </li>
               <li>
-                <a className='hover:text-primary hover:no-underline transition duration-300 ease-in' href="/locations">Locations</a>
+                <a className='hhoverEffect' href="/locations">Locations</a>
               </li>
               <li>
-                <a className='hover:text-primary hover:no-underline transition duration-300 ease-in' href="/stories">Real Patient Stories</a>
+                <a className='hoverEffect' href="/stories">Real Patient Stories</a>
               </li>
               <li>
-                <a className='hover:text-primary hover:no-underline transition duration-300 ease-in' href="/weight-loss">Weight Loss Programs</a>
+                <a className='hoverEffect' href="/weight-loss">Weight Loss Programs</a>
               </li>
             </ul>
           </section>
@@ -62,21 +62,21 @@ const Footer = (): JSX.Element =>{
             <h5 className="mb-4 text-3xl xl:mb-8">More Links</h5>
             <ul className="space-y-4">
               <li>
-                <a className=" box-border hover:text-primary hover:no-underline transition duration-300 ease-in" href="/franchise-opportunities">
+                <a className=" hoverEffect" href="/franchise-opportunities">
                   Franchise Opportunities
                 </a>
               </li>
               <li>
-                <a className='hover:text-primary hover:no-underline transition duration-300 ease-in' href="/career-opportunities">Career Opportunities</a>
+                <a className='hoverEffect' href="/career-opportunities">Career Opportunities</a>
               </li>
               <li>
-                <a className='hover:text-primary hover:no-underline transition duration-300 ease-in' href="/privacy-policy">Privacy Policy</a>
+                <a className='hoverEffect' href="/privacy-policy">Privacy Policy</a>
               </li>
               <li>
-                <a className='hover:text-primary hover:no-underline transition duration-300 ease-in' href="/terms-conditions">Terms & Conditions</a>
+                <a className='hoverEffect' href="/terms-conditions">Terms & Conditions</a>
               </li>
               <li>
-                <a className='hover:text-primary hover:no-underline transition duration-300 ease-in' href="/return-policy">Return Policy</a>
+                <a className='hoverEffect' href="/return-policy">Return Policy</a>
               </li>
             </ul>
           </section>
