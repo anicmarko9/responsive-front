@@ -4,7 +4,7 @@ import { BsTwitter } from 'react-icons/bs';
 import { IoLocationSharp } from 'react-icons/io5';
 import { AiFillInstagram } from 'react-icons/ai';
 
-const Footer = (): JSX.Element => {
+const Footer = (): JSX.Element =>{
   return (
     <footer className="relative flex h-full flex-col bg-customWhite px-8 pb-8 pt-8 text-base sm:px-16 sm:text-lg xl:px-40 xl:pt-16">
       <div className="mb-4 flex flex-wrap justify-between xl:mb-24 xl:mt-4">
@@ -42,19 +42,19 @@ const Footer = (): JSX.Element => {
             <h5 className="mb-4 text-3xl xl:mb-8">About</h5>
             <ul className="space-y-4">
               <li>
-                <a href="/about-us">About Us</a>
+                <a className='hover:text-primary hover:no-underline transition duration-300 ease-in' href="/about-us">About Us</a>
               </li>
               <li>
-                <a href="/bookings">Book Online</a>
+                <a className='hover:text-primary hover:no-underline transition duration-300 ease-in' href="/bookings">Book Online</a>
               </li>
               <li>
-                <a href="/locations">Locations</a>
+                <a className='hover:text-primary hover:no-underline transition duration-300 ease-in' href="/locations">Locations</a>
               </li>
               <li>
-                <a href="/stories">Real Patient Stories</a>
+                <a className='hover:text-primary hover:no-underline transition duration-300 ease-in' href="/stories">Real Patient Stories</a>
               </li>
               <li>
-                <a href="/weight-loss">Weight Loss Programs</a>
+                <a className='hover:text-primary hover:no-underline transition duration-300 ease-in' href="/weight-loss">Weight Loss Programs</a>
               </li>
             </ul>
           </section>
@@ -62,21 +62,21 @@ const Footer = (): JSX.Element => {
             <h5 className="mb-4 text-3xl xl:mb-8">More Links</h5>
             <ul className="space-y-4">
               <li>
-                <a className=" box-border" href="/franchise-opportunities">
+                <a className=" box-border hover:text-primary hover:no-underline transition duration-300 ease-in" href="/franchise-opportunities">
                   Franchise Opportunities
                 </a>
               </li>
               <li>
-                <a href="/career-opportunities">Career Opportunities</a>
+                <a className='hover:text-primary hover:no-underline transition duration-300 ease-in' href="/career-opportunities">Career Opportunities</a>
               </li>
               <li>
-                <a href="/privacy-policy">Privacy Policy</a>
+                <a className='hover:text-primary hover:no-underline transition duration-300 ease-in' href="/privacy-policy">Privacy Policy</a>
               </li>
               <li>
-                <a href="/terms-conditions">Terms & Conditions</a>
+                <a className='hover:text-primary hover:no-underline transition duration-300 ease-in' href="/terms-conditions">Terms & Conditions</a>
               </li>
               <li>
-                <a href="/return-policy">Return Policy</a>
+                <a className='hover:text-primary hover:no-underline transition duration-300 ease-in' href="/return-policy">Return Policy</a>
               </li>
             </ul>
           </section>
