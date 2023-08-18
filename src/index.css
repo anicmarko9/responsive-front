@@ -2,14 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer components {
-
-
-  .hoverEffect{
+  .hoverEffect {
     @apply hover:text-primary transition duration-300 ease-in;
- }
+  }
 
   .yellowBlock {
     @apply absolute right-0 top-0 -z-10 h-full w-1/2 rounded-tl-[50px] bg-tertiary shadow-lg xl:w-[28%];
