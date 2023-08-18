@@ -42,13 +42,18 @@ const BurgerMenu = ({
     >
       <nav className="fixed right-0 top-0 z-50 h-full w-full bg-white py-2 pl-8 pr-4 shadow-lg sm:w-3/5 sm:py-3 sm:pl-16 sm:pr-16">
         <div className="flex h-14 items-center justify-between text-2xl">
-          <a href="/">A Better Weigh, Inc</a>
+          <a
+            className="block transition-all duration-300 ease-in-out hover:opacity-70 hover:-translate-y-1"
+            href="/"
+          >
+            <img className="w-full max-w-[120px]" src="/logo.png" alt="Logo" />
+          </a>
           <IoClose
             onClick={toggleMenu}
             className="h-8 w-8 cursor-pointer rounded-full text-primary transition-all duration-200 ease-in hover:bg-gray-200"
           />
         </div>
-        <hr className="border-1" />
+        <hr className="border-1 mt-4 mb-2"/>
         <div className="flex w-full flex-col space-y-4 py-4 text-xl tracking-wide">
           <a className="hoverEffect" href="/about-us">
             About Us

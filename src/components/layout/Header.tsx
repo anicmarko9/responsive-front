@@ -32,7 +32,10 @@ const Header = (): JSX.Element => {
 
   return (
     <header className="relative flex h-14 w-full items-center justify-between px-4 pt-2 sm:h-16 sm:px-16 sm:pt-4 xl:px-36">
-      <a href="/">
+      <a
+        className="hover:opacity-70 transition-all duration-300 ease-in-out hover:-translate-y-1 active:scale-95"
+        href="/"
+      >
         <img
           src="/logo.png"
           alt="Logo"
