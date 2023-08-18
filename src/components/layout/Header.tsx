@@ -18,8 +18,8 @@ const Header = (): JSX.Element => {
     setIsMenuOpen(!isMenuOpen);
     isMenuOpen
       ? setTimeout(function () {
-          setIsMenuOpenLate(!isMenuOpenLate);
-        }, 1000)
+        setIsMenuOpenLate(!isMenuOpenLate);
+      }, 1000)
       : setIsMenuOpenLate(!isMenuOpenLate);
   };
 
@@ -36,7 +36,7 @@ const Header = (): JSX.Element => {
         <img
           src="/logo.png"
           alt="Logo"
-          className="mr-16 h-[45px] w-[100px] sm:h-[65px] sm:w-[140px]"
+          className="mr-16 h-[45px] w-[100px] sm:h-[65px] sm:w-[140px] hover:opacity-70 transition duration-300 ease-in-out"
         />
       </a>
       {windowWidth >= 1024 ? (
