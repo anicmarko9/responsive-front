@@ -1,17 +1,13 @@
 import React from 'react';
 
-type Props = {
-  programName: string;
-  duration: string;
-  description: string;
-  imgSrc: string;
-};
+import { IProgram } from '../../types/countdownType';
+
 const Program = ({
   programName,
   duration,
   description,
   imgSrc,
-}: Props): JSX.Element => {
+}: IProgram): JSX.Element => {
   const notFound = './ImgNotFound.svg';
 
   return (

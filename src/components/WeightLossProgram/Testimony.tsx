@@ -1,12 +1,8 @@
 import React from 'react';
 
-type Props = {
-  imgSrc: string;
-  name: string;
-  testimony: string;
-};
+import { ITestimony } from '../../types/countdownType';
 
-const Testimony = ({ imgSrc, name, testimony }: Props): JSX.Element => {
+const Testimony = ({ imgSrc, name, testimony }: ITestimony): JSX.Element => {
   const notFound = './ImgNotFound.svg';
 
   return (
