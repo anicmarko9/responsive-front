@@ -4,7 +4,7 @@
 
 @layer components {
   .hoverEffect {
-    @apply hover:text-primary transition duration-300 ease-in;
+    @apply hover:text-primary transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer active:scale-95;
   }
 
   .yellowBlock {
@@ -12,7 +12,7 @@
   }
 
   .button {
-    @apply w-48 self-center rounded-xl border-2 border-primary bg-primary py-2 text-center text-sm tracking-wider text-white shadow-lg transition-all duration-300 ease-in hover:bg-white hover:text-primary focus:outline-none sm:my-4 sm:w-56 sm:text-lg xl:self-start;
+    @apply w-48 self-center rounded-xl border-2 border-primary bg-primary py-2 text-center text-sm tracking-wider text-white shadow-lg transition-all duration-[250ms] ease-in-out hover:bg-white hover:text-primary focus:outline-none sm:my-4 sm:w-56 sm:text-lg xl:self-start active:scale-95 active:rounded-3xl;
   }
 
   .counterBlock {
