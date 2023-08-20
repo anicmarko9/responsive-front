@@ -29,7 +29,7 @@ const Counter = (): JSX.Element => {
 
     calculateTimeLeft();
 
-    const timer: NodeJS.Timer = setInterval(calculateTimeLeft, 1000);
+    const timer: NodeJS.Timeout = setInterval(calculateTimeLeft, 1000);
 
     return () => {
       clearInterval(timer);
