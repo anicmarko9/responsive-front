@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Countdown } from '../../types/countdownType';
-import { calculateCountdown } from '../../utils/countdown';
+
+import { Countdown } from '@Types/countdownType';
+import { calculateCountdown } from '@Utils/countdown';
 
 const Counter = (): JSX.Element => {
   const [countdown, setCountdown] = useState<Countdown>({

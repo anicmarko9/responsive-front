@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
-import '../../index.css';
+
+import '@/index.css';
 
 const FAQ = ({ question }: { question: string }): JSX.Element => {
   const [isOpen, setIsOpen] = useState<boolean>(false);

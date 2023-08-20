@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Counter from '../features/Counter';
-import MainButton from '../features/MainButton';
+import Counter from '@Components/features/Counter';
+import MainButton from '@Components/features/MainButton';
 
 const LandingPage = (): JSX.Element => {
   return (

@@ -1,8 +1,8 @@
 import React from 'react';
-import Program from '../components/WeightLossProgram/Program';
-import Testimony from '../components/WeightLossProgram/Testimony';
 
-import Layout from '../components/layout/Layout';
+import Program from '@Components/WeightLossProgram/Program';
+import Testimony from '@Components/WeightLossProgram/Testimony';
+import Layout from '@Components/layout/Layout';
 
 const WeightLossProgram = (): JSX.Element => {
   return (

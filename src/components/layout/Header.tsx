@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
-import BurgerMenu from '../features/BurgerMenu';
+
+import BurgerMenu from '@Components/features/BurgerMenu';
 
 const Header = (): JSX.Element => {
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);

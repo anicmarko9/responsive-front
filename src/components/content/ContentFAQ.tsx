@@ -1,6 +1,7 @@
 import React from 'react';
-import FAQ from '../features/FAQ';
-import MainButton from '../features/MainButton';
+
+import FAQ from '@Components/features/FAQ';
+import MainButton from '@Components/features/MainButton';
 
 const ContentFAQ = (): JSX.Element => {
   return (
