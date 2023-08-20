@@ -1,6 +1,7 @@
 import React from 'react';
-import MainButton from '../features/MainButton';
 import { BsDot } from 'react-icons/bs';
+
+import MainButton from '@Components/features/MainButton';
 
 const ContentThree = (): JSX.Element => {
   return (

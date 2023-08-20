@@ -1,6 +1,7 @@
 import React from 'react';
-import ProfilePics from '../components/AboutUs/ProfilePics';
-import Layout from '../components/layout/Layout';
+
+import ProfilePics from '@Components/AboutUs/ProfilePics';
+import Layout from '@Components/layout/Layout';
 
 const AboutUs = (): JSX.Element => {
   return (

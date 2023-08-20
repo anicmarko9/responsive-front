@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
-import NotFound from './components/NotFound';
-import Locations from './pages/Locations';
-import AboutUs from './pages/AboutUs';
-import WeightLossProgram from './pages/WeightLossProgram';
+import Home from '@Components/Home';
+import NotFound from '@Components/NotFound';
+import Locations from '@Pages/Locations';
+import AboutUs from '@Pages/AboutUs';
+import WeightLossProgram from '@Pages/WeightLossProgram';
 
 function App(): JSX.Element {
   return (

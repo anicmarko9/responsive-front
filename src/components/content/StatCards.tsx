@@ -4,7 +4,8 @@ import { FiMessageCircle } from 'react-icons/fi';
 import { RiSuitcaseLine } from 'react-icons/ri';
 import { VscSmiley } from 'react-icons/vsc';
 import { TbActivityHeartbeat } from 'react-icons/tb';
-import MainButton from '../features/MainButton';
+
+import MainButton from '@Components/features/MainButton';
 
 const StatCards = (): JSX.Element => {
   return (

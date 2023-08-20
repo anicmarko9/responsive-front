@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { IProgram } from '../../types/countdownType';
+import { IProgram } from '@Types/countdownType';
 
 const Program = ({
   programName,

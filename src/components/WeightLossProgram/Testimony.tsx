@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ITestimony } from '../../types/countdownType';
+import { ITestimony } from '@Types/countdownType';
 
 const Testimony = ({ imgSrc, name, testimony }: ITestimony): JSX.Element => {
   const notFound = './ImgNotFound.svg';
