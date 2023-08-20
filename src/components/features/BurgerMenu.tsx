@@ -53,7 +53,7 @@ const BurgerMenu = ({
             className="h-8 w-8 cursor-pointer rounded-full text-primary transition-all duration-200 ease-in hover:bg-gray-200"
           />
         </div>
-        <hr className="border-1 mt-4 mb-2"/>
+        <hr className="border-1 mt-4 mb-2" />
         <div className="flex w-full flex-col space-y-4 py-4 text-xl tracking-wide">
           <a className="hoverEffect" href="/about-us">
             About Us

@@ -45,29 +45,19 @@ const Footer = (): JSX.Element => {
             <h5 className="mb-4 text-3xl xl:mb-8">About</h5>
             <ul className="space-y-4">
               <li className="hoverEffect">
-                <a href="/about-us">
-                  About Us
-                </a>
+                <a href="/about-us">About Us</a>
               </li>
               <li className="hoverEffect">
-                <a href="/bookings">
-                  Book Online
-                </a>
+                <a href="/bookings">Book Online</a>
               </li>
               <li className="hoverEffect">
-                <a href="/locations">
-                  Locations
-                </a>
+                <a href="/locations">Locations</a>
               </li>
               <li className="hoverEffect">
-                <a href="/stories">
-                  Real Patient Stories
-                </a>
+                <a href="/stories">Real Patient Stories</a>
               </li>
               <li className="hoverEffect">
-                <a href="/weight-loss">
-                  Weight Loss Programs
-                </a>
+                <a href="/weight-loss">Weight Loss Programs</a>
               </li>
             </ul>
           </section>
@@ -75,29 +65,19 @@ const Footer = (): JSX.Element => {
             <h5 className="mb-4 text-3xl xl:mb-8">More Links</h5>
             <ul className="space-y-4">
               <li className="hoverEffect">
-                <a href="/franchise-opportunities">
-                  Franchise Opportunities
-                </a>
+                <a href="/franchise-opportunities">Franchise Opportunities</a>
               </li>
               <li className="hoverEffect">
-                <a href="/career-opportunities">
-                  Career Opportunities
-                </a>
+                <a href="/career-opportunities">Career Opportunities</a>
               </li>
               <li className="hoverEffect">
-                <a href="/privacy-policy">
-                  Privacy Policy
-                </a>
+                <a href="/privacy-policy">Privacy Policy</a>
               </li>
               <li className="hoverEffect">
-                <a href="/terms-conditions">
-                  Terms & Conditions
-                </a>
+                <a href="/terms-conditions">Terms & Conditions</a>
               </li>
               <li className="hoverEffect">
-                <a href="/return-policy">
-                  Return Policy
-                </a>
+                <a href="/return-policy">Return Policy</a>
               </li>
             </ul>
           </section>
