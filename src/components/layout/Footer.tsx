@@ -4,6 +4,7 @@ import { BsTwitter } from 'react-icons/bs';
 import { IoLocationSharp } from 'react-icons/io5';
 import { AiFillInstagram } from 'react-icons/ai';
 
+// Footer Component: Represents the footer section of the web page.
 const Footer = (): JSX.Element => {
   return (
     <footer className="relative flex h-full flex-col bg-customWhite px-8 pb-8 pt-8 text-base sm:px-16 sm:text-lg xl:px-40 xl:pt-16">
@@ -15,7 +16,7 @@ const Footer = (): JSX.Element => {
           >
             <img src="/logo.png" alt="Logo" width={140} height={65} />
           </a>
-          <p>
+          <p> {/* Information about the medical weight loss program */}
             A Better Weigh Medical Weight Loss Center offers a weight loss
             program dedicated to helping you achieve long term weight loss
             success with the use of FDA approved medication.

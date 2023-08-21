@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 
 import BurgerMenu from '@Components/features/BurgerMenu';
-
+// Header Component: Represents the header section of the web page.
 const Header = (): JSX.Element => {
+    // State variables to manage window width and menu open states
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const [isMenuOpenLate, setIsMenuOpenLate] = useState<boolean>(false);
@@ -11,10 +12,12 @@ const Header = (): JSX.Element => {
   // isMenuOpen is false when Hamburger Menu closes, and it's responsible for animation.
   // isMenuOpenLate is supposed to wait one second for animation to execute before applying "display: none" to side menu container.
 
+  // Function to handle window resize and update windowWidth state
   const handleResize = (): void => {
     setWindowWidth(window.innerWidth);
   };
 
+  // Function to toggle menu open state and apply animation timings
   const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
     isMenuOpen
@@ -24,6 +27,7 @@ const Header = (): JSX.Element => {
       : setIsMenuOpenLate(!isMenuOpenLate);
   };
 
+  // Effect to add and remove window resize event listener
   useEffect(() => {
     window.addEventListener('resize', handleResize);
     return () => {

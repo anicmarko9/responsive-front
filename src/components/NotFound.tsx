@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Layout from './layout/Layout';
-
+// NotFound Component: Represents the 404 page when a page is not found
 const NotFound = (): JSX.Element => {
   return (
     <Layout>

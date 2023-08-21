@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Layout from '@Components/layout/Layout';
-
+// Locations Component: Represents the page for displaying different locations
 const Locations = (): JSX.Element => {
   return (
     <Layout>

@@ -2,9 +2,10 @@ import React from 'react';
 
 import Counter from '@Components/features/Counter';
 import MainButton from '@Components/features/MainButton';
-
+// LandingPage Component: Represents the landing page of the application.
 const LandingPage = (): JSX.Element => {
   return (
+    // Main container for the landing page.
     <div>
       <div className="yellowBlock"></div>
       {/* yellowBlock and other styles are in file: index.css */}
@@ -15,9 +16,10 @@ const LandingPage = (): JSX.Element => {
             Chicago&apos;s <span className="text-primary">Free</span> Medical
             Check-Up and Weight Loss Consultation
           </h1>
-          <Counter />
+          <Counter />{/* Component to display a counter. */}
         </div>
         <p className="my-6 w-full leading-relaxed sm:mb-4 sm:mt-8 sm:w-3/4 sm:text-lg xl:mb-6 xl:mt-6 xl:w-2/5">
+          {/* Description of the service, its availability, and requirements. */}
           Limited spots available due to the Physicians schedule and the high
           demand for service. No credit card or insurance required.
         </p>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { IoClose } from 'react-icons/io5';
-
+// BurgerMenu Component: Represents a burger menu for responsive navigation
 const BurgerMenu = ({
   toggleMenu,
   isMenuOpen,
@@ -12,22 +12,23 @@ const BurgerMenu = ({
 }): JSX.Element => {
   // Props are passed from "Header" component.
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
-
+// Handle window resize event.
   const handleResize = (): void => {
     setWindowWidth(window.innerWidth);
   };
-
+// Add and remove resize event listener on component mount and unmount.
   useEffect(() => {
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
+ // If the menu is not open on small screens or the window width is greater than 1024, render nothing.
   if (!isMenuOpenLate || windowWidth >= 1024)
     return <div className="hidden"></div>;
 
   return (
+    // Responsive Burger Menu Container
     <div
       className={`fixed top-0 z-30 h-full w-full ${
         // check if menu is open on different resolutions

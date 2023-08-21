@@ -2,15 +2,16 @@ import React, { useState } from 'react';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
 import '@/index.css';
-
+// FAQ Component: Represents a collapsible Frequently Asked Questions (FAQ) item.
 const FAQ = ({ question }: { question: string }): JSX.Element => {
+   // State to track whether the dropdown is open or closed
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const toggleDropdown = (): void => {
     setIsOpen(!isOpen);
   };
 
-  return (
+  return ( // FAQ container element
     <details
       className={`FAQcontainer cursor-pointer space-y-4 transition-all duration-600 ease-in-out hover:bg-gray-200 ${
         isOpen ? 'open' : ''
@@ -25,6 +26,7 @@ const FAQ = ({ question }: { question: string }): JSX.Element => {
           <IoIosArrowDown className="FAQarrow self-center" />
         )}
       </summary>
+         {/* Content section that shows when the dropdown is open */}
       {isOpen && (
         <p className="w-full text-sm xl:text-base">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos

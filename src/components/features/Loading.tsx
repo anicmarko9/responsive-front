@@ -1,5 +1,5 @@
 import React from 'react';
-
+// Loading Component: Represents a loading spinner.
 const Loading = (): JSX.Element => {
   return (
     <div className="loading-container">

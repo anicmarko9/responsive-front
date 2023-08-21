@@ -2,7 +2,7 @@ import React from 'react';
 
 import ProfilePics from '@Components/AboutUs/ProfilePics';
 import Layout from '@Components/layout/Layout';
-
+// AboutUs Component: Represents the about page with team information
 const AboutUs = (): JSX.Element => {
   return (
     <Layout>
