@@ -4,12 +4,14 @@ import Program from '@Components/WeightLossProgram/Program';
 import Testimony from '@Components/WeightLossProgram/Testimony';
 import Layout from '@Components/layout/Layout';
 
+// WeightLossProgram Component: Represents the weight loss programs page
 const WeightLossProgram = (): JSX.Element => {
   return (
     <Layout>
       <section className="w-full h-auto mt-5 py-10 bg-primary">
         <div className=" mx-auto flex flex-row gap-5 flex-wrap justify-center items-center md:w-3/5 w-5/6">
-          <Program
+          {/* Displaying different weight loss programs using the Program component */}
+          <Program 
             programName={'Loss weight: Level 1'}
             duration={'4 weeks'}
             description={
@@ -47,6 +49,7 @@ const WeightLossProgram = (): JSX.Element => {
 
       <section className="bg-secondary w-full py-10">
         <div className="flex flex-row gap-5 flex-wrap md:justify-between justify-center md:w-3/5 w-full m-auto">
+         {/* Displaying testimonials using the Testimony component */}
           <Testimony
             imgSrc={'./WeightLossProgram/1.png'}
             name={'BelloDev'}

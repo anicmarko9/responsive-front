@@ -3,8 +3,10 @@ import React from 'react';
 import FAQ from '@Components/features/FAQ';
 import MainButton from '@Components/features/MainButton';
 
+// ContentFAQ Component: Section containing Frequently Asked Questions (FAQs).
 const ContentFAQ = (): JSX.Element => {
   return (
+     // Section container for FAQs with responsive styling.
     <section className="relative flex h-full flex-col bg-white px-8 py-8 text-lg sm:px-36 xl:px-36 xl:py-16">
       <h2 className="mb-8 text-2xl tracking-wide sm:text-4xl xl:mb-12 xl:mt-4">
         Frequently Asked Questions
@@ -13,7 +15,7 @@ const ContentFAQ = (): JSX.Element => {
       <FAQ
         question="Do I need this if I've had my yearly medical check? What is the
           difference?"
-      />
+      />{/* FAQ about the necessity of the service after a medical check and its differences. */}
       <FAQ question="Can I bring another person to the appointment?" />
       <FAQ question="How long does it take?" />
       <FAQ question="What if I have to cancel or if I'm not sure I'll be able to make it?" />
@@ -28,4 +30,5 @@ const ContentFAQ = (): JSX.Element => {
   );
 };
 
+// Exporting the ContentFAQ component as the default export.
 export default ContentFAQ;

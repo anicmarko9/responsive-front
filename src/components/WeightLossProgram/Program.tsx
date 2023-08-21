@@ -2,12 +2,13 @@ import React from 'react';
 
 import { IProgram } from '@Types/countdownType';
 
+// Program Component: Represents a program with its details and an image.
 const Program = ({
   programName,
   duration,
   description,
   imgSrc,
-}: IProgram): JSX.Element => {
+}: IProgram): JSX.Element => { // A fallback image source in case the provided image is not found.
   const notFound = './ImgNotFound.svg';
 
   return (

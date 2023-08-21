@@ -1,8 +1,9 @@
 import React from 'react';
 
 import { ITestimony } from '@Types/countdownType';
-
+// Testimony Component: Represents a testimony with an image, name, and text.
 const Testimony = ({ imgSrc, name, testimony }: ITestimony): JSX.Element => {
+  // A fallback image source in case the provided image is not found.
   const notFound = './ImgNotFound.svg';
 
   return (

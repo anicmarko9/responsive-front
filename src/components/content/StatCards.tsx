@@ -6,9 +6,10 @@ import { VscSmiley } from 'react-icons/vsc';
 import { TbActivityHeartbeat } from 'react-icons/tb';
 
 import MainButton from '@Components/features/MainButton';
-
+// StatCards Component: Represents a section with statistic cards.
 const StatCards = (): JSX.Element => {
   return (
+    // Section container for the statistic cards.
     <section>
       <div className="relative flex h-full flex-col bg-primary px-8 text-lg sm:px-16 xl:px-36">
         <div className="mb-6 mt-8 flex flex-wrap justify-between space-x-0 sm:mb-0 xl:mb-8 xl:mt-16">
