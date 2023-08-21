@@ -8,7 +8,7 @@ const ProfilePics = ({
   href,
   nickName,
 }: {
-    // Destructuring props with their types for clarity and type safety.
+  // Destructuring props with their types for clarity and type safety.
   positionAndName: string;
   imgSrc: string;
   href?: string;

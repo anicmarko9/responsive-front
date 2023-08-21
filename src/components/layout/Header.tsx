@@ -4,7 +4,7 @@ import { RxHamburgerMenu } from 'react-icons/rx';
 import BurgerMenu from '@Components/features/BurgerMenu';
 // Header Component: Represents the header section of the web page.
 const Header = (): JSX.Element => {
-    // State variables to manage window width and menu open states
+  // State variables to manage window width and menu open states
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const [isMenuOpenLate, setIsMenuOpenLate] = useState<boolean>(false);

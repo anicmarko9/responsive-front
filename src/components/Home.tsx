@@ -11,7 +11,7 @@ import Layout from './layout/Layout';
 // Home Component: Represents the home page of the website
 const Home = (): JSX.Element => {
   return (
-     // Using the Layout component to structure the page
+    // Using the Layout component to structure the page
     <Layout>
       <LandingPage />
       <StatCards />

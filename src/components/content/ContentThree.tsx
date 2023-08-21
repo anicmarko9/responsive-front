@@ -56,7 +56,8 @@ const ContentThree = (): JSX.Element => {
             </li>
           </ul>
         </div>
-      </div>{/* Main Call to Action Button */}
+      </div>
+      {/* Main Call to Action Button */}
       <MainButton overwrite="xl:self-center" />
     </section>
   );
