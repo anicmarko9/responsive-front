@@ -4,21 +4,21 @@ import MainButton from '@Components/features/MainButton';
 // ContentTwo Component: Represents the second section of the page with a message about weight loss assistance.
 const ContentTwo = (): JSX.Element => {
   return (
-     // Section container for the second content section with responsive styling.
+    // Section container for the second content section with responsive styling.
     <section className="relative flex h-full flex-col items-center space-y-8 bg-white px-0 py-8 text-start text-lg xl:px-36 xl:pb-0 xl:pt-16 xl:text-center">
       <h2 className="order-first my-2 w-full px-8 text-3xl tracking-wide sm:px-36 xl:order-none xl:my-4 xl:px-0 xl:text-4xl">
         We Can Help You
       </h2>
       <p className="flex flex-col space-y-4 px-8 sm:space-y-8 sm:px-36 xl:block xl:space-y-0 xl:px-0">
         <span className="order-1 text-sm sm:text-base xl:order-none xl:text-lg">
-           {/* First part of the message about weight loss challenges and common experiences. */}
+          {/* First part of the message about weight loss challenges and common experiences. */}
           For those of us who struggle with our weight it&apos;s easy to lose
           hope. We have seen so many tricks, gimmicks and weight loss programs
           that simply do not work for us. They want us to eat like a pigeon,
           avoid all the things we love to eat and work out till we cry.
         </span>{' '}
         <span className="order-2 text-sm sm:text-base xl:order-none xl:text-lg">
-           {/* Second part of the message highlighting hope and the advancements in technology. */}
+          {/* Second part of the message highlighting hope and the advancements in technology. */}
           We are here to tell you that it doesn&apos;t have to be that way.
           There is hope! Technology has advanced rapidly in recent years and
           now, with proper guidance...

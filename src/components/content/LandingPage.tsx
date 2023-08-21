@@ -16,7 +16,8 @@ const LandingPage = (): JSX.Element => {
             Chicago&apos;s <span className="text-primary">Free</span> Medical
             Check-Up and Weight Loss Consultation
           </h1>
-          <Counter />{/* Component to display a counter. */}
+          <Counter />
+          {/* Component to display a counter. */}
         </div>
         <p className="my-6 w-full leading-relaxed sm:mb-4 sm:mt-8 sm:w-3/4 sm:text-lg xl:mb-6 xl:mt-6 xl:w-2/5">
           {/* Description of the service, its availability, and requirements. */}

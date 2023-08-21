@@ -11,7 +11,7 @@ const ContentOne = (): JSX.Element => {
         <div className="space-y-4 sm:space-y-6">
           <h2 className="contentOneTitle">Who Is The Consultation For?</h2>
           <p className="contentOneDescription">
-             {/* Description of the target audience for the consultation. */}
+            {/* Description of the target audience for the consultation. */}
             Chicago&apos;s free medical check-up and weight loss consultation is
             for Chicago residents who are looking to lose weight so they can
             live a long, vibrant and healthy life, while looking good and not
@@ -21,7 +21,7 @@ const ContentOne = (): JSX.Element => {
         <div className="space-y-4 sm:space-y-6">
           <h2 className="contentOneTitle">How Does It Work?</h2>
           <p className="contentOneDescription">
-               {/* Description of how the consultation works and its process. */}
+            {/* Description of how the consultation works and its process. */}
             In this exam a certified nurse or physician will do various tests to
             check your overall health level and find which easy-to-do
             physician-supervised weight loss program will work best for you.

@@ -16,10 +16,12 @@ const Footer = (): JSX.Element => {
           >
             <img src="/logo.png" alt="Logo" width={140} height={65} />
           </a>
-          <p> {/* Information about the medical weight loss program */}
-            A Better Weigh Medical Weight Loss Center offers a weight loss
-            program dedicated to helping you achieve long term weight loss
-            success with the use of FDA approved medication.
+          <p>
+            {' '}
+            {/* Information about the medical weight loss program */}A Better
+            Weigh Medical Weight Loss Center offers a weight loss program
+            dedicated to helping you achieve long term weight loss success with
+            the use of FDA approved medication.
           </p>
           <address>
             <div className="flex">

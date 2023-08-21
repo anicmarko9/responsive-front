@@ -8,7 +8,8 @@ const Program = ({
   duration,
   description,
   imgSrc,
-}: IProgram): JSX.Element => { // A fallback image source in case the provided image is not found.
+}: IProgram): JSX.Element => {
+  // A fallback image source in case the provided image is not found.
   const notFound = './ImgNotFound.svg';
 
   return (
