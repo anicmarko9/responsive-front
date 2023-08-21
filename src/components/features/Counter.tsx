@@ -14,7 +14,7 @@ const Counter = (): JSX.Element => {
 
   useEffect(() => {
     // Set the offer expiration date and time
-    const endTime: Date = new Date('2023-09-05T23:59:59');
+    const endTime: Date = new Date('2023-10-23T23:59:59');
 
     // Calculate and update the countdown values
     const calculateTimeLeft = (): void => {
