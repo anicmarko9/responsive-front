@@ -11,10 +11,10 @@ const Footer = (): JSX.Element => {
       <div className="mb-4 flex flex-wrap justify-between xl:mb-24 xl:mt-4">
         <section className="w-full space-y-8 pb-8 sm:w-1/2 xl:w-5/12">
           <a
-            className="block transition-all duration-300 ease-in-out hover:opacity-70 hover:-translate-y-1 active:scale-95"
+            className="block hover:cursor-pointer"
             href="/"
           >
-            <img src="/logo.png" alt="Logo" width={140} height={65} />
+            <img className='duration-300 ease-in-out hover:opacity-70 hover:-translate-y-1 transition-transform active:scale-95' src="/logo.png" alt="Logo" width={140} height={65} />
           </a>
           <p>
             {' '}
