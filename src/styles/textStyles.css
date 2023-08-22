@@ -1,4 +1,7 @@
-@tailwind components
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer components {
   .counterText {
     @apply mb-4 text-[8px] font-medium uppercase tracking-[0.2em] text-countdown sm:text-xs lg:text-lg xl:mb-8;
