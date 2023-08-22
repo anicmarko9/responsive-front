@@ -1,0 +1,11 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import './containers.css';
+@import './animations.css';
+@import './icons.css';
+@import './textStyles.css';
+@import './miscStyles.css';
+
+
