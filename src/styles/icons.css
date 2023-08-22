@@ -1,4 +1,7 @@
-@tailwind components
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer components {
   .footerIcon {
     @apply flex h-7 w-7 items-center justify-center rounded-full bg-primary text-white transition-colors hover:border-2 hover:border-primary hover:bg-customWhite hover:text-primary;
