@@ -112,7 +112,7 @@
   }
 
   .footerIcon {
-    @apply flex h-7 w-7 items-center justify-center rounded-full bg-primary text-white transition-colors hover:border-2 hover:border-primary hover:bg-customWhite hover:text-primary;
+    @apply flex h-7 w-7 items-center justify-center rounded-full bg-primary text-white transition-colors hover:border-2 hover:border-primary hover:bg-customWhite hover:text-primary duration-300 ease-in-out;
   }
 
   .socialMediaIcon {
