@@ -1,16 +1,8 @@
 import React from 'react';
 
-interface BurgerMenuItemProps {
-  href: string;
-  icon: React.ReactElement;
-  text: string;
-}
+import { IBurgerMenuItem } from '@Types/countdownType';
 
-const BurgerMenuItem: React.FC<BurgerMenuItemProps> = ({
-  href,
-  icon,
-  text,
-}) => {
+const BurgerMenuItem = ({ href, icon, text }: IBurgerMenuItem): JSX.Element => {
   return (
     <a className="hoverEffect flex items-center" href={href}>
       {icon}
