@@ -18,3 +18,9 @@ export interface IProgram {
   description: string;
   imgSrc: string;
 }
+
+export interface IBurgerMenuItem {
+  href: string;
+  icon: React.ReactElement;
+  text: string;
+}

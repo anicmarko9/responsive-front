@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { IoClose } from 'react-icons/io5';
+
 import BurgerMenuItems from './BurgerMenuItems';
 import BurgerMenuData from './BurgerMenuData';
+import { IBurgerMenuItem } from '@Types/countdownType';
 
 // BurgerMenu Component: Represents a burger menu for responsive navigation
 const BurgerMenu = ({
@@ -59,9 +61,19 @@ const BurgerMenu = ({
         </div>
         <hr className="border-1 mt-4 mb-2" />
         <div className="flex w-full flex-col space-y-4 py-4 text-xl tracking-wide">
-          {BurgerMenuData.map(({ href, icon, text }, index) => (
-            <BurgerMenuItems key={index} href={href} icon={icon} text={text} />
-          ))}
+          {BurgerMenuData.map(
+            (
+              { href, icon, text }: IBurgerMenuItem,
+              index: number,
+            ): JSX.Element => (
+              <BurgerMenuItems
+                key={index}
+                href={href}
+                icon={icon}
+                text={text}
+              />
+            ),
+          )}
         </div>
         <div
           className="fixed left-0 top-0 z-40 h-0 w-0 bg-black bg-opacity-30 sm:h-full sm:w-2/5"

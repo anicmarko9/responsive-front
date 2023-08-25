@@ -10,7 +10,9 @@ import {
 } from 'react-icons/fa';
 import { MdAnnouncement } from 'react-icons/md';
 
-const BurgerMenuData = [
+import { IBurgerMenuItem } from '@Types/countdownType';
+
+const BurgerMenuData: IBurgerMenuItem[] = [
   {
     href: '/about-us',
     icon: <MdAnnouncement size={24} style={{ marginRight: '8px' }} />,
