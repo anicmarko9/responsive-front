@@ -1,15 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { IoClose } from 'react-icons/io5';
-import {
-  FaWeight,
-  FaUsers,
-  FaMapMarkerAlt,
-  FaBlog,
-  FaShoppingCart,
-  FaEnvelope,
-  FaCalendarCheck,
-} from 'react-icons/fa';
-import { MdAnnouncement } from 'react-icons/md';
+import BurgerMenuItems from './BurgerMenuItems';
+import BurgerMenuData from './BurgerMenuData';
+
 // BurgerMenu Component: Represents a burger menu for responsive navigation
 const BurgerMenu = ({
   toggleMenu,
@@ -66,38 +59,9 @@ const BurgerMenu = ({
         </div>
         <hr className="border-1 mt-4 mb-2" />
         <div className="flex w-full flex-col space-y-4 py-4 text-xl tracking-wide">
-          <a className="hoverEffect flex items-center" href="/about-us">
-            <MdAnnouncement size={24} style={{ marginRight: '8px' }} />
-            <span>About Us</span>
-          </a>
-          <a className="hoverEffect flex items-center" href="/bookings">
-            <FaCalendarCheck size={24} style={{ marginRight: '8px' }} />
-            <span>Book Online</span>
-          </a>
-          <a className="hoverEffect flex items-center" href="/weight-loss">
-            <FaWeight size={24} style={{ marginRight: '8px' }} />
-            <span>Weight Loss Programs</span>
-          </a>
-          <a className="hoverEffect flex items-center" href="/stories">
-            <FaUsers size={24} style={{ marginRight: '8px' }} />
-            <span>Real Patient Stories</span>
-          </a>
-          <a className="hoverEffect flex items-center" href="/locations">
-            <FaMapMarkerAlt size={24} style={{ marginRight: '8px' }} />
-            <span>Locations</span>
-          </a>
-          <a className="hoverEffect flex items-center" href="/blogs">
-            <FaBlog size={24} style={{ marginRight: '8px' }} />
-            <span>Blog</span>
-          </a>
-          <a className="hoverEffect flex items-center" href="/shop">
-            <FaShoppingCart size={24} style={{ marginRight: '8px' }} />
-            <span>Shop</span>
-          </a>
-          <a className="hoverEffect flex items-center" href="/subscription">
-            <FaEnvelope size={24} style={{ marginRight: '8px' }} />
-            <span>Subscription</span>
-          </a>
+          {BurgerMenuData.map(({ href, icon, text }, index) => (
+            <BurgerMenuItems key={index} href={href} icon={icon} text={text} />
+          ))}
         </div>
         <div
           className="fixed left-0 top-0 z-40 h-0 w-0 bg-black bg-opacity-30 sm:h-full sm:w-2/5"
