@@ -53,7 +53,7 @@ const Header = (): JSX.Element => {
             className="hover:text-primary hover:text-decoration:none  hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-300 ease-in nav-link rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter bg-opacity-70 text-white"
             href="/about-us"
           >
-            Abouts Us
+            About Us
           </a>
           <a
             className="hover:text-primary hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-300 ease-in nav-link rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter bg-opacity-70 text-white"

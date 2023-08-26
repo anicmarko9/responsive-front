@@ -67,7 +67,7 @@ const Footer = (): JSX.Element => {
               </li>
             </ul>
           </section>
-          <section className="  py-4 xl:px-4">
+          <section className="py-4 xl:px-4">
             <h5 className="mb-4 text-3xl xl:mb-8">More Links</h5>
             <ul className="space-y-4">
               <li className="hoverEffect">

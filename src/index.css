@@ -3,16 +3,28 @@
 @tailwind utilities;
 
 @layer components {
+  /* .hoverEffect {
+    @apply inline-block relative w-[fit-content]; 
+  }
+  
+  .hoverEffect::after {
+    @apply transition-transform duration-400 ease-in-expo scale-x-0 origin-bottom-right transform rounded-sm bottom-[6px];
+  }
+  
+  .hoverEffect:hover::after {
+    @apply scale-x-100 origin-bottom-left;
+  } */
+
   .hoverEffect {
-    @apply hover:text-primary transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer active:scale-95;
+      @apply hover:text-primary transition duration-150 ease-in-expo cursor-pointer active:scale-95;;
   }
 
   .yellowBlock {
-    @apply absolute right-0 top-0 -z-10 h-full w-1/2 rounded-tl-[50px] bg-tertiary shadow-lg xl:w-[28%];
+    @apply absolute right-0 top-0 -z-10 h-full w-1/2 rounded-tl-[20%] bg-tertiary shadow-lg xl:w-[28%];
   }
 
   .button {
-    @apply w-48 self-center rounded-xl border-2 border-primary bg-primary py-2 text-center text-sm tracking-wider text-white shadow-lg transition-all duration-[250ms] ease-in-out hover:bg-white hover:text-primary focus:outline-none sm:my-4 sm:w-56 sm:text-lg xl:self-start active:scale-95 active:rounded-3xl;
+    @apply w-48 self-center rounded-xl border-2 border-primary bg-primary py-2 text-center text-sm tracking-wider text-white shadow-lg transition-all duration-[250ms] ease-in-expo hover:bg-white hover:text-primary focus:outline-none sm:my-4 sm:w-56 sm:text-lg xl:self-start active:scale-95 active:rounded-3xl;
   }
 
   .counterBlock {
@@ -32,7 +44,7 @@
   }
 
   .popUpAnimation {
-    @apply duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer hover:bg-secondary hover:text-white sm:space-y-6;
+    @apply duration-300 ease-in-expo hover:scale-110 hover:cursor-pointer hover:bg-secondary hover:text-white sm:space-y-6;
   }
 
   .popUpAnimation:hover
@@ -40,11 +52,11 @@
     > .statNumber
     > .statPlusIcon
     > svg {
-    @apply delay-custom ease-in-out fill-white opacity-100;
+    @apply delay-custom ease-in-expo fill-white opacity-100;
   }
 
   .statCard:hover > .statIconAndTitleContainer > div > svg {
-    @apply delay-custom ease-in-out opacity-100 text-white;
+    @apply delay-custom ease-in-expo opacity-100 text-white;
   }
 
   .statIconAndTitleContainer {
@@ -112,7 +124,7 @@
   }
 
   .footerIcon {
-    @apply flex h-7 w-7 items-center justify-center rounded-full bg-primary text-white transition-colors hover:border-2 hover:border-primary hover:bg-customWhite hover:text-primary duration-300 ease-in-out;
+    @apply flex h-7 w-7 items-center justify-center rounded-full bg-primary text-white transition-colors hover:border-2 hover:border-primary hover:bg-customWhite hover:text-primary duration-300 ease-in-expo;
   }
 
   .socialMediaIcon {

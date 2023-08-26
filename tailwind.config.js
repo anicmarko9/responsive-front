@@ -7,6 +7,10 @@ module.exports = {
       fontFamily: {
         'libre-baskerville': ['Libre Baskerville', 'serif'],
       },
+      transitionTimingFunction: {
+        'in-expo': 'cubic-bezier(0.95, 0.05, 0.795, 0.035)',
+        'out-expo': 'cubic-bezier(0.465, 0.183, 0.153, 0.946)',
+      },
       colors: {
         primary: '#dd71c6',
         secondary: '#73c3f4',
@@ -17,11 +21,18 @@ module.exports = {
       transitionDelay: {
         custom: '120ms',
       },
+      transitionDuration: {
+        '400': '400ms',
+      },
       animation: {
-        slideInRightSM: 'slideInRightSM 1s ease-in-out',
-        slideInRight: 'slideInRight 1s ease-in-out',
-        slideOutRightSM: 'slideOutRightSM 1s ease-in-out',
-        slideOutRight: 'slideOutRight 1s ease-in-out',
+        slideInRightSM:
+          'slideInRightSM 1s cubic-bezier(0.465, 0.183, 0.153, 0.946)',
+        slideInRight:
+          'slideInRight 1s cubic-bezier(0.465, 0.183, 0.153, 0.946)',
+        slideOutRightSM:
+          'slideOutRightSM 1s cubic-bezier(0.465, 0.183, 0.153, 0.946)',
+        slideOutRight:
+          'slideOutRight 1s cubic-bezier(0.465, 0.183, 0.153, 0.946)',
         customSpin: 'customSpin 1s linear infinite',
       },
       keyframes: {
