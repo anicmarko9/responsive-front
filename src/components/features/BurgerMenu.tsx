@@ -56,7 +56,7 @@ const BurgerMenu = ({
           </a>
           <IoClose
             onClick={toggleMenu}
-            className="h-8 w-8 cursor-pointer rounded-full text-primary transition-all duration-200 ease-in hover:bg-gray-200"
+            className="h-8 w-8 text-black transition-all duration-200 ease-in hover:cursor-pointer hover:text-primary"
           />
         </div>
         <hr className="border-1 mt-4 mb-2" />
