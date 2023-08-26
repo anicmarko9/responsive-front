@@ -15,7 +15,6 @@ const AboutUs = (): JSX.Element => {
             alt="about us"
           ></img>
         </figure>
-
         <div className="md:w-2/5 md:p-5 ">
           <div className="flex w-full justify-center">
             <h2 className="w-4/5 rounded-2xl bg-blue-400 p-3 text-center text-4xl font-bold text-yellow-300 md:w-[200px]">

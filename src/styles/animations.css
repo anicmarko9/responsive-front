@@ -3,14 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-  .hoverEffect {
-    @apply hover:text-primary transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer active:scale-95;
-  }
-
-  .popUpAnimation {
-    @apply duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer hover:bg-secondary hover:text-white sm:space-y-6;
-  }
-
   .loading-spinner {
     @apply animate-customSpin border-primary rounded-full h-16 w-16 border-b-4 border-l-4;
   }
@@ -20,6 +12,6 @@
     > .statNumber
     > .statPlusIcon
     > svg {
-    @apply delay-custom ease-in-out fill-white opacity-100;
+    @apply delay-custom ease-in-expo fill-white opacity-100;
   }
 }
