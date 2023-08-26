@@ -16,7 +16,7 @@
   } */
 
   .hoverEffect {
-      @apply hover:text-primary transition duration-150 ease-in-expo cursor-pointer active:scale-95;;
+    @apply hover:text-primary transition duration-150 ease-in-expo cursor-pointer active:scale-95;
   }
 
   .yellowBlock {
