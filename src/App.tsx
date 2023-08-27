@@ -5,6 +5,7 @@ import NotFound from '@Components/NotFound';
 import Locations from '@Pages/Locations';
 import AboutUs from '@Pages/AboutUs';
 import WeightLossProgram from '@Pages/WeightLossProgram';
+import Shop from '@Pages/Shop';
 
 function App(): JSX.Element {
   return (
@@ -16,6 +17,7 @@ function App(): JSX.Element {
           <Route path="/locations" element={<Locations />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/weight-loss" element={<WeightLossProgram />} />
+          <Route path="/shop" element={<Shop />} />
           <Route path="*" element={<Navigate to="/not-found" />} />
         </Routes>
       </BrowserRouter>
