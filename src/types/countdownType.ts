@@ -24,3 +24,11 @@ export interface IBurgerMenuItem {
   icon: React.ReactElement;
   text: string;
 }
+
+//Interface outlining Shop program
+export interface IShop {
+  description: string;
+  imgSrc: string;
+  title: string;
+  price: string;
+}
