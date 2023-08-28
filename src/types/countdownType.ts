@@ -25,10 +25,17 @@ export interface IBurgerMenuItem {
   text: string;
 }
 
-//Interface outlining Shop program
+//Interface outlining Product
 export interface IProduct {
   description: string;
   imgSrc: string;
   title: string;
   price: string;
+}
+
+export interface ILocation {
+  name: string;
+  imgSrc: string;
+  schedule: string;
+  address: string;
 }
