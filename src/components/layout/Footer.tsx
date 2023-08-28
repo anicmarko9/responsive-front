@@ -5,7 +5,7 @@ import { IoLocationSharp } from 'react-icons/io5';
 import { AiFillInstagram } from 'react-icons/ai';
 
 // Footer Component: Represents the footer section of the web page.
-const Footer = (): JSX.Element => {
+export default function Footer() {
   return (
     <footer className="relative flex h-full flex-col bg-customWhite px-6 pb-8 pt-6 text-base sm:px-16 sm:text-lg xl:px-40 xl:pt-16">
       <div className="mb-4 flex flex-wrap justify-between xl:mb-24 xl:mt-4">
@@ -17,7 +17,7 @@ const Footer = (): JSX.Element => {
               alt="Logo"
               width={140}
               height={65}
-              loading='lazy'
+              loading="lazy"
             />
           </a>
           <p>
@@ -30,9 +30,9 @@ const Footer = (): JSX.Element => {
           <address>
             <div className="flex">
               <IoLocationSharp className="contactIcon" />
-              <div className="xl:flex xl:flex-wrap">
-                <p className="font-bold xl:mr-1 xl:min-w-fit">Head Office:</p>
-                <p className="xl:min-w-fit">
+              <div className="xl:flex xl:flex-wrap pt-[2px] pl-1 font-bold">
+                <p>Head Office:</p>
+                <p>
                   1931 W 95th Street Chicago IL, 60643
                 </p>
               </div>
@@ -40,8 +40,8 @@ const Footer = (): JSX.Element => {
             <br />
             <div className="flex">
               <FaPhoneAlt className="contactIcon" />
-              <div className="xl:flex xl:space-x-1">
-                <p className="font-bold">Phone:</p>
+              <div className="xl:flex xl:space-x-1 pt-[2px] pl-1 font-bold">
+                <p>Phone:</p>
                 <p>773-496-4222</p>
               </div>
             </div>
@@ -50,41 +50,51 @@ const Footer = (): JSX.Element => {
         <div className="flex flex-wrap xl:space-x-16">
           <section className="mr-8 py-4 xl:px-4">
             <h5 className="mb-4 text-3xl xl:mb-8">About</h5>
-            <ul className="space-y-4">
-              <li className="hoverEffect">
-                <a href="/about-us">About Us</a>
+            <ul className="relative space-y-4">
+              <li>
+                <a className="hoverUnderline" href="/about-us">
+                  About Us
+                </a>
               </li>
-              <li className="hoverEffect">
-                <a href="/bookings">Book Online</a>
+              <li>
+                <a className="hoverUnderline" href="/bookings">
+                  Book Online
+                </a>
               </li>
-              <li className="hoverEffect">
-                <a href="/locations">Locations</a>
+              <li>
+                <a className="hoverUnderline" href="/locations">
+                  Locations
+                </a>
               </li>
-              <li className="hoverEffect">
-                <a href="/stories">Real Patient Stories</a>
+              <li>
+                <a className="hoverUnderline" href="/stories">
+                  Real Patient Stories
+                </a>
               </li>
-              <li className="hoverEffect">
-                <a href="/weight-loss">Weight Loss Programs</a>
+              <li>
+                <a className="hoverUnderline" href="/weight-loss">
+                  Weight Loss Programs
+                </a>
               </li>
             </ul>
           </section>
           <section className="py-4 xl:px-4">
             <h5 className="mb-4 text-3xl xl:mb-8">More Links</h5>
             <ul className="space-y-4">
-              <li className="hoverEffect">
-                <a href="/franchise-opportunities">Franchise Opportunities</a>
+              <li>
+                <a className="hoverUnderline" href="/franchise-opportunities">Franchise Opportunities</a>
               </li>
-              <li className="hoverEffect">
-                <a href="/career-opportunities">Career Opportunities</a>
+              <li>
+                <a className="hoverUnderline" href="/career-opportunities">Career Opportunities</a>
               </li>
-              <li className="hoverEffect">
-                <a href="/privacy-policy">Privacy Policy</a>
+              <li>
+                <a className="hoverUnderline" href="/privacy-policy">Privacy Policy</a>
               </li>
-              <li className="hoverEffect">
-                <a href="/terms-conditions">Terms & Conditions</a>
+              <li>
+                <a className="hoverUnderline" href="/terms-conditions">Terms & Conditions</a>
               </li>
-              <li className="hoverEffect">
-                <a href="/return-policy">Return Policy</a>
+              <li>
+                <a className="hoverUnderline" href="/return-policy">Return Policy</a>
               </li>
             </ul>
           </section>
@@ -106,6 +116,5 @@ const Footer = (): JSX.Element => {
       </section>
     </footer>
   );
-};
+}
 
-export default Footer;

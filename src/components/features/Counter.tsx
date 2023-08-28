@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 
 import { Countdown } from '@Types/countdownType';
 import { calculateCountdown } from '@Utils/countdown';
 // Counter Component: Represents a countdown timer for an offer expiration.
-const Counter = (): JSX.Element => {
+export default function Counter() {
   // State to store countdown values
   const [countdown, setCountdown] = useState<Countdown>({
     days: '00',
@@ -12,20 +12,20 @@ const Counter = (): JSX.Element => {
     seconds: '00',
   });
 
-  useEffect(() => {
-    // Set the offer expiration date and time
+  const countdownTimer = () => {
     const endTime: Date = new Date('2023-10-23T23:59:59');
-
+    
     // Calculate and update the countdown values
     const calculateTimeLeft = (): void => {
       const currentTime: Date = new Date();
       const timeDifference: number = endTime.getTime() - currentTime.getTime();
-
+      
       if (timeDifference > 0) {
         // Calculate the countdown values using utility function
         const getCountdown: Countdown = calculateCountdown(timeDifference);
-
+        
         // Update the countdown state with calculated values
+        // Set the offer expiration date and time
         setCountdown(getCountdown);
       } else {
         // Set countdown to zero if offer has expired
@@ -36,11 +36,17 @@ const Counter = (): JSX.Element => {
     calculateTimeLeft();
     // Update the countdown every second
     const timer: NodeJS.Timeout = setInterval(calculateTimeLeft, 1000);
-
     // Clear the timer when the component is unmounted
     return () => {
       clearInterval(timer);
     };
+  }
+  // Added a memo so react remembers the function and doesn't re-render it on every change
+  const memoCountdownTimer = useMemo(() => countdownTimer, [countdownTimer]);
+  
+  // moved function outside of hook to take advantage of memo and reduce render times
+  useEffect(() => {
+    memoCountdownTimer();
   }, []);
 
   return (
@@ -69,6 +75,4 @@ const Counter = (): JSX.Element => {
       </div>
     </section>
   );
-};
-
-export default Counter;
+}

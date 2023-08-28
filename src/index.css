@@ -3,20 +3,29 @@
 @tailwind utilities;
 
 @layer components {
-  /* .hoverEffect {
-    @apply inline-block relative w-[fit-content]; 
-  }
   
-  .hoverEffect::after {
-    @apply transition-transform duration-400 ease-in-expo scale-x-0 origin-bottom-right transform rounded-sm bottom-[6px];
-  }
-  
-  .hoverEffect:hover::after {
-    @apply scale-x-100 origin-bottom-left;
-  } */
+.hoverUnderline {
+  display: inline-block;
+  position: relative;
+}
 
-  .hoverEffect {
-    @apply hover:text-primary transition duration-150 ease-in-out cursor-pointer active:scale-95;
+.hoverUnderline::after {
+  @apply bg-primary;
+  content: '';
+  position: absolute;
+  bottom: -4px; 
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946); 
+  }
+
+  .hoverUnderline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
   }
 
   .yellowBlock {
