@@ -32,7 +32,6 @@ const AboutUs = (): JSX.Element => {
           </p>
         </div>
       </section>
-
       <section className="mt-3 h-auto md:mt-10 md:p-5 ">
         <div className="m-auto flex flex-col gap-2 md:w-4/6 md:flex-row">
           <div className="md:w-3/5 md:p-5">
