@@ -128,11 +128,11 @@
   }
 
   .footerIcon {
-    @apply flex h-7 w-7 items-center justify-center rounded-full bg-primary text-white transition-colors hover:border-2 hover:border-primary hover:bg-customWhite hover:text-primary duration-300 ease-in-expo;
+    @apply flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white transition hover:border-2 hover:border-primary hover:bg-customWhite hover:text-primary duration-300 ease-in-out;
   }
 
   .socialMediaIcon {
-    @apply h-4 w-4;
+    @apply h-6 w-6;
   }
 
   .contactIcon {
