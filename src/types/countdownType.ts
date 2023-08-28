@@ -26,7 +26,7 @@ export interface IBurgerMenuItem {
 }
 
 //Interface outlining Shop program
-export interface IShop {
+export interface IProduct {
   description: string;
   imgSrc: string;
   title: string;
