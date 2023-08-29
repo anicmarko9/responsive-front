@@ -36,9 +36,9 @@ const Header = (): JSX.Element => {
   }, []);
 
   return (
-    <header className="relative flex h-14 w-full items-center justify-between px-4 pt-2 sm:h-16 sm:px-16 sm:pt-4 xl:px-36">
+    <header className="relative flex h-14 w-full items-center justify-between px-4 pt-[4vh] sm:h-16 sm:px-16 sm:pt-4 xl:px-36">
       <a
-        className="hover:opacity-70 transition-all duration-300 ease-in-out hover:-translate-y-1 active:scale-95"
+        className="relative hover:opacity-90 transition duration-300 ease-in-out hover:scale-110 origin-center pt-5"
         href="/"
       >
         <img
@@ -48,51 +48,51 @@ const Header = (): JSX.Element => {
         />
       </a>
       {windowWidth >= 1024 ? (
-        <nav className="flex w-full items-center justify-between">
+        <nav className="flex w-full items-center justify-between pt-4">
           <a
-            className="hover:text-primary hover:text-decoration:none  hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-300 ease-in nav-link rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter bg-opacity-70 text-white"
+            className="navBtns"
             href="/about-us"
           >
             About Us
           </a>
           <a
-            className="hover:text-primary hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-300 ease-in nav-link rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter bg-opacity-70 text-white"
+            className="navBtns"
             href="/bookings"
           >
             Book Online
           </a>
           <a
-            className="hover:text-primary hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-300 ease-in nav-link rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter bg-opacity-70 text-white"
+            className="navBtns"
             href="/weight-loss"
           >
             Weight Loss Programs
           </a>
           <a
-            className="hover:text-primary hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-300 ease-in nav-link rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter bg-opacity-70 text-white"
+            className="navBtns"
             href="/stories"
           >
             Stories
           </a>
           <a
-            className="hover:text-primary hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-300 ease-in nav-link rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter bg-opacity-70 text-white"
+            className="navBtns"
             href="/locations"
           >
             Locations
           </a>
           <a
-            className="hover:text-primary hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-300 ease-in nav-link rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter text-white bg-opacity-70"
+            className="navBtns"
             href="/blogs"
           >
             Blog
           </a>
           <a
-            className="hidden 2xl:block hover:text-primary hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-300 ease-in nav-link rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter text-white bg-opacity-70"
+            className="hidden 2xl:block hover:text-primary hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-300 ease-in rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter text-white bg-opacity-70"
             href="/shop"
           >
             Shop
           </a>
           <a
-            className="hidden 2xl:block hover:text-primary hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-300 ease-in nav-link rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter text-white bg-opacity-70"
+            className="hidden 2xl:block hover:text-primary hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-300 ease-in rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter text-white bg-opacity-70"
             href="/subscription"
           >
             Subscription

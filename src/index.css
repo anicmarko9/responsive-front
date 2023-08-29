@@ -3,20 +3,29 @@
 @tailwind utilities;
 
 @layer components {
-  /* .hoverEffect {
-    @apply inline-block relative w-[fit-content]; 
-  }
   
-  .hoverEffect::after {
-    @apply transition-transform duration-400 ease-in-expo scale-x-0 origin-bottom-right transform rounded-sm bottom-[6px];
-  }
-  
-  .hoverEffect:hover::after {
-    @apply scale-x-100 origin-bottom-left;
-  } */
+.hoverUnderline {
+  display: inline-block;
+  position: relative;
+}
 
-  .hoverEffect {
-    @apply hover:text-primary transition duration-150 ease-in-expo cursor-pointer active:scale-95;
+.hoverUnderline::after {
+  @apply bg-primary;
+  content: '';
+  position: absolute;
+  bottom: -4px; 
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946); 
+  }
+
+  .hoverUnderline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
   }
 
   .yellowBlock {
@@ -24,7 +33,11 @@
   }
 
   .button {
-    @apply w-48 self-center rounded-xl border-2 border-primary bg-primary py-2 text-center text-sm tracking-wider text-white shadow-lg transition-all duration-[250ms] ease-in-expo hover:bg-white hover:text-primary focus:outline-none sm:my-4 sm:w-56 sm:text-lg xl:self-start active:scale-95 active:rounded-3xl;
+    @apply w-48 self-center rounded-xl border-2 border-primary bg-primary py-2 text-center text-sm tracking-wider text-white shadow-lg transition-all duration-[300ms] ease-in-out hover:bg-white hover:text-primary focus:outline-none sm:my-4 sm:w-56 sm:text-lg xl:self-start active:scale-95 active:rounded-3xl;
+  }
+
+  .navBtns {
+    @apply hover:text-primary hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-[350ms] ease-in rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter bg-opacity-70 text-white;
   }
 
   .counterBlock {
@@ -44,7 +57,7 @@
   }
 
   .popUpAnimation {
-    @apply duration-300 ease-in-expo hover:scale-110 hover:cursor-pointer hover:bg-secondary hover:text-white sm:space-y-6;
+    @apply duration-300 ease-in-out hover:scale-110 hover:cursor-pointer hover:bg-secondary hover:text-white sm:space-y-6;
   }
 
   .popUpAnimation:hover
@@ -52,7 +65,7 @@
     > .statNumber
     > .statPlusIcon
     > svg {
-    @apply delay-custom ease-in-expo fill-white opacity-100;
+    @apply delay-custom duration-[350ms] ease-in-out fill-white opacity-100;
   }
 
   .statCard:hover > .statIconAndTitleContainer > div > svg {
@@ -124,11 +137,11 @@
   }
 
   .footerIcon {
-    @apply flex h-7 w-7 items-center justify-center rounded-full bg-primary text-white transition-colors hover:border-2 hover:border-primary hover:bg-customWhite hover:text-primary duration-300 ease-in-expo;
+    @apply flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white transition hover:border-2 hover:border-primary hover:bg-customWhite hover:text-primary duration-300 ease-in-out;
   }
 
   .socialMediaIcon {
-    @apply h-4 w-4;
+    @apply h-6 w-6;
   }
 
   .contactIcon {

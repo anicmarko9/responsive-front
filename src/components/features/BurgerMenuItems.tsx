@@ -4,7 +4,7 @@ import { IBurgerMenuItem } from '@Types/countdownType';
 
 const BurgerMenuItem = ({ href, icon, text }: IBurgerMenuItem): JSX.Element => {
   return (
-    <a className="hoverEffect flex items-center" href={href}>
+    <a className="hoverUnderline flex items-center" href={href}>
       {icon}
       <span>{text}</span>
     </a>
