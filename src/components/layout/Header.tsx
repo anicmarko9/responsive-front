@@ -36,73 +36,50 @@ const Header = (): JSX.Element => {
   }, []);
 
   return (
-    <header className="relative flex h-14 w-full items-center justify-between px-4 pt-[4vh] sm:h-16 sm:px-16 sm:pt-4 xl:px-36">
-      <a
-        className="relative hover:opacity-90 transition duration-300 ease-in-out hover:scale-110 origin-center pt-5"
-        href="/"
-      >
+    <header className="relative flex w-full h-20 items-center justify-between xl:px-36, bg-[rgba(255,255,255,0.8)]">
+      <a className="w-1/2 sm:w-1/5 pl-4 sm:px-6" href="/">
         <img
           src="/logo.png"
           alt="Logo"
-          className="mr-16 h-[45px] w-[100px] sm:h-[65px] sm:w-[140px]"
+          className="h-[65px] w-[140px] min-w-[140px] relative hover:opacity-90 transition duration-300 ease-in-out hover:scale-110 origin-center"
         />
       </a>
       {windowWidth >= 1024 ? (
-        <nav className="flex w-full items-center justify-between pt-4">
-          <a
-            className="navBtns"
-            href="/about-us"
-          >
-            About Us
-          </a>
-          <a
-            className="navBtns"
-            href="/bookings"
-          >
-            Book Online
-          </a>
-          <a
-            className="navBtns"
-            href="/weight-loss"
-          >
-            Weight Loss Programs
-          </a>
-          <a
-            className="navBtns"
-            href="/stories"
-          >
-            Stories
-          </a>
-          <a
-            className="navBtns"
-            href="/locations"
-          >
-            Locations
-          </a>
-          <a
-            className="navBtns"
-            href="/blogs"
-          >
-            Blog
-          </a>
-          <a
-            className="hidden 2xl:block hover:text-primary hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-300 ease-in rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter text-white bg-opacity-70"
-            href="/shop"
-          >
-            Shop
-          </a>
-          <a
-            className="hidden 2xl:block hover:text-primary hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-300 ease-in rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter text-white bg-opacity-70"
-            href="/subscription"
-          >
-            Subscription
-          </a>
-        </nav>
+        <div className="flex items-center justify-end w-full h-full sm:px-3">
+          <nav className="flex">
+            <a className="navBtns" href="/about-us">
+              About Us
+            </a>
+            <a className="navBtns" href="/bookings">
+              Book Online
+            </a>
+            <a className="navBtns" href="/weight-loss">
+              Programs
+            </a>
+            <a className="navBtns" href="/stories">
+              Stories
+            </a>
+            <a className="navBtns" href="/locations">
+              Locations
+            </a>
+            <a className="navBtns" href="/blogs">
+              Blog
+            </a>
+            <a className="navBtns" href="/shop">
+              Shop
+            </a>
+            <a className="navBtns" href="/subscription">
+              Subscription
+            </a>
+          </nav>
+        </div>
       ) : (
-        <RxHamburgerMenu
-          className="h-8 w-8 cursor-pointer text-primary hover:opacity-60"
-          onClick={toggleMenu}
-        />
+        <div className="flex w-1/2 justify-end pr-4">
+          <RxHamburgerMenu
+            className="h-8 w-8 cursor-pointer text-primary hover:opacity-60"
+            onClick={toggleMenu}
+          />
+        </div>
       )}
       <BurgerMenu
         toggleMenu={toggleMenu}
