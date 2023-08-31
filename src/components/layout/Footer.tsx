@@ -32,9 +32,7 @@ export default function Footer() {
               <IoLocationSharp className="contactIcon" />
               <div className="xl:flex xl:flex-wrap pt-[2px] pl-1 font-bold">
                 <p>Head Office:</p>
-                <p>
-                  1931 W 95th Street Chicago IL, 60643
-                </p>
+                <p>1931 W 95th Street Chicago IL, 60643</p>
               </div>
             </div>
             <br />
@@ -82,19 +80,29 @@ export default function Footer() {
             <h5 className="mb-4 text-3xl xl:mb-8">More Links</h5>
             <ul className="space-y-4">
               <li>
-                <a className="hoverUnderline" href="/franchise-opportunities">Franchise Opportunities</a>
+                <a className="hoverUnderline" href="/franchise-opportunities">
+                  Franchise Opportunities
+                </a>
               </li>
               <li>
-                <a className="hoverUnderline" href="/career-opportunities">Career Opportunities</a>
+                <a className="hoverUnderline" href="/career-opportunities">
+                  Career Opportunities
+                </a>
               </li>
               <li>
-                <a className="hoverUnderline" href="/privacy-policy">Privacy Policy</a>
+                <a className="hoverUnderline" href="/privacy-policy">
+                  Privacy Policy
+                </a>
               </li>
               <li>
-                <a className="hoverUnderline" href="/terms-conditions">Terms & Conditions</a>
+                <a className="hoverUnderline" href="/terms-conditions">
+                  Terms & Conditions
+                </a>
               </li>
               <li>
-                <a className="hoverUnderline" href="/return-policy">Return Policy</a>
+                <a className="hoverUnderline" href="/return-policy">
+                  Return Policy
+                </a>
               </li>
             </ul>
           </section>
@@ -117,4 +125,3 @@ export default function Footer() {
     </footer>
   );
 }
-
