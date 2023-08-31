@@ -14,16 +14,16 @@ export default function Counter() {
 
   const countdownTimer = () => {
     const endTime: Date = new Date('2023-10-23T23:59:59');
-    
+
     // Calculate and update the countdown values
     const calculateTimeLeft = (): void => {
       const currentTime: Date = new Date();
       const timeDifference: number = endTime.getTime() - currentTime.getTime();
-      
+
       if (timeDifference > 0) {
         // Calculate the countdown values using utility function
         const getCountdown: Countdown = calculateCountdown(timeDifference);
-        
+
         // Update the countdown state with calculated values
         // Set the offer expiration date and time
         setCountdown(getCountdown);
@@ -40,10 +40,10 @@ export default function Counter() {
     return () => {
       clearInterval(timer);
     };
-  }
+  };
   // Added a memo so react remembers the function and doesn't re-render it on every change
   const memoCountdownTimer = useMemo(() => countdownTimer, [countdownTimer]);
-  
+
   // moved function outside of hook to take advantage of memo and reduce render times
   useEffect(() => {
     memoCountdownTimer();
