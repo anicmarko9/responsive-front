@@ -6,7 +6,8 @@
       "@Utils/*": ["./src/utils/*"],
       "@Types/*": ["./src/types/*"],
       "@Pages/*": ["./src/pages/*"],
-      "@Components/*": ["./src/components/*"]
+      "@Components/*": ["./src/components/*"],
+      "@Styles/*": ["./src/styles/*"]
     }
   }
 }
