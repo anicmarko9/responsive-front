@@ -3,29 +3,310 @@
 @tailwind utilities;
 
 @layer components {
-  
-.hoverUnderline {
-  display: inline-block;
-  position: relative;
-}
+  .hoverUnderline {
+    display: inline-block;
+    position: relative;
+  }
 
-.hoverUnderline::after {
-  @apply bg-primary;
-  content: '';
-  position: absolute;
-  bottom: -4px; 
-  left: 0;
-  width: 100%;
-  height: 2px;
-  border-radius: 2px;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946); 
+  .hoverUnderline::after {
+    @apply bg-primary;
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: bottom right;
+    -ms-transform-origin: bottom right;
+    transform-origin: bottom right;
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition: -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -o-transition: transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s
+      cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-transition: -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition: transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition: transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946), -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition:
+      transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+      -webkit-transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946);
   }
 
   .hoverUnderline:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    transform-origin: bottom left;
   }
 
   .yellowBlock {
@@ -37,7 +318,7 @@
   }
 
   .navBtns {
-    @apply hover:text-primary hover:bg-white hover:border-primary border-2 border-primary border-opacity-0 transition-all duration-[350ms] ease-in rounded bg-primary px-4 py-2 shadow-lg backdrop-blur-lg backdrop-filter bg-opacity-70 text-white;
+    @apply text-[18px] text-slate-300 border-2 border-slate-200 hover:border-primary transition-all duration-[150ms] ease-in rounded px-2 mr-3 hover:text-primary flex items-center justify-center h-[35px];
   }
 
   .counterBlock {
