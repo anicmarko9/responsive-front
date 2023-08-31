@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import 'typeface-roboto';
 
 import Loading from '@Components/features/Loading';
-import '@/index.css';
+import './styles/index.css';
 import App from '@/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

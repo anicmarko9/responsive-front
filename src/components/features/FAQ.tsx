@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
-import '@/index.css';
 // FAQ Component: Represents a collapsible Frequently Asked Questions (FAQ) item.
 const FAQ = ({ question }: { question: string }): JSX.Element => {
   // State to track whether the dropdown is open or closed
