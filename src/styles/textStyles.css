@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Heebo';
+  src: url('../fonts/Heebo-R.ttf');
+}
+
 @layer components {
   .counterText {
     @apply mb-4 text-[8px] font-medium uppercase tracking-[0.2em] text-countdown sm:text-xs lg:text-lg xl:mb-8;
