@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { IProduct } from '@Types/countdownType';
+import { IProduct } from '@/types/interfaces';
 
 const Product = ({
   title,

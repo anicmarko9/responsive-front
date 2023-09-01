@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { IProgram } from '@Types/countdownType';
+import { IProgram } from '@/types/interfaces';
 
 // Program Component: Represents a program with its details and an image.
 const Program = ({

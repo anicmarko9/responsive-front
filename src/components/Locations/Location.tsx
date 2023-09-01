@@ -1,5 +1,5 @@
 import React from 'react';
-import { ILocation } from '@Types/countdownType';
+import { ILocation } from '@/types/interfaces';
 
 const Location = ({
   name,
