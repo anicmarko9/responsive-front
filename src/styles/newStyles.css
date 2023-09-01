@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 @layer components {
   .hoverUnderline {
     @apply inline-block relative;
@@ -155,19 +152,16 @@
     --os-padding-axis: 160px;
     --os-handle-interactive-area-offset: 10px;
   }
-  
-  
-  
 }
 
 .os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle {
-  @apply !bg-countdown !m-[-9px]
+  @apply !bg-countdown !m-[-9px];
 }
 
 .os-scrollbar-vertical:hover .os-scrollbar-handle {
-  @apply !w-[500%]
+  @apply !w-[500%];
 }
 
 .os-scrollbar-track {
-  @apply !bg-slide !rounded-xl !opacity-60 !translate-x-[-15px]
+  @apply !bg-slide !rounded-xl !opacity-60 !translate-x-[-15px];
 }
