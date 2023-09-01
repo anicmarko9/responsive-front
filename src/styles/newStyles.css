@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
 @layer components {
   .hoverUnderline {
     @apply inline-block relative;
@@ -142,4 +145,29 @@
   .loading-spinner {
     @apply animate-customSpin border-primary rounded-full h-16 w-16 border-b-4 border-l-4;
   }
+
+  .os-theme-dark {
+    --os-handle-max-size: 20px;
+    --os-handle-min-size: 20px;
+    --os-handle-border-radius: 13px;
+    --os-size: 8px;
+    --os-handle-perpendicular-size: 500%;
+    --os-padding-axis: 160px;
+    --os-handle-interactive-area-offset: 10px;
+  }
+  
+  
+  
+}
+
+.os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle {
+  @apply !bg-countdown !m-[-9px]
+}
+
+.os-scrollbar-vertical:hover .os-scrollbar-handle {
+  @apply !w-[500%]
+}
+
+.os-scrollbar-track {
+  @apply !bg-slide !rounded-xl !opacity-60 !translate-x-[-15px]
 }
