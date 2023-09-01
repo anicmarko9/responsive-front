@@ -17,6 +17,7 @@ module.exports = {
         tertiary: '#ffd900',
         countdown: '#4D85B0',
         customWhite: '#f9f5f6',
+        slide: '#d3d3d3'
       },
       transitionDelay: {
         custom: '120ms',
