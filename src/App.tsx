@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Home from '@Components/Home';
 import NotFound from '@Components/NotFound';
@@ -9,10 +9,9 @@ import Shop from '@Pages/Shop';
 import { useOverlayScrollbars } from 'overlayscrollbars-react';
 
 function App(): JSX.Element {
- 
   const [initBodyOverlayScrollbars] = useOverlayScrollbars({
     defer: true,
-  
+
     options: {
       scrollbars: {
         theme: 'os-theme-dark',
@@ -21,7 +20,6 @@ function App(): JSX.Element {
   });
 
   useEffect(() => {
-    
     initBodyOverlayScrollbars(document.body);
   }, [initBodyOverlayScrollbars]);
 
