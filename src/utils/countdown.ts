@@ -1,4 +1,4 @@
-import { Countdown } from '@Types/countdownType';
+import { Countdown } from '@/types/interfaces';
 
 export const calculateCountdown = (timeRemaining: number): Countdown => {
   const days: number = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));

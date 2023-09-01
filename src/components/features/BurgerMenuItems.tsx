@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { IBurgerMenuItem } from '@Types/countdownType';
+import { IBurgerMenuItem } from '@/types/interfaces';
 
 const BurgerMenuItem = ({ href, icon, text }: IBurgerMenuItem): JSX.Element => {
   return (
