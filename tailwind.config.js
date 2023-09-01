@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'libre-baskerville': ['Libre Baskerville', 'serif'],
+        heebo: ['Heebo', 'sans-serif'],
       },
       transitionTimingFunction: {
         'in-expo': 'cubic-bezier(0.95, 0.05, 0.795, 0.035)',
@@ -22,7 +22,7 @@ module.exports = {
         custom: '120ms',
       },
       transitionDuration: {
-        '400': '400ms',
+        400: '400ms',
       },
       animation: {
         slideInRightSM:
