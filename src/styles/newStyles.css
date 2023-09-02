@@ -28,7 +28,7 @@
   }
 
   .counterBlock {
-    @apply h-full w-full rounded-3xl bg-white bg-opacity-30 px-4 py-8 shadow-lg backdrop-blur-lg backdrop-filter sm:mx-[20%] sm:py-10 xl:mx-0 xl:h-72 xl:w-1/2 xl:rounded-[50px] xl:px-10;
+    @apply h-auto w-full rounded-3xl bg-white bg-opacity-30 px-4 py-8 shadow-lg backdrop-blur-lg backdrop-filter sm:mx-[20%] sm:py-10 xl:mx-0 xl:h-72 xl:w-1/2 xl:rounded-[50px] xl:px-10;
   }
 
   .counterText {
