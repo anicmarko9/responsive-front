@@ -1,15 +1,25 @@
 import React, { useEffect } from 'react';
 import Lenis from '@studio-freight/lenis';
 
-import LandingPage from './content/LandingPage';
-import Layout from './layout/Layout';
+import Layout from '@Layout/Layout';
+import LandingPage from '@Components/content/landing-page/LandingPage';
 
 // Lazy loading components to improve performance
-const LazyCards = React.lazy(() => import('./content/StatCards'));
-const LazyContentOne = React.lazy(() => import('./content/ContentOne'));
-const LazyContentTwo = React.lazy(() => import('./content/ContentTwo'));
-const LazyContentThree = React.lazy(() => import('./content/ContentThree'));
-const LazyContentFAQ = React.lazy(() => import('./content/ContentFAQ'));
+const LazyCards = React.lazy(
+  () => import('@Components/content/landing-page/StatCards'),
+);
+const LazyContentOne = React.lazy(
+  () => import('@Components/content/landing-page/ContentOne'),
+);
+const LazyContentTwo = React.lazy(
+  () => import('@Components/content/landing-page/ContentTwo'),
+);
+const LazyContentThree = React.lazy(
+  () => import('@Components/content/landing-page/ContentThree'),
+);
+const LazyContentFAQ = React.lazy(
+  () => import('@Components/content/landing-page/ContentFAQ'),
+);
 // Home Component: Represents the home page of the website
 // Updating to a functional component
 function Home() {

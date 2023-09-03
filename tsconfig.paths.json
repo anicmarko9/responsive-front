@@ -5,10 +5,11 @@
       "@/*": ["./src/*"],
       "@Utils/*": ["./src/utils/*"],
       "@Types/*": ["./src/types/*"],
-      "@Pages/*": ["./src/pages/*"],
-      "@Components/*": ["./src/components/*"],
       "@Styles/*": ["./src/styles/*"],
-      "@Fonts/*": ["./src/fonts/*"]
+      "@Pages/*": ["./src/pages/*"],
+      "@Layout/*": ["./src/layout/*"],
+      "@Components/*": ["./src/components/*"],
+      "@Assets/*": ["./src/assets/*"]
     }
   }
 }

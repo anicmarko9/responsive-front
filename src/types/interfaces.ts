@@ -25,7 +25,7 @@ export interface IBurgerMenuItem {
   text: string;
 }
 
-//Interface outlining Product
+// Interface outlining Product
 export interface IProduct {
   description: string;
   imgSrc: string;
@@ -33,6 +33,7 @@ export interface IProduct {
   price: string;
 }
 
+// Interface outlining Location
 export interface ILocation {
   name: string;
   imgSrc: string;

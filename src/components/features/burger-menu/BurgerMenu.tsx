@@ -3,7 +3,7 @@ import { IoClose } from 'react-icons/io5';
 
 import BurgerMenuItems from './BurgerMenuItems';
 import BurgerMenuData from './BurgerMenuData';
-import { IBurgerMenuItem } from '@/types/interfaces';
+import { IBurgerMenuItem } from '@Types/interfaces';
 
 // BurgerMenu Component: Represents a burger menu for responsive navigation
 const BurgerMenu = ({

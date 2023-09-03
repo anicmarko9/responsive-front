@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Layout from './layout/Layout';
+import Layout from '@Layout/Layout';
+
 // NotFound Component: Represents the 404 page when a page is not found
 const NotFound = (): JSX.Element => {
   return (
@@ -10,7 +11,7 @@ const NotFound = (): JSX.Element => {
           <a href="/">Go back home</a>
         </button>
         <img
-          src="/NotFound.svg"
+          src="@Assets/images/NotFound.svg"
           alt="404 - Page Not Found"
           className="h-auto w-full self-center sm:h-[80%]"
         />

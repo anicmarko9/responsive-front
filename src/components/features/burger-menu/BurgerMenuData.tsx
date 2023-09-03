@@ -10,7 +10,7 @@ import {
 } from 'react-icons/fa';
 import { MdAnnouncement } from 'react-icons/md';
 
-import { IBurgerMenuItem } from '@/types/interfaces';
+import { IBurgerMenuItem } from '@Types/interfaces';
 
 const BurgerMenuData: IBurgerMenuItem[] = [
   {

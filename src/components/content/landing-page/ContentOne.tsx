@@ -30,7 +30,11 @@ const ContentOne = (): JSX.Element => {
         <MainButton overwrite="" />
       </div>
       <figure className="flex h-80 w-3/4 justify-center self-center sm:h-full sm:w-full xl:my-16 xl:ml-16 xl:w-1/2">
-        <img src="/trainer.png" alt="Trainer" className="h-full" />
+        <img
+          src="@Assets/images/home/trainer.png"
+          alt="Trainer"
+          className="h-full"
+        />
       </figure>
     </section>
   );

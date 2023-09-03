@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo } from 'react';
 
-import { Countdown } from '@/types/interfaces';
+import { Countdown } from '@Types/interfaces';
 import { calculateCountdown } from '@Utils/countdown';
 // Counter Component: Represents a countdown timer for an offer expiration.
 export default function Counter() {

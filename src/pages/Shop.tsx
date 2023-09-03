@@ -1,17 +1,18 @@
-import Layout from '@Components/layout/Layout';
 import React from 'react';
-import Product from '@/components/Shop/Product';
+
+import Layout from '@Layout/Layout';
+import Product from '@Components/features/Product';
 
 const Shop = (): JSX.Element => {
   return (
     <Layout>
-      <section className="w-screen mx-auto flex flex-row gap-5 mt-5 py-10 flex-wrap bg-primary justify-center w-5/6">
+      <section className="w-screen mx-auto flex flex-row gap-5 mt-5 py-10 flex-wrap bg-primary justify-center">
         <Product
           title={'Product 1'}
           description={
             "Beginner's program and easy to follow to lose weight and get started into a healthy life style"
           }
-          imgSrc={'../Shop/product1.jpg'}
+          imgSrc={'@Assets/images/shop/product1.jpg'}
           price={'$199'}
         ></Product>
 
@@ -20,7 +21,7 @@ const Shop = (): JSX.Element => {
           description={
             "Beginner's program and easy to follow to lose weight and get started into a healthy life style"
           }
-          imgSrc={'../Shop/product2.jpg'}
+          imgSrc={'@Assets/images/shop/product2.jpg'}
           price={'$99'}
         ></Product>
 
@@ -29,7 +30,7 @@ const Shop = (): JSX.Element => {
           description={
             "Beginner's program and easy to follow to lose weight and get started into a healthy life style"
           }
-          imgSrc={'../Shop/product3.jpg'}
+          imgSrc={'@Assets/images/shop/product3.jpg'}
           price={'$59.99'}
         ></Product>
         <Product
@@ -37,7 +38,7 @@ const Shop = (): JSX.Element => {
           description={
             "Beginner's program and easy to follow to lose weight and get started into a healthy life style"
           }
-          imgSrc={'../Shop/product4.jpg'}
+          imgSrc={'@Assets/images/shop/product4.jpg'}
           price={'$89.99'}
         ></Product>
         <Product
