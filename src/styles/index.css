@@ -79,7 +79,7 @@
     > .statNumber
     > .statPlusIcon
     > svg {
-    @apply delay-custom duration-[350ms] ease-in-out fill-white opacity-100;
+    @apply delay-custom duration-[0ms] ease-in-out fill-white opacity-100;
   }
 
   .statCard:hover > .statIconAndTitleContainer > div > svg {
