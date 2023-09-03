@@ -24,7 +24,7 @@ function App(): JSX.Element {
   }, [initBodyOverlayScrollbars]);
 
   return (
-    <div className="font-libre-baskerville relative">
+    <div className="font-heebo relative">
       <BrowserRouter>
         <Routes>
           <Route path="/not-found" element={<NotFound />} />
