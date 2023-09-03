@@ -7,7 +7,8 @@
       "@Types/*": ["./src/types/*"],
       "@Pages/*": ["./src/pages/*"],
       "@Components/*": ["./src/components/*"],
-      "@Styles/*": ["./src/styles/*"]
+      "@Styles/*": ["./src/styles/*"],
+      "@Fonts/*": ["./src/fonts/*"]
     }
   }
 }
