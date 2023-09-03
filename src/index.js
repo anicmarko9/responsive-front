@@ -1,10 +1,9 @@
 import React, { Profiler, StrictMode, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
-import 'typeface-roboto';
 import 'overlayscrollbars/overlayscrollbars.css';
 
 import Loading from '@Components/features/Loading';
-import './styles/index.css';
+import '@Styles/index.css';
 import App from '@/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

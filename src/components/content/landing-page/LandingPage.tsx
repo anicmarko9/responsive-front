@@ -2,6 +2,7 @@ import React from 'react';
 
 import Counter from '@Components/features/Counter';
 import MainButton from '@Components/features/MainButton';
+
 // LandingPage Component: Represents the landing page of the application.
 export default function LandingPage() {
   return (

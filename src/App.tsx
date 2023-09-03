@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import Home from '@Components/Home';
-import NotFound from '@Components/NotFound';
+import { useOverlayScrollbars } from 'overlayscrollbars-react';
+
+import NotFound from '@/pages/NotFound';
+import Home from '@Pages/Home';
 import Locations from '@Pages/Locations';
 import AboutUs from '@Pages/AboutUs';
 import WeightLossProgram from '@Pages/WeightLossProgram';
 import Shop from '@Pages/Shop';
-import { useOverlayScrollbars } from 'overlayscrollbars-react';
 
 function App(): JSX.Element {
   const [initBodyOverlayScrollbars] = useOverlayScrollbars({

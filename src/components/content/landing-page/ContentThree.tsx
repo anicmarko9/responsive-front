@@ -2,6 +2,7 @@ import React from 'react';
 import { BsDot } from 'react-icons/bs';
 
 import MainButton from '@Components/features/MainButton';
+
 // ContentThree Component: Represents the third section of the page outlining what the user will get at their consultation.
 const ContentThree = (): JSX.Element => {
   return (

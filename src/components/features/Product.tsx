@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { IProduct } from '@/types/interfaces';
+import { IProduct } from '@Types/interfaces';
 
 const Product = ({
   title,
@@ -9,7 +9,7 @@ const Product = ({
   price,
 }: IProduct): JSX.Element => {
   // A fallback image source in case the provided image is not found.
-  const notFound = '../ImgNotFound.svg';
+  const notFound = '@Assets/images/NotFound.svg';
   return (
     <section className="max-w-sm rounded overflow-hidden shadow-lg bg-green-100">
       <figure>
