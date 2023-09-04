@@ -10,7 +10,7 @@ const Program = ({
   imgSrc,
 }: IProgram): JSX.Element => {
   // A fallback image source in case the provided image is not found.
-  const notFound = '@Assets/images/NotFound.svg';
+  const notFound = '/images/NotFound.svg';
 
   return (
     <div className="m-auto md:w-[500px] w-full h-auto md:p-5 bg-white rounded-lg shadow-md shadow-slate-700 backdrop-blur-xl flex flex-col justify-between items-center">

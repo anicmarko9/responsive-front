@@ -10,7 +10,6 @@ module.exports = {
       '@Pages': path.resolve(__dirname, 'src/pages'),
       '@Layout': path.resolve(__dirname, 'src/layout'),
       '@Components': path.resolve(__dirname, 'src/components'),
-      '@Assets': path.resolve(__dirname, 'src/assets'),
     },
   },
 };
