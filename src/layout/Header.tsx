@@ -22,10 +22,10 @@ const Header = (): JSX.Element => {
   // Function to toggle menu open state and apply animation timings
   const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
-    isMenuOpen
+    isMenuOpen 
       ? setTimeout(function () {
           setIsMenuOpenLate(!isMenuOpenLate);
-        }, 100)
+        }, 800)
       : setIsMenuOpenLate(!isMenuOpenLate);
   };
 
@@ -61,11 +61,11 @@ const Header = (): JSX.Element => {
       ) : (
         <>
           <div className="flex justify-start pr-4">
-            {isMenuOpen ? (
+            {isMenuOpenLate ? (
               ''
             ) : (
               <RxHamburgerMenu
-                className="h-8 w-8 cursor-pointer text-black hover:opacity-60"
+                className="h-8 w-8 cursor-pointer text-primary border border-secondary rounded-lg p-1"
                 onClick={toggleMenu}
               />
             )}

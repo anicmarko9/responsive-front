@@ -46,12 +46,12 @@ module.exports = {
         },
         // Added slideOutLeft keyframes
         slideOutLeft: {
-          '100%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
           '0%': { transform: 'translateX(0px)' },
         },
         // Added slideOutLeftSM keyframes
         slideOutLeftSM: {
-          '100%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
           '0%': { transform: 'translateX(0px)' },
         },
         // Added slideInLeft keyframes
