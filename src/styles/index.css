@@ -51,7 +51,7 @@
   }
 
   .navBtns {
-    @apply text-[18px] text-slate-300 border-2 border-slate-200 hover:border-primary transition-all duration-[150ms] ease-in rounded px-2 mr-3 hover:text-primary flex items-center justify-center h-[35px] whitespace-nowrap;
+    @apply text-[18px] text-slate-600 border-2 border-slate-400 hover:border-primary transition-all duration-[150ms] ease-in rounded px-2 mr-3 hover:text-primary flex items-center justify-center h-[35px] whitespace-nowrap;
   }
 
   .counterBlock {
