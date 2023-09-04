@@ -26,36 +26,43 @@ module.exports = {
         400: '400ms',
       },
       animation: {
-        slideInRightSM:
-          'slideInRightSM 1s cubic-bezier(0.465, 0.183, 0.153, 0.946)',
-        slideInRight:
-          'slideInRight 1s cubic-bezier(0.465, 0.183, 0.153, 0.946)',
-        slideOutRightSM:
-          'slideOutRightSM 1s cubic-bezier(0.465, 0.183, 0.153, 0.946)',
-        slideOutRight:
-          'slideOutRight 1s cubic-bezier(0.465, 0.183, 0.153, 0.946)',
         customSpin: 'customSpin 1s linear infinite',
+        // Changed animation name
+        slideOutLeft:
+          'slideOutLeft 1s cubic-bezier(0.465, 0.183, 0.153, 0.946)', // Added slideOutLeft
+        // Changed animation name
+        slideOutLeftSM:
+          'slideOutLeftSM 1s cubic-bezier(0.465, 0.183, 0.153, 0.946)', // Added slideOutLeftSM
+        // Changed animation name
+        slideInLeft: 'slideInLeft 1s cubic-bezier(0.465, 0.183, 0.153, 0.946)', // Added slideInLeft
+        // Changed animation name
+        slideInLeftSM:
+          'slideInLeftSM 1s cubic-bezier(0.465, 0.183, 0.153, 0.946)', // Added slideInLeftSM
       },
       keyframes: {
-        slideInRightSM: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(-64px)' },
-        },
-        slideInRight: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(-16px)' },
-        },
-        slideOutRightSM: {
-          '100%': { transform: 'translateX(100%)' },
-          '0%': { transform: 'translateX(-64px)' },
-        },
-        slideOutRight: {
-          '100%': { transform: 'translateX(100%)' },
-          '0%': { transform: 'translateX(-16px)' },
-        },
         customSpin: {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(360deg)' },
+        },
+        // Added slideOutLeft keyframes
+        slideOutLeft: {
+          '100%': { transform: 'translateX(100%)' },
+          '0%': { transform: 'translateX(0px)' },
+        },
+        // Added slideOutLeftSM keyframes
+        slideOutLeftSM: {
+          '100%': { transform: 'translateX(100%)' },
+          '0%': { transform: 'translateX(0px)' },
+        },
+        // Added slideInLeft keyframes
+        slideInLeft: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0px)' },
+        },
+        // Added slideInLeftSM keyframes
+        slideInLeftSM: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0px)' },
         },
       },
     },
