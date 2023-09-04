@@ -24,7 +24,7 @@ const Header = (): JSX.Element => {
     isMenuOpen
       ? setTimeout(function () {
           setIsMenuOpenLate(!isMenuOpenLate);
-        }, 1000)
+        }, 100)
       : setIsMenuOpenLate(!isMenuOpenLate);
   };
 
@@ -37,12 +37,14 @@ const Header = (): JSX.Element => {
   }, []);
 
   return (
-    <header className="relative flex w-full h-20 items-center justify-between xl:px-36, bg-[rgba(255,255,255,0.8)]">
-      <a className="w-1/2 sm:w-1/5 pl-4 sm:px-6" href="/">
+    <header
+      className={`relative flex w-full h-20 items-center justify-between xl:px-36 bg-[rgba(255,255,255,0.8)]`}
+    >
+      <a className="md:w-full sm:w-1/5 pl-4 sm:px-6" href="/">
         <img
           src="/logo.png"
           alt="Logo"
-          className="h-[65px] w-[140px] min-w-[140px] relative hover:opacity-90 transition duration-300 ease-in-out hover:scale-110 origin-center"
+          className="h-[65px] w-[140px] min-w-[140px] relative hover:opacity-90 transition duration-300 ease-in-out hover:scale-100 origin-left"
         />
       </a>
       {windowWidth >= 1024 ? (
@@ -75,18 +77,24 @@ const Header = (): JSX.Element => {
           </nav>
         </div>
       ) : (
-        <div className="flex w-1/2 justify-end pr-4">
-          <RxHamburgerMenu
-            className="h-8 w-8 cursor-pointer text-primary hover:opacity-60"
-            onClick={toggleMenu}
+        <>
+          <div className="flex justify-start pr-4">
+            {isMenuOpen ? (
+              ''
+            ) : (
+              <RxHamburgerMenu
+                className="h-8 w-8 cursor-pointer text-black hover:opacity-60"
+                onClick={toggleMenu}
+              />
+            )}
+          </div>
+          <BurgerMenu
+            toggleMenu={toggleMenu}
+            isMenuOpen={isMenuOpen}
+            isMenuOpenLate={isMenuOpenLate}
           />
-        </div>
+        </>
       )}
-      <BurgerMenu
-        toggleMenu={toggleMenu}
-        isMenuOpen={isMenuOpen}
-        isMenuOpenLate={isMenuOpenLate}
-      />
     </header>
   );
 };

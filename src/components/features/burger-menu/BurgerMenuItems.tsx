@@ -6,7 +6,7 @@ const BurgerMenuItem = ({ href, icon, text }: IBurgerMenuItem): JSX.Element => {
   return (
     <a className="hoverUnderline flex items-center" href={href}>
       {icon}
-      <span>{text}</span>
+      <span className='ml-1'>{text}</span>
     </a>
   );
 };

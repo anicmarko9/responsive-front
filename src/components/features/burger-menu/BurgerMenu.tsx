@@ -15,9 +15,8 @@ const BurgerMenu = ({
   isMenuOpen: boolean;
   isMenuOpenLate: boolean;
 }): JSX.Element => {
-  // Props are passed from "Header" component.
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
-  // Handle window resize event.
+
   const handleResize = (): void => {
     setWindowWidth(window.innerWidth);
   };
@@ -28,9 +27,23 @@ const BurgerMenu = ({
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
   // If the menu is not open on small screens or the window width is greater than 1024, render nothing.
-  if (!isMenuOpenLate || windowWidth >= 1024)
+  if (!isMenuOpenLate || windowWidth >= 1024) {
     return <div className="hidden"></div>;
+  }
+
+  const slideInClass = isMenuOpen
+    ? windowWidth < 640
+      ? 'animate-slideInLeft transition-transform duration-300 ease-in-out'
+      : 'animate-slideInLeftSM transition-transform duration-300 ease-in-out'
+    : 'scale-0';
+
+  const slideOutClass = isMenuOpen
+    ? 'scale-100'
+    : windowWidth < 640
+    ? 'animate-slideOutLeft transition-transform duration-300 ease-in-out'
+    : 'animate-slideOutLeftSM transition-transform duration-300 ease-in-out';
 
   return (
     // Responsive Burger Menu Container
@@ -38,16 +51,14 @@ const BurgerMenu = ({
       className={`fixed top-0 z-30 h-full w-full ${
         // check if menu is open on different resolutions
         isMenuOpen
-          ? windowWidth < 640
-            ? 'animate-slideInRight'
-            : 'animate-slideInRightSM'
-          : windowWidth < 640
-          ? 'scale-0 animate-slideOutRight'
-          : 'scale-0 animate-slideOutRightSM'
-      }`}
+          ? 'block bg-black bg-opacity-30'
+          : 'hidden bg-black bg-opacity-30'
+      } ${isMenuOpen ? slideOutClass : slideInClass}`}
     >
-      <nav className="fixed right-0 top-0 z-50 h-full w-full bg-white py-2 pl-8 pr-4 shadow-lg sm:w-3/5 sm:py-3 sm:pl-16 sm:pr-16">
-        <div className="flex h-14 items-center justify-between text-2xl">
+      <nav
+        className={`fixed left-0 top-0 z-50 h-full md:w-[60vw] rounded-r-3xl bg-white py-2 pl-8 pr-4 shadow-lg sm:py-3 sm:pl-16 sm:pr-16  ${slideInClass}`}
+      >
+        <div className="flex h-14 w-full items-center justify-between text-2xl">
           <a
             className="block transition-all duration-300 ease-in-out hover:opacity-70 hover:-translate-y-1"
             href="/"
@@ -60,12 +71,13 @@ const BurgerMenu = ({
           />
         </div>
         <hr className="border-1 mt-4 mb-2" />
-        <div className="flex w-full flex-col space-y-4 py-4 text-xl tracking-wide">
+        <div
+          className={`flex w-[70vw] sm:w-[50vw] md:w-[50vw] flex-col space-y-4 py-4 text-xl tracking-wide ${
+            isMenuOpen ? 'opacity-100' : 'opacity-0'
+          }`}
+        >
           {BurgerMenuData.map(
-            (
-              { href, icon, text }: IBurgerMenuItem,
-              index: number,
-            ): JSX.Element => (
+            ({ href, icon, text }: IBurgerMenuItem, index: number) => (
               <BurgerMenuItems
                 key={index}
                 href={href}
@@ -75,10 +87,6 @@ const BurgerMenu = ({
             ),
           )}
         </div>
-        <div
-          className="fixed left-0 top-0 z-40 h-0 w-0 bg-black bg-opacity-30 sm:h-full sm:w-2/5"
-          onClick={toggleMenu}
-        ></div>
       </nav>
     </div>
   );
