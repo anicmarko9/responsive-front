@@ -4,13 +4,13 @@ import { ITestimony } from '@Types/interfaces';
 // Testimony Component: Represents a testimony with an image, name, and text.
 const Testimony = ({ imgSrc, name, testimony }: ITestimony): JSX.Element => {
   // A fallback image source in case the provided image is not found.
-  const notFound = '@Assets/images/NotFound.svg';
+  const notFound = '/images/NotFound.svg';
 
   return (
     <div className="flex flex-col items-center overflow-y-auto overflow-x-hidden h-[450px]">
       <figure className="w-[300px] flex flex-col items-center">
         <img
-          className="h-[250px] w-[250px] rounded-full"
+          className="h-[240px] w-[240px] rounded-full"
           src={imgSrc || notFound}
           alt={name}
         />

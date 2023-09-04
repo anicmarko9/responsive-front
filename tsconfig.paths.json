@@ -9,7 +9,6 @@
       "@Pages/*": ["./src/pages/*"],
       "@Layout/*": ["./src/layout/*"],
       "@Components/*": ["./src/components/*"],
-      "@Assets/*": ["./src/assets/*"]
     }
   }
 }

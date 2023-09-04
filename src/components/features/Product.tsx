@@ -9,9 +9,9 @@ const Product = ({
   price,
 }: IProduct): JSX.Element => {
   // A fallback image source in case the provided image is not found.
-  const notFound = '@Assets/images/NotFound.svg';
+  const notFound = '/images/NotFound.svg';
   return (
-    <section className="max-w-sm rounded overflow-hidden shadow-lg bg-green-100">
+    <section className="max-w-sm px-2 py-1 rounded overflow-hidden shadow-lg bg-green-100">
       <figure>
         <img
           className="mx-auto w-9/12 md:h-[300px] rounded-lg"

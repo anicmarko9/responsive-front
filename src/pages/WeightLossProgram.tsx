@@ -17,7 +17,7 @@ const WeightLossProgram = (): JSX.Element => {
             description={
               "Beginner's program and easy to follow to lose weight and get started into a healthy life style"
             }
-            imgSrc={'@Assets/images/weight-loss-program/Level1.svg'}
+            imgSrc={'/images/weight-loss-program/Level1.svg'}
           />
           <Program
             programName={'Intermediate Loss weight: Level 2'}
@@ -25,7 +25,7 @@ const WeightLossProgram = (): JSX.Element => {
             description={
               "Intermediate's program. This includes workouts and special diets"
             }
-            imgSrc={'@Assets/images/weight-loss-program/Level2.svg'}
+            imgSrc={'/images/weight-loss-program/Level2.svg'}
           />
           <Program
             programName={'Mussel gains: Level 3'}
@@ -33,7 +33,7 @@ const WeightLossProgram = (): JSX.Element => {
             description={
               'This program will push you to limits so you can get maximum mussel grow.'
             }
-            imgSrc={'@Assets/images/weight-loss-program/Level3.svg'}
+            imgSrc={'/images/weight-loss-program/Level3.svg'}
           />
 
           <Program
@@ -42,7 +42,7 @@ const WeightLossProgram = (): JSX.Element => {
             description={
               'This is the ultimate program. This includes all diets to make you look as Captain America'
             }
-            imgSrc={'@Assets/images/weight-loss-program/Level4.svg'}
+            imgSrc={'/images/weight-loss-program/Level4.svg'}
           />
         </div>
       </section>
@@ -51,13 +51,13 @@ const WeightLossProgram = (): JSX.Element => {
         <div className="flex flex-row gap-5 flex-wrap md:justify-between justify-center md:w-3/5 w-full m-auto">
           {/* Displaying testimonials using the Testimony component */}
           <Testimony
-            imgSrc={'@Assets/images/weight-loss-program/1.png'}
+            imgSrc={'/images/weight-loss-program/1.png'}
             name={'BelloDev'}
             testimony={'This has been the most rewarding feat of my life!'}
           />
 
           <Testimony
-            imgSrc={'@Assets/images/weight-loss-program/marko-program.png'}
+            imgSrc={'/images/weight-loss-program/marko-program.png'}
             name={'anicmarko'}
             testimony={
               "I'm so happy for having so much help and improving my health. I really recommend the beginner's course"
@@ -65,7 +65,7 @@ const WeightLossProgram = (): JSX.Element => {
           />
 
           <Testimony
-            imgSrc={'@Assets/images/weight-loss-program/3.png'}
+            imgSrc={'/images/weight-loss-program/3.png'}
             name={'John Dope'}
             testimony={
               "I would have not believe these results if I haven't tried out myself."
@@ -73,7 +73,7 @@ const WeightLossProgram = (): JSX.Element => {
           />
 
           <Testimony
-            imgSrc={'@Assets/images/weight-loss-program/4.png'}
+            imgSrc={'/images/weight-loss-program/4.png'}
             name={'Johana Dope'}
             testimony={
               "Cooking was so easy thanks to the plans provided by Dr. Dope. I used to spend hours cooking unhealthy food but now it takes me 20 mins top. Thanks to beginner's program I've lost over 10 pounds."

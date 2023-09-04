@@ -29,9 +29,7 @@ function Home() {
       easing: (t: number): number => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     });
 
-    lenis.on('scroll', (e: Event): void => {
-      console.log(e);
-    });
+   
     const raf = (time: number): void => {
       lenis.raf(time);
       requestAnimationFrame(raf);

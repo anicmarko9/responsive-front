@@ -37,7 +37,7 @@ const ContentTwo = (): JSX.Element => {
       <MainButton overwrite="xl:self-center order-last xl:order-none" />
       <figure>
         <img
-          src="@Assets/images/home/group.png"
+          src="/images/home/group.png"
           alt="Group of people"
           height={760}
           className="order-3 h-40 w-full sm:h-full xl:order-none"

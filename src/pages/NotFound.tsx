@@ -11,7 +11,7 @@ const NotFound = (): JSX.Element => {
           <a href="/">Go back home</a>
         </button>
         <img
-          src="@Assets/images/NotFound.svg"
+          src="/images/NotFound.svg"
           alt="404 - Page Not Found"
           className="h-auto w-full self-center sm:h-[80%]"
         />

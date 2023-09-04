@@ -11,9 +11,9 @@ export default function LandingPage() {
       <div className="yellowBlock" />
       {/* yellowBlock and other styles are in file: index.css */}
       {/* changed page height to make sure only the top level components are rendered upon entry */}
-      <section className="z-10 flex h-screen flex-col justify-evenly px-8 py-8 mb-20 sm:mb-20 lg:mb-0 sm:px-16 xl:px-36 xl:py-16">
+      <section className="z-10 flex h-[85vh] md:h-[95vh] lg:h-[90vh] xl:h-screen flex-col justify-evenly px-8 pb-8 mb-20 sm:mb-20 md:mb-20 lg:mb-20 sm:px-16 xl:px-36 xl:py-16">
         <div className="flex flex-wrap justify-between pt-10">
-          <h1 className="mb-6 w-full break-words text-center text-3xl leading-normal tracking-wide sm:mb-8 sm:w-3/4 sm:text-start sm:text-4xl lg:text-4xl lg:leading-relaxed xl:mb-0 xl:w-2/5 xl:text-5xl xl:leading-relaxed">
+          <h1 className="mb-6 w-full break-words text-center text-3xl leading-normal tracking-wide sm:mb-8 sm:w-3/4 sm:text-start sm:text-4xl md:text-4xl lg:text-4xl lg:leading-relaxed xl:mb-0 xl:w-2/5 xl:text-5xl xl:leading-relaxed">
             Chicago&apos;s <span className="text-primary">Free</span> Medical
             Check-Up and Weight Loss Consultation
           </h1>

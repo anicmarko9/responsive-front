@@ -12,7 +12,7 @@ const Shop = (): JSX.Element => {
           description={
             "Beginner's program and easy to follow to lose weight and get started into a healthy life style"
           }
-          imgSrc={'@Assets/images/shop/product1.jpg'}
+          imgSrc={'/images/shop/product1.jpg'}
           price={'$199'}
         ></Product>
 
@@ -21,7 +21,7 @@ const Shop = (): JSX.Element => {
           description={
             "Beginner's program and easy to follow to lose weight and get started into a healthy life style"
           }
-          imgSrc={'@Assets/images/shop/product2.jpg'}
+          imgSrc={'/images/shop/product2.jpg'}
           price={'$99'}
         ></Product>
 
@@ -30,7 +30,7 @@ const Shop = (): JSX.Element => {
           description={
             "Beginner's program and easy to follow to lose weight and get started into a healthy life style"
           }
-          imgSrc={'@Assets/images/shop/product3.jpg'}
+          imgSrc={'/images/shop/product3.jpg'}
           price={'$59.99'}
         ></Product>
         <Product
@@ -38,15 +38,7 @@ const Shop = (): JSX.Element => {
           description={
             "Beginner's program and easy to follow to lose weight and get started into a healthy life style"
           }
-          imgSrc={'@Assets/images/shop/product4.jpg'}
-          price={'$89.99'}
-        ></Product>
-        <Product
-          title={'Product 4'}
-          description={
-            "Beginner's program and easy to follow to lose weight and get started into a healthy life style"
-          }
-          imgSrc=""
+          imgSrc={'/images/shop/product4.jpg'}
           price={'$89.99'}
         ></Product>
       </section>
