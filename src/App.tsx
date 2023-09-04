@@ -8,6 +8,7 @@ import Locations from '@Pages/Locations';
 import AboutUs from '@Pages/AboutUs';
 import WeightLossProgram from '@Pages/WeightLossProgram';
 import Shop from '@Pages/Shop';
+import Subscription from './pages/Subscription';
 
 function App(): JSX.Element {
   const [initBodyOverlayScrollbars] = useOverlayScrollbars({
@@ -34,6 +35,7 @@ function App(): JSX.Element {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/weight-loss" element={<WeightLossProgram />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/subscription" element={<Subscription />} />
           <Route path="*" element={<Navigate to="/not-found" />} />
         </Routes>
       </BrowserRouter>
