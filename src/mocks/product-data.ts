@@ -1,4 +1,9 @@
-export const ProductData = [
+export const ProductData: {
+  title: string;
+  description: string;
+  imgSrc: string;
+  price: string;
+}[] = [
   {
     title: 'Product 1',
     description:
