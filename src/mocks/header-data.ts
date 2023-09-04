@@ -1,4 +1,7 @@
-export const NavLinks = [
+export const NavLinks: {
+  href: string;
+  name: string;
+}[] = [
   {
     href: '/about-us',
     name: 'About Us',
