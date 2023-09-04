@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 
 import BurgerMenu from '@Components/features/burger-menu/BurgerMenu';
-import { NavLinks } from '@/Data/HeaderData';
+import { NavLinks } from '@Mocks/header-data';
 
 // Header Component: Represents the header section of the web page.
 const Header = (): JSX.Element => {
@@ -51,11 +51,19 @@ const Header = (): JSX.Element => {
       {windowWidth >= 1024 ? (
         <div className="flex items-center justify-end w-full h-full sm:px-3">
           <nav className="flex">
-            {NavLinks.map((link, index) => (
-              <a key={index} href={link.href} className="navBtns">
-                {link.name}
-              </a>
-            ))}
+            {NavLinks.map(
+              (
+                link: {
+                  href: string;
+                  name: string;
+                },
+                index: number,
+              ): JSX.Element => (
+                <a key={index} href={link.href} className="navBtns">
+                  {link.name}
+                </a>
+              ),
+            )}
           </nav>
         </div>
       ) : (
