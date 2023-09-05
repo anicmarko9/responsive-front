@@ -6,7 +6,7 @@ const Program: React.FC<IProgram> = ({
   duration,
   description,
   imgSrc,
-}) => {
+}): JSX.Element => {
   // A fallback image source in case the provided image is not found.
   const notFound = '/images/NotFound.svg';
 
