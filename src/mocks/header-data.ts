@@ -1,7 +1,9 @@
-export const NavLinks: {
+export interface INavLink {
   href: string;
   name: string;
-}[] = [
+}
+
+export const NavLinks: INavLink[] = [
   {
     href: '/about-us',
     name: 'About Us',

@@ -6,7 +6,7 @@ import MainButton from '@Components/features/MainButton';
 const ContentOne = (): JSX.Element => {
   return (
     // Section container for the first content section with responsive styling.
-    <section className="relative flex h-full flex-col justify-between bg-secondary px-8 pb-4 text-lg text-customWhite sm:px-36 xl:flex-row xl:px-36 xl:pb-0">
+    <section className="relative flex h-full xl:h-[100vh] flex-col justify-around items-center bg-secondary px-8 pb-4 text-lg text-customWhite sm:px-36 xl:flex-row xl:px-64 xl:pb-0">
       <div className="my-8 flex flex-col space-y-8 sm:my-12 sm:space-y-12 xl:my-16 xl:w-1/2 xl:space-y-16">
         <div className="space-y-4 sm:space-y-6">
           <h2 className="contentOneTitle">Who Is The Consultation For?</h2>
@@ -29,8 +29,12 @@ const ContentOne = (): JSX.Element => {
         </div>
         <MainButton overwrite="" />
       </div>
-      <figure className="flex h-80 w-3/4 justify-center self-center sm:h-full sm:w-full xl:my-16 xl:ml-16 xl:w-1/2">
-        <img src="/images/home/trainer.png" alt="Trainer" className="h-full" />
+      <figure className="flex h-80 w-3/4 justify-center items-center sm:h-full sm:w-full xl:my-16 xl:ml-16 xl:w-1/2">
+        <img
+          src="/images/home/trainer.png"
+          alt="Trainer"
+          className="h-full xl:lg:md:h-[70%]"
+        />
       </figure>
     </section>
   );

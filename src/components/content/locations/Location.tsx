@@ -10,7 +10,7 @@ const Location = ({
 }: ILocation): JSX.Element => {
   const notFound = '/images/NotFound.svg';
   return (
-    <article className="flex flex-col group px-3 py-2 items-center bg-gray-900 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+    <article className="flex flex-col xl:h-1/4 group px-3 py-2 items-center bg-gray-900 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
       <img
         className="object-cover w-full rounded-l-md h-96 md:h-auto md:w-48 md:rounded-l-md"
         src={imgSrc || notFound}
