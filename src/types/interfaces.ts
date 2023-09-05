@@ -40,3 +40,8 @@ export interface ILocation {
   schedule: string;
   address: string;
 }
+
+export interface ISubscription {
+  price: string;
+  plan: string;
+}
