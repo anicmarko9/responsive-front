@@ -10,7 +10,7 @@ const Testimony = ({ imgSrc, name, testimony }: ITestimony): JSX.Element => {
 
   return (
     <div className="flex flex-col items-center overflow-y-auto overflow-x-hidden h-auto xl:w-1/4">
-      <TestimonyImage imgSrc={imgSrc || notFound } altText={name} />
+      <TestimonyImage imgSrc={imgSrc || notFound} altText={name} />
       <TestimonyText name={name} testimony={testimony} />
     </div>
   );
