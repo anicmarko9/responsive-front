@@ -1,4 +1,4 @@
-import { ITestimony } from "@Types/interfaces";
+import { ITestimony } from '@Types/interfaces';
 
 export const TestimonyData: ITestimony[] = [
   {

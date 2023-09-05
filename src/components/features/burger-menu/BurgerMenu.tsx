@@ -35,7 +35,7 @@ const BurgerMenu = ({
 
   const slideInClass = isMenuOpen
     ? windowWidth < 640
-      ? 'animate-slideInLeft transition-transform duration-300 ease-in-out' 
+      ? 'animate-slideInLeft transition-transform duration-300 ease-in-out'
       : 'animate-slideInLeftSM transition-transform duration-300 ease-in-out'
     : 'scale-0';
 

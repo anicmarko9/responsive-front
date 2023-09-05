@@ -35,7 +35,7 @@ const ContentTwo = (): JSX.Element => {
         favorite foods.
       </p>
       <MainButton overwrite="xl:self-center order-last xl:order-none" />
-      <figure className='xl:pt-10'>
+      <figure className="xl:pt-10">
         <img
           src="/images/home/group.png"
           alt="Group of people"
