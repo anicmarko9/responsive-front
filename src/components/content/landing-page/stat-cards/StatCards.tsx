@@ -16,7 +16,7 @@ const StatCards = (): JSX.Element => {
       <div className="relative flex h-full flex-col bg-primary px-8 text-lg sm:px-16 xl:px-36">
         <div className="mb-6 mt-8 flex flex-wrap justify-between space-x-0 sm:mb-0 xl:mb-8 xl:mt-16">
           <StatCard
-            bgColor="bg-red-600"
+            bgColor="statCard popUpAnimation hover:bg-primary"
             icon={<RiSuitcaseLine className="statIconSize text-primary" />}
             description="years of experience"
           >
@@ -28,7 +28,7 @@ const StatCards = (): JSX.Element => {
             </>
           </StatCard>
           <StatCard
-            bgColor="bg-tertiary"
+            bgColor="statCard popUpAnimation hover:bg-tertiary"
             icon={<VscSmiley className="statIconSize text-tertiary" />}
             description="positive reviews"
           >
@@ -40,7 +40,7 @@ const StatCards = (): JSX.Element => {
             </>
           </StatCard>
           <StatCard
-            bgColor="bg-secondary"
+            bgColor="statCard popUpAnimation hover:bg-secondary"
             icon={<FiMessageCircle className="statIconSize text-secondary" />}
             description="satisfied clients"
           >
@@ -51,9 +51,8 @@ const StatCards = (): JSX.Element => {
               </span>
             </>
           </StatCard>
-
           <StatCard
-            bgColor="bg-green-600"
+            bgColor="statCard popUpAnimation hover:bg-green-500"
             icon={
               <TbActivityHeartbeat className="statIconSize text-green-600" />
             }
