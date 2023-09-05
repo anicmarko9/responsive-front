@@ -47,7 +47,7 @@ const BurgerMenu = ({
 
   return (
     // Responsive Burger Menu Container
-    <aside className="h-screen">
+    <div className="h-screen">
       <nav
         className={`fixed left-0 top-0 z-50 h-full md:w-[50vw] sm:w-[50vw] rounded-r-2xl bg-slate-50 py-2 pl-8 pr-4 shadow-lg sm:py-3 sm:pl-16 sm:pr-16  ${
           isMenuOpen ? slideInClass : slideOutClass
@@ -70,7 +70,7 @@ const BurgerMenu = ({
         <hr className="border-1 mt-4 mb-2" />
         <div
           className={`flex w-[70vw] sm:w-[50vw] md:w-[50vw] flex-col space-y-4 py-6 text-xl tracking-wide ${
-            isMenuOpen ? 'opacity-100' : 'opacity-0'
+            isMenuOpenLate ? 'opacity-100' : 'opacity-0'
           }`}
         >
           {BurgerMenuData.map(
@@ -85,7 +85,7 @@ const BurgerMenu = ({
           )}
         </div>
       </nav>
-    </aside>
+    </div>
   );
 };
 

@@ -1,19 +1,17 @@
 import React from 'react';
-
 import { IProgram } from '@Types/interfaces';
 
-// Program Component: Represents a program with its details and an image.
-const Program = ({
+const Program: React.FC<IProgram> = ({
   programName,
   duration,
   description,
   imgSrc,
-}: IProgram): JSX.Element => {
+}): JSX.Element => {
   // A fallback image source in case the provided image is not found.
   const notFound = '/images/NotFound.svg';
 
   return (
-    <div className="m-auto md:w-[500px] w-full h-auto md:p-5 bg-white rounded-lg shadow-md shadow-slate-700 backdrop-blur-xl flex flex-col justify-between items-center">
+    <div className="m-auto md:w-[500px] w-full h-auto md:p-5 bg-customWhite rounded-lg shadow-md shadow-slate-700 backdrop-blur-xl flex flex-col justify-between items-center">
       <figure className="md:w-full w-[95%] mt-3 flex flex-col relative transition-all hover:scale-[0.98] ease-in-out">
         <img
           className="mx-auto w-full md:h-[300px] rounded-lg"
@@ -29,7 +27,7 @@ const Program = ({
         </div>
       </figure>
 
-      <button className="mt-2 mb-3 md:w-[450px] w-[95%] text-white font-bold font-libre-baskerville bg-[--violet] rounded-md p-3 hover:bg-[--purple] hover:scale-[0.98] transition-all ease-in-out">
+      <button className="mt-2 mb-3 md:w-[450px] w-[95%] text-secondary font-bold font-libre-baskerville bg-[--violet] rounded-md p-3 hover:bg-[--purple] hover:scale-[0.98] transition-all ease-in-out">
         ROLL IN!
       </button>
     </div>

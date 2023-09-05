@@ -14,7 +14,7 @@ const AboutUs = (): JSX.Element => {
             className="rounded-md shadow-md shadow-yellow-300"
             src="/images/home/aboutus_image1.webp"
             alt="about us"
-          ></img>
+          />
         </figure>
         <div className="md:w-2/5 md:p-5 ">
           <div className="flex w-full justify-center">
@@ -57,7 +57,7 @@ const AboutUs = (): JSX.Element => {
               className="rounded-md shadow-md shadow-yellow-300"
               src="/images/home/aboutus_image1.webp"
               alt="about us"
-            ></img>
+            />
           </figure>
         </div>
       </section>

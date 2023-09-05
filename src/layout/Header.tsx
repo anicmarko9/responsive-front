@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 
 import BurgerMenu from '@Components/features/burger-menu/BurgerMenu';
-import { NavLinks } from '@Mocks/header-data';
+import { INavLink, NavLinks } from '@Mocks/header-data';
 
 // Header Component: Represents the header section of the web page.
 const Header = (): JSX.Element => {
@@ -22,7 +22,7 @@ const Header = (): JSX.Element => {
   // Function to toggle menu open state and apply animation timings
   const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
-    isMenuOpen 
+    isMenuOpen
       ? setTimeout(function () {
           setIsMenuOpenLate(!isMenuOpenLate);
         }, 800)
@@ -52,13 +52,7 @@ const Header = (): JSX.Element => {
         <div className="flex items-center justify-end w-full h-full sm:px-3">
           <nav className="flex">
             {NavLinks.map(
-              (
-                link: {
-                  href: string;
-                  name: string;
-                },
-                index: number,
-              ): JSX.Element => (
+              (link: INavLink, index: number): JSX.Element => (
                 <a key={index} href={link.href} className="navBtns">
                   {link.name}
                 </a>
