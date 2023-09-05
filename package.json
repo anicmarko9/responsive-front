@@ -10,7 +10,7 @@
     "typecheck": "tsc",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,css}\"",
     "lint": "eslint \"src/**/*.{ts,tsx,js}\" --fix",
-    "ci:format": "prettier --check \"src/**/*.{ts,tsx,js,css}\"", 
+    "ci:format": "prettier --check \"src/**/*.{ts,tsx,js,css}\"",
     "ci:lint": "eslint \"src/**/*.{ts,tsx,js}\""
   },
   "dependencies": {
