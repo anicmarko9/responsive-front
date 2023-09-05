@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '@Layout/Layout';
 import Product from '@Components/features/Product';
 
-import { ProductData } from '@/mocks/product-data';
+import { ProductData } from '@Mocks/product-data';
 import { IProduct } from '@Types/interfaces';
 
 const Shop = (): JSX.Element => {

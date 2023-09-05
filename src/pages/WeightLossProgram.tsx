@@ -3,9 +3,9 @@ import React from 'react';
 import Program from '@Components/content/programs/Program';
 import Testimony from '@Components/content/programs/Testimony';
 import Layout from '@Layout/Layout';
-import { WeightLossProgramData } from '@/mocks/weight-loss-program-data';
-import { TestimonyData } from '@/mocks/testimony-data';
-import { IProgram, ITestimony } from '@/types/interfaces';
+import { WeightLossProgramData } from '@Mocks/weight-loss-program-data';
+import { TestimonyData } from '@Mocks/testimony-data';
+import { IProgram, ITestimony } from '@Types/interfaces';
 
 // WeightLossProgram Component: Represents the weight loss programs page
 const WeightLossProgram = (): JSX.Element => {

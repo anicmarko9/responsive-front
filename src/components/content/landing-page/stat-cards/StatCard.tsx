@@ -1,10 +1,10 @@
 import React from 'react';
 
 interface StatCardProps {
-  bgColor?: string;
-  icon?: JSX.Element;
+  bgColor: 'primary' | 'secondary' | 'tertiary' | 'green-500';
+  icon: JSX.Element;
   children: JSX.Element;
-  description?: string;
+  description: string;
 }
 
 const StatCard = ({
@@ -14,8 +14,10 @@ const StatCard = ({
   description,
 }: StatCardProps): JSX.Element => {
 
+  const StatContainer = `statCard popUpAnimation hover:bg-${bgColor}`;
+
   return (
-    <div className={bgColor}>
+    <div className={StatContainer}>
       <div className="statIconAndTitleContainer ">
         <div>{icon}</div>
         <p className="statNumber">{children}</p>

@@ -1,14 +1,12 @@
 import React from 'react';
-
 import { IProgram } from '@Types/interfaces';
 
-// Program Component: Represents a program with its details and an image.
-const Program = ({
+const Program: React.FC<IProgram> = ({
   programName,
   duration,
   description,
   imgSrc,
-}: IProgram): JSX.Element => {
+}) => {
   // A fallback image source in case the provided image is not found.
   const notFound = '/images/NotFound.svg';
 
@@ -20,9 +18,9 @@ const Program = ({
           src={imgSrc || notFound}
           alt={programName}
         />
-        <figcaption className="absolute bottom-0 left-0 w-full bg-black/60 flex flex-col justify-center items-center font-libre-baskerville py-1 px-3 text-sm text-white hover:text-yellow-300 transition-all ease-in-out">
+        <p className="absolute bottom-0 left-0 w-full bg-black/60 flex flex-col justify-center items-center font-libre-baskerville py-1 px-3 text-sm text-white hover:text-yellow-300 transition-all ease-in-out">
           {description}
-        </figcaption>
+        </p>
         <div className="absolute top-0 left-0 w-full bg-black/60 flex flex-row justify-between p-1 items-center font-libre-baskerville text-white uppercase hover:text-yellow-300 transition-all ease-in-out">
           <h2 className="font-bold ml-1">{programName}</h2>
           <p className="text-sm text-center mr-1">{duration}</p>

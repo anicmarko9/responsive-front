@@ -6,7 +6,7 @@ import LandingPage from '@Components/content/landing-page/LandingPage';
 
 // Lazy loading components to improve performance
 const LazyCards = React.lazy(
-  () => import('@/components/content/landing-page/stat-cards/StatCards'),
+  () => import('@Components/content/landing-page/stat-cards/StatCards'),
 );
 const LazyContentOne = React.lazy(
   () => import('@Components/content/landing-page/ContentOne'),

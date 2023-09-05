@@ -1,4 +1,4 @@
-import { IProgram } from "@/types/interfaces";
+import { IProgram } from "@Types/interfaces";
 
 export const WeightLossProgramData: IProgram[] = [
   {

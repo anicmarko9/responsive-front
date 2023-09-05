@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 
 import BurgerMenu from '@Components/features/burger-menu/BurgerMenu';
-import { INavLink, NavLinks } from '@/mocks/header-data';
+import { INavLink, NavLinks } from '@Mocks/header-data';
 
 // Header Component: Represents the header section of the web page.
 const Header = (): JSX.Element => {
