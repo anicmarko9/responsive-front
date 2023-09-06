@@ -8,8 +8,8 @@ import Locations from '@Pages/Locations';
 import AboutUs from '@Pages/AboutUs';
 import WeightLossProgram from '@Pages/WeightLossProgram';
 import Shop from '@Pages/Shop';
-import Subscription from './pages/Subscription';
-import Stories from './pages/Stories';
+import Subscription from '@Pages/Subscription';
+import Stories from '@Pages/Stories';
 
 function App(): JSX.Element {
   const [initBodyOverlayScrollbars] = useOverlayScrollbars({
