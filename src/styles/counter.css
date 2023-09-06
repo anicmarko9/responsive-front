@@ -1,0 +1,15 @@
+@tailwind components;
+
+@layer components {
+    .counterBlock {
+    @apply h-auto w-full rounded-3xl bg-white bg-opacity-30 px-4 py-8 shadow-lg backdrop-blur-lg backdrop-filter sm:mx-[20%] sm:py-10 xl:mx-0 xl:h-72 xl:w-1/2 xl:rounded-[50px] xl:px-10;
+  }
+
+  .counterText {
+    @apply mb-4 text-[8px] font-medium uppercase tracking-[0.2em] text-countdown sm:text-xs lg:text-lg xl:mb-8;
+  }
+
+  .counterNumber {
+    @apply text-center text-xl font-medium tracking-wider sm:text-3xl lg:text-4xl xl:text-5xl;
+  }
+}

@@ -12,7 +12,7 @@ export const posts:Post[] = [
     date: '2023-07-01',
     title: 'Test',
     summary:
-      ' Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere libero, ipsa quia maiores adipisci fuga ullam obcaecati voluptas, laborum nobis tempora nam rem illum eligendi reiciendis veritatis aspernatur distinctio corporis.',
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere libero, ipsa quia maiores adipisci fuga ullam obcaecati voluptas, laborum nobis tempora nam rem illum eligendi reiciendis veritatis aspernatur distinctio corporis.',
     tags: ['test', 'test2', 'test3'],
   },
   {

@@ -1,11 +1,11 @@
 import React from 'react';
 import { slug } from 'github-slugger';
 
-interface Props {
+interface ITag {
   text: string;
 }
 
-const Tag: React.FC<Props> = ({ text }) => {
+const Tag = ({ text }: ITag): JSX.Element => {
   return (
     <a
       href={`/tags/${slug(text)}`}
