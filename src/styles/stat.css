@@ -1,0 +1,30 @@
+@tailwind components;
+
+@layer components {
+  .statCard {
+    @apply mb-4 flex h-40 w-[47%] flex-col items-center justify-center space-y-3 rounded-3xl bg-customWhite px-2 text-center sm:h-48 sm:w-[22%] sm:justify-around sm:space-y-0 sm:rounded-2xl sm:px-4 xl:h-60 xl:justify-center xl:space-y-8 xl:rounded-3xl;
+  }
+  .statCard:hover > .statIconAndTitleContainer > div > svg {
+    @apply delay-custom ease-in-expo opacity-100 text-white;
+  }
+
+  .statIconAndTitleContainer {
+    @apply flex flex-col items-center justify-center space-y-3 sm:space-y-1 lg:space-y-8;
+  }
+
+  .statIconSize {
+    @apply text-2xl lg:text-3xl xl:text-4xl;
+  }
+
+  .statNumber {
+    @apply flex justify-center text-xl font-medium sm:text-2xl lg:text-3xl xl:text-5xl;
+  }
+
+  .statPlusIcon {
+    @apply ml-1 text-[8px] sm:text-[10px] lg:ml-2 lg:text-sm xl:ml-3 xl:text-xl hover:fill-black;
+  }
+
+  .statDescriptionText {
+    @apply text-xs leading-4 sm:text-sm lg:text-base xl:text-lg;
+  }
+}

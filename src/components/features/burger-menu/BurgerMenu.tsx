@@ -49,7 +49,7 @@ const BurgerMenu = ({
     // Responsive Burger Menu Container
     <div className="h-screen">
       <nav
-        className={`fixed left-0 top-0 z-50 h-full md:w-[50vw] sm:w-[50vw] rounded-r-2xl bg-slate-50 py-2 pl-8 pr-4 shadow-lg sm:py-3 sm:pl-16 sm:pr-16  ${
+        className={`fixed left-0 top-0 z-50 h-full sm:w-[50vw] rounded-r-2xl bg-slate-50 py-2 pl-8 pr-4 shadow-lg sm:py-3 sm:pl-16 sm:pr-16  ${
           isMenuOpen ? slideInClass : slideOutClass
         }`}
       >
@@ -69,7 +69,7 @@ const BurgerMenu = ({
         </div>
         <hr className="border-1 mt-4 mb-2" />
         <div
-          className={`flex w-[70vw] sm:w-[50vw] md:w-[50vw] flex-col space-y-4 py-6 text-xl tracking-wide ${
+          className={`flex w-[70vw] sm:w-[40vw] flex-col space-y-4 py-6 text-xl tracking-wide ${
             isMenuOpenLate ? 'opacity-100' : 'opacity-0'
           }`}
         >
