@@ -45,3 +45,9 @@ export interface ISubscription {
   price: string;
   plan: string;
 }
+
+export interface IStories {
+  imgSrc: string;
+  name: string;
+  text: string;
+}
