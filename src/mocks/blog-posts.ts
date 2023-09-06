@@ -6,7 +6,7 @@ export interface Post {
   tags: string[];
 }
 
-export const posts:Post[] = [
+export const posts: Post[] = [
   {
     slug: 'test',
     date: '2023-07-01',
