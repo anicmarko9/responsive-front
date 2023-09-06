@@ -4,7 +4,7 @@
   .FAQarrow {
     @apply h-5 w-5 text-primary xl:mr-8 xl:h-7 xl:w-7;
   }
- .FAQcontainer {
+  .FAQcontainer {
     @apply my-2 rounded-xl bg-customWhite p-2 text-base shadow-xl xl:my-4 xl:rounded-2xl xl:p-4 xl:text-lg;
   }
 }

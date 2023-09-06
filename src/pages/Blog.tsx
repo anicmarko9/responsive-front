@@ -4,8 +4,6 @@ import Layout from '@Layout/Layout';
 import BlogContainer from '@Components/content/blog/BlogContainer';
 import { posts } from '@Mocks/blog-posts';
 
-
-
 const Blog = (): JSX.Element => {
   return (
     <Layout>

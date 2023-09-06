@@ -1,10 +1,10 @@
 @tailwind components;
 
 @layer components {
-     .button {
+  .button {
     @apply w-48 self-center rounded-xl border-2 border-primary bg-primary py-2 text-center text-sm tracking-wider text-white shadow-lg transition-all duration-[250ms] ease-in-out hover:bg-white hover:text-primary focus:outline-none sm:my-4 sm:w-56 sm:text-lg xl:self-start active:scale-95 active:rounded-3xl;
   }
-   .yellowBlock {
+  .yellowBlock {
     @apply absolute right-0 top-0 -z-10 h-full w-1/2 rounded-tl-[20%] bg-tertiary shadow-lg xl:w-[28%];
   }
   .bulletPoint {

@@ -3,7 +3,7 @@ import Tag from './Tag';
 import { Post } from '@Mocks/blog-posts';
 
 interface BlogContainerProps {
-    posts: Post[];
+  posts: Post[];
 }
 
 const MAX_DISPLAY = 5;
