@@ -17,8 +17,8 @@ const StatCards = (): JSX.Element => {
         <div className="mb-6 mt-8 flex flex-wrap justify-between space-x-0 sm:mb-0 xl:mb-8 xl:mt-16">
           <StatCard
             key={1}
-            bgColor="hover:bg-primary hover:border hover:border-white"
-            icon={<RiSuitcaseLine className="statIconSize text-primary" />}
+            bgColor="hover:bg-secondary"
+            icon={<RiSuitcaseLine className="statIconSize text-secondary" />}
             description="years of experience"
           >
             <>
@@ -43,8 +43,8 @@ const StatCards = (): JSX.Element => {
           </StatCard>
           <StatCard
             key={3}
-            bgColor="hover:bg-secondary"
-            icon={<FiMessageCircle className="statIconSize text-secondary" />}
+            bgColor="hover:bg-primary hover:border hover:border-slate-50"
+            icon={<FiMessageCircle className="statIconSize text-primary" />}
             description="satisfied clients"
           >
             <>
