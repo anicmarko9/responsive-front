@@ -47,7 +47,7 @@ const BurgerMenu = ({
 
   return (
     // Responsive Burger Menu Container
-    <div className="h-screen">
+    <div className="h-full w-full">
       <nav
         className={`fixed left-0 top-0 z-50 h-full sm:w-[50vw] rounded-r-2xl bg-slate-50 py-2 pl-8 pr-4 shadow-lg sm:py-3 sm:pl-16 sm:pr-16  ${
           isMenuOpen ? slideInClass : slideOutClass
@@ -62,7 +62,7 @@ const BurgerMenu = ({
           </a>
           <TbLayoutSidebarLeftCollapse
             onClick={toggleMenu}
-            className={`h-8 w-8 mr-3 mt-2 text-primary border border-secondary rounded-lg p-1 transition-all duration-200 ease-in ${
+            className={`h-8 w-8 mr-3 mt-2 text-primary rounded-lg p-1 transition-all duration-200 ease-in ${
               isMenuOpen ? '' : 'rotate-180'
             }`}
           />
@@ -85,6 +85,13 @@ const BurgerMenu = ({
           )}
         </div>
       </nav>
+
+      <div 
+        className="w-full h-full fixed right-0 top-0 bg-black/40 backdrop-blur-sm"
+        onClick={toggleMenu}
+        >
+
+      </div>
     </div>
   );
 };
