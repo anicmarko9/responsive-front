@@ -1,0 +1,11 @@
+.os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle {
+  @apply !bg-countdown !m-[-9px];
+}
+
+.os-scrollbar-vertical:hover .os-scrollbar-handle {
+  @apply !w-[500%];
+}
+
+.os-scrollbar-track {
+  @apply !bg-slide !rounded-xl !opacity-60 !translate-x-[-15px];
+}
