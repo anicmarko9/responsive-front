@@ -87,8 +87,8 @@ const Header = (): JSX.Element => {
             {isMenuOpenLate ? (
               ''
             ) : (
-              <RxHamburgerMenu
-                className="h-8 w-8 cursor-pointer text-primary border border-secondary rounded-lg p-1"
+              <RxHamburgerMenu 
+                className=" hamburgerIcon h-8 w-8 cursor-pointer text-primary border rounded-lg p-1 hover:opacity-70 "
                 onClick={toggleMenu}
               />
             )}
