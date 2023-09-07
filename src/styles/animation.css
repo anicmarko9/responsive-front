@@ -1,0 +1,35 @@
+@tailwind components;
+
+@layer components {
+  .hoverUnderline {
+    @apply inline-block relative;
+  }
+
+  .hoverUnderline::after {
+    @apply bg-primary content-[''] absolute bottom-[-4px] left-0 w-full h-[2px] rounded scale-x-0 origin-bottom-right transition transform duration-[0.35s] ease-[out-expo];
+  }
+
+  .hoverUnderline:hover::after {
+    @apply scale-x-100 origin-bottom-left;
+  }
+
+  .popUpAnimation {
+    @apply duration-300 ease-in-out hover:scale-110 hover:cursor-pointer hover:text-white sm:space-y-6;
+  }
+
+  .popUpAnimation:hover
+    > .statIconAndTitleContainer
+    > .statNumber
+    > .statPlusIcon
+    > svg {
+    @apply delay-custom ease-in-out fill-white opacity-100;
+  }
+
+  .loading-container {
+    @apply flex justify-center items-center h-screen;
+  }
+
+  .loading-spinner {
+    @apply animate-customSpin border-primary rounded-full h-16 w-16 border-b-4 border-l-4;
+  }
+}
