@@ -86,12 +86,10 @@ const BurgerMenu = ({
         </div>
       </nav>
 
-      <div 
+      <div
         className="w-full h-full fixed right-0 top-0 bg-black/40 backdrop-blur-sm"
         onClick={toggleMenu}
-        >
-
-      </div>
+      ></div>
     </div>
   );
 };
