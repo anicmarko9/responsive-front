@@ -62,7 +62,7 @@ const BurgerMenu = ({
           </a>
           <TbLayoutSidebarLeftCollapse
             onClick={toggleMenu}
-            className={`h-8 w-8 mr-3 mt-2 text-primary rounded-lg p-1 transition-all duration-200 ease-in ${
+            className={`h-8 w-8 mr-3 mt-2 text-primary rounded-lg p-1 transition-all duration-200 ease-in cursor-pointer hover:opacity-70 hover:-translate-y-1 ${
               isMenuOpen ? '' : 'rotate-180'
             }`}
           />
