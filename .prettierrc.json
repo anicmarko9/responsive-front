@@ -4,5 +4,6 @@
   "trailingComma": "all",
   "arrowParens": "always",
   "quoteProps": "consistent",
-  "endOfLine": "lf"
+  "endOfLine": "lf",
+  "plugins": ["prettier-plugin-tailwindcss"]
 }

@@ -7,7 +7,7 @@ import { posts } from '@Mocks/blog-posts';
 const Blog = (): JSX.Element => {
   return (
     <Layout>
-      <section className="w-screen mx-auto px-4 md:px-16 lg:px-32 xl:px-56 flex flex-col gap-5 mt-3 py-10 flex-wrap">
+      <section className="mx-auto mt-3 flex w-screen flex-col flex-wrap gap-5 px-4 py-10 md:px-16 lg:px-32 xl:px-56">
         <BlogContainer posts={posts} />
       </section>
     </Layout>

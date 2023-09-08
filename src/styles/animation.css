@@ -2,15 +2,15 @@
 
 @layer components {
   .hoverUnderline {
-    @apply inline-block relative;
+    @apply relative inline-block;
   }
 
   .hoverUnderline::after {
-    @apply bg-primary content-[''] absolute bottom-[-4px] left-0 w-full h-[2px] rounded scale-x-0 origin-bottom-right transition transform duration-[0.35s] ease-[out-expo];
+    @apply absolute bottom-[-4px] left-0 h-[2px] w-full origin-bottom-right scale-x-0 transform rounded bg-primary transition duration-[0.35s] ease-[out-expo] content-[''];
   }
 
   .hoverUnderline:hover::after {
-    @apply scale-x-100 origin-bottom-left;
+    @apply origin-bottom-left scale-x-100;
   }
 
   .popUpAnimation {
@@ -22,14 +22,14 @@
     > .statNumber
     > .statPlusIcon
     > svg {
-    @apply delay-custom ease-in-out fill-white opacity-100;
+    @apply fill-white opacity-100 delay-custom ease-in-out;
   }
 
   .loading-container {
-    @apply flex justify-center items-center h-screen;
+    @apply flex h-screen items-center justify-center;
   }
 
   .loading-spinner {
-    @apply animate-customSpin border-primary rounded-full h-16 w-16 border-b-4 border-l-4;
+    @apply h-16 w-16 animate-customSpin rounded-full border-b-4 border-l-4 border-primary;
   }
 }

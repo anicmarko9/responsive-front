@@ -8,7 +8,7 @@ interface TestimonyImageProps {
 
 const TestimonyImage: React.FC<TestimonyImageProps> = ({ imgSrc, altText }) => {
   return (
-    <figure className="w-[300px] flex flex-col items-center">
+    <figure className="flex w-[300px] flex-col items-center">
       <img
         className="h-[200px] w-[200px] rounded-full"
         src={imgSrc}

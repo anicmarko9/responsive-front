@@ -3,8 +3,8 @@ import { ISubscription } from '@Types/interfaces';
 
 const Subscriptions = ({ price, plan }: ISubscription): JSX.Element => {
   return (
-    <div className="container my-24 mx-auto md:px-6 basis-3">
-      <div className="block p-4 h-full bg-gray-800 text-white rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+    <div className="container mx-auto my-24 basis-3 md:px-6">
+      <div className="block h-full rounded-lg bg-gray-800 p-4 text-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
         <p className="mb-4 text-sm uppercase">
           <strong>{plan}</strong>
         </p>
@@ -17,13 +17,13 @@ const Subscriptions = ({ price, plan }: ISubscription): JSX.Element => {
 
         <button
           type="button"
-          className="inline-block w-full rounded bg-cyan-500 text-white px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal  shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+          className="hover:bg-primary-600 focus:bg-primary-600 active:bg-primary-700 inline-block w-full rounded bg-cyan-500 px-6 pb-2 pt-2.5 text-xs font-medium  uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
           data-te-ripple-init
           data-te-ripple-color="light"
         >
           Buy
         </button>
-        <ol className="list-inside bg-yellow-400 mt-4">
+        <ol className="mt-4 list-inside bg-yellow-400">
           <li className="mb-4 flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@ const Subscriptions = ({ price, plan }: ISubscription): JSX.Element => {
               viewBox="0 0 24 24"
               strokeWidth="2"
               stroke="currentColor"
-              className="mr-3 h-5 w-5 text-primary dark:text-primary-400"
+              className="dark:text-primary-400 mr-3 h-5 w-5 text-primary"
             >
               <path
                 strokeLinecap="round"
@@ -48,7 +48,7 @@ const Subscriptions = ({ price, plan }: ISubscription): JSX.Element => {
               viewBox="0 0 24 24"
               strokeWidth="2"
               stroke="currentColor"
-              className="mr-3 h-5 w-5 text-primary dark:text-primary-400"
+              className="dark:text-primary-400 mr-3 h-5 w-5 text-primary"
             >
               <path
                 strokeLinecap="round"
@@ -65,7 +65,7 @@ const Subscriptions = ({ price, plan }: ISubscription): JSX.Element => {
               viewBox="0 0 24 24"
               strokeWidth="2"
               stroke="currentColor"
-              className="mr-3 h-5 w-5 text-primary dark:text-primary-400"
+              className="dark:text-primary-400 mr-3 h-5 w-5 text-primary"
             >
               <path
                 strokeLinecap="round"

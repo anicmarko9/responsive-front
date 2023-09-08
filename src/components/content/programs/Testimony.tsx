@@ -9,7 +9,7 @@ const Testimony = ({ imgSrc, name, testimony }: ITestimony): JSX.Element => {
   const notFound = '/images/NotFound.svg';
 
   return (
-    <div className="flex flex-col items-center overflow-y-auto overflow-x-hidden h-auto xl:w-1/4">
+    <div className="flex h-auto flex-col items-center overflow-y-auto overflow-x-hidden xl:w-1/4">
       <TestimonyImage imgSrc={imgSrc || notFound} altText={name} />
       <TestimonyText name={name} testimony={testimony} />
     </div>

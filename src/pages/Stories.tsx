@@ -5,7 +5,7 @@ import Story from '@/components/content/stories/Story';
 const Stories = () => {
   return (
     <Layout>
-      <section className="w-screen xl:h-[90vh] mx-auto flex flex-row gap-5 mt-3 py-10 flex-wrap bg-primary justify-center">
+      <section className="mx-auto mt-3 flex w-screen flex-row flex-wrap justify-center gap-5 bg-primary py-10 xl:h-[90vh]">
         <Story
           imgSrc={'/images/stories/story1.jpg'}
           name={'Linda'}
