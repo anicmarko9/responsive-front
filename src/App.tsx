@@ -13,7 +13,6 @@ import Subscription from '@Pages/Subscription';
 import Stories from '@Pages/Stories';
 import Blog from '@Pages/Blog';
 
-
 function App(): JSX.Element {
   const [initBodyOverlayScrollbars] = useOverlayScrollbars({
     defer: true,
