@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, useCallback } from 'react';
+import React, { useEffect, useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 
 import BurgerMenu from '@Components/features/burger-menu/BurgerMenu';
@@ -6,7 +6,6 @@ import { INavLink, NavLinks } from '@Mocks/header-data';
 
 // Header Component: Represents the header section of the web page.
 const Header = (): JSX.Element => {
-  const dropdownRef = useRef<HTMLDivElement>(null);
   // State variables to manage window width and menu open states
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -20,37 +19,15 @@ const Header = (): JSX.Element => {
     setWindowWidth(window.innerWidth);
   };
 
-  // Function to toggle menu open state and apply animation timings
   const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
     isMenuOpen
       ? setTimeout(function () {
           setIsMenuOpenLate(!isMenuOpenLate);
-        }, 800)
+        }, 1000)
       : setIsMenuOpenLate(!isMenuOpenLate);
   };
 
-  const handleClickOutside = useCallback(
-    (e: MouseEvent) => {
-      if (
-        dropdownRef.current &&
-        dropdownRef.current.contains(e.target as HTMLElement)
-      ) {
-        return;
-      }
-      setIsMenuOpen(false);
-    },
-    [isMenuOpen],
-  );
-
-  useEffect(() => {
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [handleClickOutside]);
-
-  // Effect to add and remove window resize event listener
   useEffect(() => {
     window.addEventListener('resize', handleResize);
     return () => {
@@ -87,7 +64,7 @@ const Header = (): JSX.Element => {
             {isMenuOpenLate ? (
               ''
             ) : (
-              <RxHamburgerMenu 
+              <RxHamburgerMenu
                 className=" hamburgerIcon h-8 w-8 cursor-pointer text-primary border rounded-lg p-1 hover:opacity-70 "
                 onClick={toggleMenu}
               />

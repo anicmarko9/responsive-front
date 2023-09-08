@@ -33,24 +33,19 @@ const BurgerMenu = ({
     return <div className="hidden"></div>;
   }
 
-  const slideInClass = isMenuOpen
-    ? windowWidth < 640
-      ? 'animate-slideInLeft transition-transform duration-300 ease-in-out'
-      : 'animate-slideInLeftSM transition-transform duration-300 ease-in-out'
-    : 'scale-0';
-
-  const slideOutClass = isMenuOpen
-    ? 'scale-100'
-    : windowWidth < 640
-    ? 'animate-slideOutLeft transition-transform duration-300 ease-in-out'
-    : 'animate-slideOutLeftSM transition-transform duration-300 ease-in-out';
-
   return (
     // Responsive Burger Menu Container
     <div className="h-full w-full">
       <nav
-        className={`fixed left-0 top-0 z-50 h-full sm:w-[50vw] rounded-r-2xl bg-slate-50 py-2 pl-8 pr-4 shadow-lg sm:py-3 sm:pl-16 sm:pr-16  ${
-          isMenuOpen ? slideInClass : slideOutClass
+        className={`fixed left-0 top-0 z-50 h-full sm:w-[50vw] rounded-r-2xl bg-slate-50 py-2 pl-8 pr-4 shadow-lg sm:py-3 sm:pl-16 sm:pr-16 transition-transform duration-300 ease-in-out  ${
+          // check if menu is open on different resolutions
+          isMenuOpen
+            ? windowWidth < 640
+              ? 'animate-slideInLeft'
+              : 'animate-slideInLeftSM'
+            : windowWidth < 640
+            ? 'animate-slideOutLeft'
+            : 'animate-slideOutLeftSM'
         }`}
       >
         <div className="flex h-14 w-full items-center justify-between text-2xl">
