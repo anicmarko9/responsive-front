@@ -16,6 +16,6 @@
     @apply h-full opacity-30;
   }
   .hamburgerIcon {
-    border: 1px solid rgb(221, 113, 198); /* Set the border width and color */
+    @apply border border-primary;
   }
 }
