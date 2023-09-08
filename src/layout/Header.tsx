@@ -37,17 +37,17 @@ const Header = (): JSX.Element => {
 
   return (
     <header
-      className={`sticky top-0 z-50 flex w-full h-20 items-center justify-between xl:px-36 bg-[rgba(255,255,255,0.8)]`}
+      className={`sticky top-0 z-50 flex h-20 w-full items-center justify-between bg-[rgba(255,255,255,0.8)] xl:px-36`}
     >
-      <a className="md:w-full sm:w-1/5 pl-4 sm:px-6" href="/">
+      <a className="pl-4 sm:w-1/5 sm:px-6 md:w-full" href="/">
         <img
           src="/logo.png"
           alt="Logo"
-          className="h-[65px] w-[140px] min-w-[140px] relative hover:opacity-90 transition duration-300 ease-in-out hover:scale-100 origin-left"
+          className="relative h-[65px] w-[140px] min-w-[140px] origin-left transition duration-300 ease-in-out hover:scale-100 hover:opacity-90"
         />
       </a>
       {windowWidth >= 1024 ? (
-        <div className="flex items-center justify-end w-full h-full sm:px-3">
+        <div className="flex h-full w-full items-center justify-end sm:px-3">
           <nav className="flex">
             {NavLinks.map(
               (link: INavLink, index: number): JSX.Element => (
@@ -65,7 +65,7 @@ const Header = (): JSX.Element => {
               ''
             ) : (
               <RxHamburgerMenu
-                className=" hamburgerIcon h-8 w-8 cursor-pointer text-primary border rounded-lg p-1 hover:opacity-70 "
+                className=" hamburgerIcon h-8 w-8 cursor-pointer rounded-lg border p-1 text-primary hover:opacity-70 "
                 onClick={toggleMenu}
               />
             )}

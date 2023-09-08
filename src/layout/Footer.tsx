@@ -12,7 +12,7 @@ export default function Footer() {
         <section className="w-full space-y-8 pb-8 sm:w-1/2 xl:w-5/12">
           <a className="block hover:cursor-pointer" href="/">
             <img
-              className="relative hover:opacity-90 transition duration-300 ease-in-out hover:scale-110 origin-center"
+              className="relative origin-center transition duration-300 ease-in-out hover:scale-110 hover:opacity-90"
               src="/logo.png"
               alt="Logo"
               width={140}
@@ -30,7 +30,7 @@ export default function Footer() {
           <address>
             <div className="flex">
               <IoLocationSharp className="contactIcon" />
-              <div className="xl:flex xl:flex-wrap pt-[2px] pl-1 font-bold">
+              <div className="pl-1 pt-[2px] font-bold xl:flex xl:flex-wrap">
                 <p>Head Office:</p>
                 <p>1931 W 95th Street Chicago IL, 60643</p>
               </div>
@@ -38,7 +38,7 @@ export default function Footer() {
             <br />
             <div className="flex">
               <FaPhoneAlt className="contactIcon" />
-              <div className="xl:flex xl:space-x-1 pt-[2px] pl-1 font-bold">
+              <div className="pl-1 pt-[2px] font-bold xl:flex xl:space-x-1">
                 <p>Phone:</p>
                 <p>773-496-4222</p>
               </div>

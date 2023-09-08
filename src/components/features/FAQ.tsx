@@ -13,7 +13,7 @@ const FAQ = ({ question }: { question: string }): JSX.Element => {
   return (
     // FAQ container element
     <details
-      className={`FAQcontainer cursor-pointer space-y-4 transition-all duration-600 ease-in-out hover:bg-gray-200 ${
+      className={`FAQcontainer duration-600 cursor-pointer space-y-4 transition-all ease-in-out hover:bg-gray-200 ${
         isOpen ? 'open' : ''
       }`}
       onClick={toggleDropdown}

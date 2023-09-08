@@ -37,7 +37,7 @@ const BurgerMenu = ({
     // Responsive Burger Menu Container
     <div className="h-full w-full">
       <nav
-        className={`fixed left-0 top-0 z-50 h-full sm:w-[50vw] rounded-r-2xl bg-slate-50 py-2 pl-8 pr-4 shadow-lg sm:py-3 sm:pl-16 sm:pr-16 transition-transform duration-300 ease-in-out  ${
+        className={`fixed left-0 top-0 z-50 h-full rounded-r-2xl bg-slate-50 py-2 pl-8 pr-4 shadow-lg transition-transform duration-300 ease-in-out sm:w-[50vw] sm:py-3 sm:pl-16 sm:pr-16  ${
           // check if menu is open on different resolutions
           isMenuOpen
             ? windowWidth < 640
@@ -50,21 +50,21 @@ const BurgerMenu = ({
       >
         <div className="flex h-14 w-full items-center justify-between text-2xl">
           <a
-            className="block transition-all duration-300 ease-in-out hover:opacity-70 hover:-translate-y-1"
+            className="block transition-all duration-300 ease-in-out hover:-translate-y-1 hover:opacity-70"
             href="/"
           >
             <img className="w-full max-w-[120px]" src="/logo.png" alt="Logo" />
           </a>
           <TbLayoutSidebarLeftCollapse
             onClick={toggleMenu}
-            className={`h-8 w-8 mr-3 mt-2 text-primary rounded-lg p-1 transition-all duration-200 ease-in cursor-pointer hover:opacity-70 hover:-translate-y-1 ${
+            className={`mr-3 mt-2 h-8 w-8 cursor-pointer rounded-lg p-1 text-primary transition-all duration-200 ease-in hover:-translate-y-1 hover:opacity-70 ${
               isMenuOpen ? '' : 'rotate-180'
             }`}
           />
         </div>
-        <hr className="border-1 mt-4 mb-2" />
+        <hr className="border-1 mb-2 mt-4" />
         <div
-          className={`flex w-[70vw] sm:w-[40vw] flex-col space-y-4 py-6 text-xl tracking-wide ${
+          className={`flex w-[70vw] flex-col space-y-4 py-6 text-xl tracking-wide sm:w-[40vw] ${
             isMenuOpenLate ? 'opacity-100' : 'opacity-0'
           }`}
         >
@@ -82,7 +82,7 @@ const BurgerMenu = ({
       </nav>
 
       <div
-        className="w-full h-full fixed right-0 top-0 bg-black/40 backdrop-blur-sm"
+        className="fixed right-0 top-0 h-full w-full bg-black/40 backdrop-blur-sm"
         onClick={toggleMenu}
       ></div>
     </div>
