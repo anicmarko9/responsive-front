@@ -50,14 +50,14 @@ const BurgerMenu = ({
       >
         <div className="flex h-14 w-full items-center justify-between text-2xl">
           <a
-            className="block transition-all duration-300 ease-in-out hover:-translate-y-1 hover:opacity-70"
+            className="block transition-all duration-300 ease-in-out hover:opacity-70"
             href="/"
           >
             <img className="w-full max-w-[120px]" src="/logo.png" alt="Logo" />
           </a>
           <TbLayoutSidebarLeftCollapse
             onClick={toggleMenu}
-            className={`mr-3 mt-2 h-8 w-8 cursor-pointer rounded-lg p-1 text-primary transition-all duration-200 ease-in hover:-translate-y-1 hover:opacity-70 ${
+            className={`mr-3 mt-2 h-8 w-8 cursor-pointer rounded-lg p-1 text-primary transition-all duration-200 ease-in hover:opacity-70 ${
               isMenuOpen ? '' : 'rotate-180'
             }`}
           />

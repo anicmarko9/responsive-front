@@ -43,7 +43,7 @@ const Header = (): JSX.Element => {
         <img
           src="/logo.png"
           alt="Logo"
-          className="relative h-[65px] w-[140px] min-w-[140px] origin-left transition duration-300 ease-in-out hover:scale-100 hover:opacity-90"
+          className="relative h-[65px] w-[140px] min-w-[140px] origin-left transition duration-300 ease-in-out hover:opacity-70"
         />
       </a>
       {windowWidth >= 1024 ? (

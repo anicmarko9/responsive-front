@@ -12,7 +12,7 @@ export default function Footer() {
         <section className="w-full space-y-8 pb-8 sm:w-1/2 xl:w-5/12">
           <a className="block hover:cursor-pointer" href="/">
             <img
-              className="relative origin-center transition duration-300 ease-in-out hover:scale-110 hover:opacity-90"
+              className="relative origin-center transition duration-300 ease-in-out hover:opacity-70"
               src="/logo.png"
               alt="Logo"
               width={140}
