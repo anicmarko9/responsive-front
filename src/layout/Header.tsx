@@ -65,7 +65,7 @@ const Header = (): JSX.Element => {
               ''
             ) : (
               <RxHamburgerMenu
-                className=" hamburgerIcon h-8 w-8 cursor-pointer rounded-lg border p-1 text-primary hover:opacity-70 "
+                className="h-8 w-8 cursor-pointer rounded-lg p-1 text-primary hover:opacity-70"
                 onClick={toggleMenu}
               />
             )}
