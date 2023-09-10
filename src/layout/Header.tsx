@@ -19,17 +19,15 @@ const Header = (): JSX.Element => {
     setWindowWidth(window.innerWidth);
   };
 
-  // Function to toggle menu open state and apply animation timings
   const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
     isMenuOpen
       ? setTimeout(function () {
           setIsMenuOpenLate(!isMenuOpenLate);
-        }, 800)
+        }, 500)
       : setIsMenuOpenLate(!isMenuOpenLate);
   };
 
-  // Effect to add and remove window resize event listener
   useEffect(() => {
     window.addEventListener('resize', handleResize);
     return () => {
@@ -39,17 +37,17 @@ const Header = (): JSX.Element => {
 
   return (
     <header
-      className={`sticky top-0 z-50 flex w-full h-20 items-center justify-between xl:px-36 bg-[rgba(255,255,255,0.8)]`}
+      className={`sticky top-0 z-50 flex h-20 w-full items-center justify-between bg-[rgba(255,255,255,0.8)] xl:px-36`}
     >
-      <a className="md:w-full sm:w-1/5 pl-4 sm:px-6" href="/">
+      <a className="pl-4 sm:w-1/5 sm:px-6 md:w-full" href="/">
         <img
           src="/logo.png"
           alt="Logo"
-          className="h-[65px] w-[140px] min-w-[140px] relative hover:opacity-90 transition duration-300 ease-in-out hover:scale-100 origin-left"
+          className="relative h-[65px] w-[140px] min-w-[140px] origin-left transition duration-300 ease-in-out hover:opacity-70"
         />
       </a>
       {windowWidth >= 1024 ? (
-        <div className="flex items-center justify-end w-full h-full sm:px-3">
+        <div className="flex h-full w-full items-center justify-end sm:px-3">
           <nav className="flex">
             {NavLinks.map(
               (link: INavLink, index: number): JSX.Element => (
@@ -67,7 +65,7 @@ const Header = (): JSX.Element => {
               ''
             ) : (
               <RxHamburgerMenu
-                className="h-8 w-8 cursor-pointer text-primary border border-secondary rounded-lg p-1"
+                className="h-8 w-8 cursor-pointer rounded-lg p-1 text-primary hover:opacity-70"
                 onClick={toggleMenu}
               />
             )}

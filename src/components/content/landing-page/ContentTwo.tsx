@@ -6,7 +6,7 @@ import MainButton from '@Components/features/MainButton';
 const ContentTwo = (): JSX.Element => {
   return (
     // Section container for the second content section with responsive styling.
-    <section className="relative flex h-full xl:h-[95vh] flex-col items-center space-y-8 px-0 py-8 text-start text-lg xl:px-36 xl:pb-0 xl:pt-16 xl:text-center">
+    <section className="relative flex h-full flex-col items-center space-y-8 bg-white px-0 py-8 text-start text-lg xl:px-36 xl:pb-0 xl:pt-16 xl:text-center">
       <h2 className="order-first my-2 w-full px-8 text-3xl tracking-wide sm:px-36 xl:order-none xl:my-4 xl:px-0 xl:text-4xl">
         We Can Help You
       </h2>

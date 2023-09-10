@@ -8,6 +8,10 @@ import Locations from '@Pages/Locations';
 import AboutUs from '@Pages/AboutUs';
 import WeightLossProgram from '@Pages/WeightLossProgram';
 import Shop from '@Pages/Shop';
+<<<<<<< HEAD
+=======
+
+>>>>>>> cbbc1f232cbd06d22e1ab887e6d978f0dd44f099
 import Subscription from '@Pages/Subscription';
 import Stories from '@Pages/Stories';
 import Blog from '@Pages/Blog';
@@ -28,7 +32,7 @@ function App(): JSX.Element {
   }, [initBodyOverlayScrollbars]);
 
   return (
-    <div className="font-heebo relative">
+    <div className="relative font-heebo">
       <BrowserRouter>
         <Routes>
           <Route path="/not-found" element={<NotFound />} />

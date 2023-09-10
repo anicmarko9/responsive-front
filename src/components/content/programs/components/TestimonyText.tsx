@@ -8,8 +8,8 @@ interface TestimonyTextProps {
 
 const TestimonyText: React.FC<TestimonyTextProps> = ({ name, testimony }) => {
   return (
-    <div className="p-3 text-xl italic flex flex-col text-center gap-y-1">
-      <h2 className="font-semibold text-xl">{name}</h2>
+    <div className="flex flex-col gap-y-1 p-3 text-center text-xl italic">
+      <h2 className="text-xl font-semibold">{name}</h2>
       {testimony && <span className="text-justify text-base">{testimony}</span>}
     </div>
   );

@@ -5,7 +5,7 @@ import Subscriptions from '@/components/content/subscription/Subscriptions';
 const Subscription = (): JSX.Element => {
   return (
     <Layout>
-      <section className="w-screen mx-auto flex flex-row gap-5 mt-5 py-10 flex-wrap bg-primary justify-center">
+      <section className="mx-auto mt-5 flex w-screen flex-row flex-wrap justify-center gap-5 bg-primary py-10">
         <Subscriptions plan={'Basic'} price={'$129.99'} />
         <Subscriptions plan={'Advanced'} price={'$329.99'} />
         <Subscriptions plan={'Teams'} price={'$1299.99'} />

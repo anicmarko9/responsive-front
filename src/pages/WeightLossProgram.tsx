@@ -11,8 +11,8 @@ import { IProgram, ITestimony } from '@Types/interfaces';
 const WeightLossProgram = (): JSX.Element => {
   return (
     <Layout>
-      <section className="w-full h-auto mt-3 py-10 bg-primary">
-        <div className=" mx-auto flex flex-row gap-5 flex-wrap justify-center items-center md:w-3/5 w-5/6">
+      <section className="mt-3 h-auto w-full bg-primary py-10">
+        <div className=" mx-auto flex w-5/6 flex-row flex-wrap items-center justify-center gap-5 md:w-3/5">
           {/* Displaying different weight loss programs using the Program component */}
           {WeightLossProgramData.map(
             (program: IProgram, index: number): JSX.Element => (
@@ -28,8 +28,8 @@ const WeightLossProgram = (): JSX.Element => {
         </div>
       </section>
 
-      <section className="bg-secondary w-full py-10">
-        <div className="flex flex-row gap-2 flex-wrap md:justify-between justify-center md:w-3/5 w-full m-auto">
+      <section className="w-full bg-secondary py-10">
+        <div className="m-auto flex w-full flex-row flex-wrap justify-center gap-2 md:w-3/5 md:justify-between">
           {/* Displaying testimonials using the Testimony component */}
           {TestimonyData.map(
             (testimony: ITestimony, index: number): JSX.Element => (

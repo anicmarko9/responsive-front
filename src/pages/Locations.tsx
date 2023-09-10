@@ -7,7 +7,7 @@ import Location from '@Components/content/locations/Location';
 const Locations = (): JSX.Element => {
   return (
     <Layout>
-      <section className="w-screen xl:h-[90vh] mx-auto flex flex-row gap-5 mt-3 py-10 flex-wrap bg-primary justify-center">
+      <section className="mx-auto mt-3 flex w-screen flex-row flex-wrap justify-center gap-5 bg-primary py-10 xl:h-[90vh]">
         <Location
           imgSrc={'/images/store/store1.jpg'}
           name={'name'}

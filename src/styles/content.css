@@ -14,11 +14,11 @@
   }
 
   .contentThreeContainer:first-child:hover {
-    @apply text-white bg-secondary;
+    @apply bg-secondary text-white;
   }
 
   .contentThreeContainer:last-child:hover {
-    @apply text-white bg-primary;
+    @apply bg-primary text-white;
   }
 
   .contentThreeContainer:hover > h2 {

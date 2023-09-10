@@ -5,7 +5,7 @@
     @apply mb-4 flex h-40 w-[47%] flex-col items-center justify-center space-y-3 rounded-3xl bg-customWhite px-2 text-center sm:h-48 sm:w-[22%] sm:justify-around sm:space-y-0 sm:rounded-2xl sm:px-4 xl:h-60 xl:justify-center xl:space-y-8 xl:rounded-3xl;
   }
   .statCard:hover > .statIconAndTitleContainer > div > svg {
-    @apply delay-custom ease-in-expo opacity-100 text-white;
+    @apply text-white opacity-100 delay-custom ease-in-expo;
   }
 
   .statIconAndTitleContainer {
@@ -21,7 +21,7 @@
   }
 
   .statPlusIcon {
-    @apply ml-1 text-[8px] sm:text-[10px] lg:ml-2 lg:text-sm xl:ml-3 xl:text-xl hover:fill-black;
+    @apply ml-1 text-[8px] hover:fill-black sm:text-[10px] lg:ml-2 lg:text-sm xl:ml-3 xl:text-xl;
   }
 
   .statDescriptionText {

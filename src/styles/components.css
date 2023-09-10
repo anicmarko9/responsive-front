@@ -2,7 +2,7 @@
 
 @layer components {
   .button {
-    @apply w-48 self-center rounded-xl border-2 border-primary bg-primary py-2 text-center text-sm tracking-wider text-white shadow-lg transition-all duration-[250ms] ease-in-out hover:bg-white hover:text-primary focus:outline-none sm:my-4 sm:w-56 sm:text-lg xl:self-start active:scale-95 active:rounded-3xl;
+    @apply w-48 self-center rounded-xl border-2 border-primary bg-primary py-2 text-center text-sm tracking-wider text-white shadow-lg transition-all duration-[250ms] ease-in-out hover:bg-white hover:text-primary focus:outline-none active:scale-95 active:rounded-3xl sm:my-4 sm:w-56 sm:text-lg xl:self-start;
   }
   .yellowBlock {
     @apply absolute right-0 top-0 -z-10 h-full w-1/2 rounded-tl-[20%] bg-tertiary shadow-lg xl:w-[28%];
@@ -11,7 +11,7 @@
     @apply mr-1 mt-2 h-3 w-3 min-w-[12px] max-w-[12px];
   }
   .navBtns {
-    @apply text-[18px] text-slate-600 border-2 border-slate-400 hover:border-primary transition-all duration-[150ms] ease-in rounded px-2 mr-3 hover:text-primary flex items-center justify-center h-[35px] whitespace-nowrap;
+    @apply mr-3 flex h-[35px] items-center justify-center whitespace-nowrap rounded border-2 border-slate-400 px-2 text-[18px] text-slate-600 transition-all duration-[150ms] ease-in hover:border-primary hover:text-primary;
   }
   .bulletPoint {
     @apply mr-1 mt-2 h-3 w-3 min-w-[12px] max-w-[12px];
