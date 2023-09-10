@@ -15,7 +15,4 @@
   .plusIcon {
     @apply h-full opacity-30;
   }
-  .hamburgerIcon {
-    @apply border border-primary;
-  }
 }
