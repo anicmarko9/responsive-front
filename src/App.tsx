@@ -8,7 +8,6 @@ import Locations from '@Pages/Locations';
 import AboutUs from '@Pages/AboutUs';
 import WeightLossProgram from '@Pages/WeightLossProgram';
 import Shop from '@Pages/Shop';
-
 import Subscription from '@Pages/Subscription';
 import Stories from '@Pages/Stories';
 import Blog from '@Pages/Blog';
