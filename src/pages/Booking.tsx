@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Layout from '@Layout/Layout';
-import BookOnline from '@/components/content/booking/BookOnline';
+import BookOnline from '@Components/content/booking/BookOnline';
 
 const Booking = (): JSX.Element => {
   return (
