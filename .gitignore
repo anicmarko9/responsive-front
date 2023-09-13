@@ -4,6 +4,7 @@
 # testing
 /coverage
 .package-lock.json
+bun.lockb
 # production
 /build
 
