@@ -81,10 +81,12 @@ const BurgerMenu = ({
         </div>
       </nav>
 
-      <div
-        className="fixed right-0 top-0 h-full w-full bg-black/40 backdrop-blur-sm"
-        onClick={toggleMenu}
-      ></div>
+      {isMenuOpen && (
+        <div
+          className={`fixed left-0 top-0 z-40 h-screen w-screen bg-black opacity-50 transition-opacity duration-300 ease-in-out`}
+          onClick={toggleMenu}
+        ></div>
+      )}
     </div>
   );
 };
