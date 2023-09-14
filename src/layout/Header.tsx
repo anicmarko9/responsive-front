@@ -37,7 +37,7 @@ const Header = (): JSX.Element => {
 
   return (
     <header
-      className={`flex h-20 w-full items-center justify-between bg-opacity-100 xl:px-36`}
+    className={`sticky top-0 z-50 flex h-20 w-full items-center justify-between bg-opacity-100 xl:px-36`}
     >
       <a className="sm:w-1/5 md:w-full" href="/">
         <img
