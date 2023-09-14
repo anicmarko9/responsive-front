@@ -5,9 +5,10 @@ import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 const FAQ = ({ question }: { question: string }): JSX.Element => {
   // State to track whether the dropdown is open or closed
   const [isOpen, setIsOpen] = useState<boolean>(false);
-
   const toggleDropdown = (): void => {
-    setIsOpen(!isOpen);
+    setTimeout(() => {
+      setIsOpen(!isOpen);
+    }, 1000);
   };
 
   return (
