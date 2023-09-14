@@ -15,42 +15,42 @@ import { IBurgerMenuItem } from '@Types/interfaces';
 const BurgerMenuData: IBurgerMenuItem[] = [
   {
     href: '/about-us',
-    icon: <MdAnnouncement size={24} style={{ marginRight: '8px' }} />,
+    icon: <MdAnnouncement size={24} style={{ marginRight: '8px' }} className=" text-primary" />,
     text: 'About Us',
   },
   {
     href: '/bookings',
-    icon: <FaCalendarCheck size={24} style={{ marginRight: '8px' }} />,
+    icon: <FaCalendarCheck size={24} style={{ marginRight: '8px' }} className=" text-primary"  />,
     text: 'Book Online',
   },
   {
     href: '/weight-loss',
-    icon: <FaWeight size={24} style={{ marginRight: '8px' }} />,
+    icon: <FaWeight size={24} style={{ marginRight: '8px' }} className=" text-primary"  />,
     text: 'Weight Loss Programs',
   },
   {
     href: '/stories',
-    icon: <FaUsers size={24} style={{ marginRight: '8px' }} />,
+    icon: <FaUsers size={24} style={{ marginRight: '8px' }} className=" text-primary"  />,
     text: 'Real Patient Stories',
   },
   {
     href: '/locations',
-    icon: <FaMapMarkerAlt size={24} style={{ marginRight: '8px' }} />,
+    icon: <FaMapMarkerAlt size={24} style={{ marginRight: '8px' }} className=" text-primary"  />,
     text: 'Locations',
   },
   {
     href: '/blogs',
-    icon: <FaBlog size={24} style={{ marginRight: '8px' }} />,
+    icon: <FaBlog size={24} style={{ marginRight: '8px' }} className=" text-primary"  />,
     text: 'Blog',
   },
   {
     href: '/shop',
-    icon: <FaShoppingCart size={24} style={{ marginRight: '8px' }} />,
+    icon: <FaShoppingCart size={24} style={{ marginRight: '8px' }} className=" text-primary"  />,
     text: 'Shop',
   },
   {
     href: '/subscription',
-    icon: <FaEnvelope size={24} style={{ marginRight: '8px' }} />,
+    icon: <FaEnvelope size={24} style={{ marginRight: '8px' }} className=" text-primary"  />,
     text: 'Subscription',
   },
 ];
