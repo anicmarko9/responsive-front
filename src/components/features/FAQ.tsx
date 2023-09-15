@@ -22,14 +22,14 @@ const FAQ = ({ question }: { question: string }): JSX.Element => {
       <summary className="flex justify-between">
         <span className="w-[85%]">{question}</span>
         {isOpen ? (
-          <IoIosArrowUp className="FAQarrow self-center" />
+          <IoIosArrowUp className="FAQarrow animate-bounce self-center" />
         ) : (
-          <IoIosArrowDown className="FAQarrow self-center" />
+          <IoIosArrowDown className="FAQarrow  self-center" />
         )}
       </summary>
       {/* Content section that shows when the dropdown is open */}
       {isOpen && (
-        <p className="w-full text-sm xl:text-base">
+        <p className="w-full animate-pulse text-sm duration-1000 xl:text-base">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos
           quam pariatur animi eveniet, quis dolores error magnam repellat omnis
           velit et totam enim, soluta quod, doloribus non exercitationem.
