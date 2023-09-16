@@ -7,7 +7,7 @@ import { AiFillInstagram } from 'react-icons/ai';
 // Footer Component: Represents the footer section of the web page.
 export default function Footer() {
   return (
-    <footer className="relative flex h-full flex-col bg-customWhite px-6 pb-8 pt-6 text-base sm:px-16 sm:text-lg xl:px-40 xl:pt-16">
+    <footer className="relative flex h-full flex-col bg-customWhite px-8 pb-8 pt-6 text-base sm:px-16 sm:text-lg xl:px-36 xl:pt-16">
       <div className="mb-4 flex flex-wrap justify-between xl:mb-24 xl:mt-4">
         <section className="w-full space-y-8 pb-8 sm:w-1/2 xl:w-5/12">
           <a className="block hover:cursor-pointer" href="/">
