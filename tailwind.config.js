@@ -29,16 +29,15 @@ module.exports = {
         customSpin: 'customSpin 1s linear infinite',
         // Changed animation name
         slideOutLeft:
-          'slideOutLeft 0.5s cubic-bezier(0.465, 0.183, 0.153, 0.946)', // Added slideOutLeft
+          'slideOutLeft 1s cubic-bezier(0.465, 0.183, 0.153, 0.946)', // Added slideOutLeft
         // Changed animation name
         slideOutLeftSM:
-          'slideOutLeftSM 0.5s cubic-bezier(0.465, 0.183, 0.153, 0.946)', // Added slideOutLeftSM
+          'slideOutLeftSM 1s cubic-bezier(0.465, 0.183, 0.153, 0.946)', // Added slideOutLeftSM
         // Changed animation name
-        slideInLeft:
-          'slideInLeft 0.5s cubic-bezier(0.465, 0.183, 0.153, 0.946)', // Added slideInLeft
+        slideInLeft: 'slideInLeft 1s cubic-bezier(0.465, 0.183, 0.153, 0.946)', // Added slideInLeft
         // Changed animation name
         slideInLeftSM:
-          'slideInLeftSM 0.5s cubic-bezier(0.465, 0.183, 0.153, 0.946)', // Added slideInLeftSM
+          'slideInLeftSM 1s cubic-bezier(0.465, 0.183, 0.153, 0.946)', // Added slideInLeftSM
       },
       keyframes: {
         customSpin: {

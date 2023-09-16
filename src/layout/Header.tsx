@@ -24,7 +24,7 @@ const Header = (): JSX.Element => {
     isMenuOpen
       ? setTimeout(function () {
           setIsMenuOpenLate(!isMenuOpenLate);
-        }, 500)
+        }, 1000)
       : setIsMenuOpenLate(!isMenuOpenLate);
   };
 
