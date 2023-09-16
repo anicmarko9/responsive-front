@@ -9,3 +9,9 @@
 .os-scrollbar-track {
   @apply !translate-x-[-15px] !rounded-xl !bg-slide !opacity-60;
 }
+
+@media (max-width: 1024px) {
+  .os-scrollbar-track {
+    display: none;
+  }
+}
