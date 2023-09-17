@@ -13,9 +13,8 @@ const FAQ = ({ question }: { question: string }): JSX.Element => {
   return (
     // FAQ container element
     <details
-      className={`FAQcontainer duration-600 cursor-pointer space-y-4 transition-all ease-in-out hover:bg-gray-200 ${
-        isOpen ? 'open' : ''
-      }`}
+      className={`FAQcontainer duration-600 cursor-pointer space-y-4 transition-all ease-in-out hover:bg-gray-200 ${isOpen ? 'open' : ''
+        }`}
       onClick={toggleDropdown}
     >
       <summary className="flex justify-between">
@@ -28,7 +27,7 @@ const FAQ = ({ question }: { question: string }): JSX.Element => {
       </summary>
       {/* Content section that shows when the dropdown is open */}
       {isOpen && (
-        <p className="w-full text-sm xl:text-base">
+        <p className='w-full text-sm xl:text-base animate-appearFAQ'>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos
           quam pariatur animi eveniet, quis dolores error magnam repellat omnis
           velit et totam enim, soluta quod, doloribus non exercitationem.

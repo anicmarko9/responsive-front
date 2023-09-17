@@ -39,6 +39,8 @@ module.exports = {
         // Changed animation name
         slideInLeftSM:
           'slideInLeftSM 0.5s cubic-bezier(0.465, 0.183, 0.153, 0.946)', // Added slideInLeftSM
+        // Changed animation name
+        appearFAQ: 'appearFAQ 1s ease', // Added appearFAQ
       },
       keyframes: {
         customSpin: {
@@ -65,6 +67,11 @@ module.exports = {
           '0%': { transform: 'translateX(-100%)' },
           '100%': { transform: 'translateX(0px)' },
         },
+        // Added appearFAQ keyframes
+        appearFAQ: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        }
       },
     },
   },
