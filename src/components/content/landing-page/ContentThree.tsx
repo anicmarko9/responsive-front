@@ -7,7 +7,7 @@ import MainButton from '@Components/features/MainButton';
 const ContentThree = (): JSX.Element => {
   return (
     // Section container for the third content section with responsive styling.
-    <section className="relative flex h-full flex-col items-center space-y-8 bg-customWhite px-8 py-8 text-lg  sm:px-36 xl:space-y-16 xl:px-36 xl:py-16">
+    <section className="relative flex h-full flex-col items-center space-y-8 bg-customWhite px-8 py-8 text-lg sm:px-16 xl:space-y-16 xl:px-36 xl:py-16">
       <h2 className="my-2 text-start text-3xl tracking-wide sm:my-4 xl:text-center xl:text-4xl">
         What You&apos;ll Get At Your <span className="text-primary">Free</span>{' '}
         Consultation

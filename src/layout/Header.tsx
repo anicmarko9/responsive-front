@@ -23,8 +23,8 @@ const Header = (): JSX.Element => {
     setIsMenuOpen(!isMenuOpen);
     isMenuOpen
       ? setTimeout(function () {
-        setIsMenuOpenLate(!isMenuOpenLate);
-      }, 500)
+          setIsMenuOpenLate(!isMenuOpenLate);
+        }, 1000)
       : setIsMenuOpenLate(!isMenuOpenLate);
   };
 
@@ -37,7 +37,8 @@ const Header = (): JSX.Element => {
 
   return (
     <header
-      className={`sticky top-0 z-50 flex h-20 w-full bg-white items-center justify-between bg-opacity-100 xl:px-36`}
+      //                                        px-4 sm:px-16
+      className={`sticky top-0 z-50 flex h-20 w-full items-center justify-between bg-white bg-opacity-100 px-8 sm:px-16 xl:px-36`}
     >
       <a className="sm:w-1/5 md:w-full" href="/">
         <img
