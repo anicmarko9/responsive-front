@@ -64,6 +64,11 @@ module.exports = {
           '0%': { transform: 'translateX(-100%)' },
           '100%': { transform: 'translateX(0px)' },
         },
+        // Added appearFAQ keyframes
+        appearFAQ: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        }
       },
     },
   },
