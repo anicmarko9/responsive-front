@@ -61,7 +61,7 @@ const Header = (): JSX.Element => {
         </div>
       ) : (
         <>
-          <div className="flex justify-start pr-4">
+          <div className="flex justify-start">
             {isMenuOpenLate ? (
               ''
             ) : (
