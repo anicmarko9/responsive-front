@@ -20,6 +20,9 @@ function App(): JSX.Element {
     options: {
       scrollbars: {
         theme: 'os-theme-dark',
+        autoHide: 'scroll',
+        clickScroll: true,
+        pointers: ['mouse', 'pen', 'touch'],
       },
     },
   });
