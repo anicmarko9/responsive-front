@@ -5,13 +5,19 @@
     @apply w-48 self-center rounded-xl border-2 border-primary bg-primary py-2 text-center text-sm tracking-wider text-white shadow-lg transition-all duration-[250ms] ease-in-out hover:bg-white hover:text-primary focus:outline-none active:scale-95 active:rounded-3xl sm:my-4 sm:w-56 sm:text-lg xl:self-start;
   }
   .yellowBlock {
-    @apply absolute right-0 top-0 -z-10 h-full w-1/2 rounded-xl bg-tertiary shadow-lg xl:w-[28%];
+    @apply absolute right-0 top-0 -z-10 h-full w-1/2 rounded-tl-2xl bg-tertiary shadow-lg xl:w-[28%];
+  }
+  .baseContainerX {
+    @apply px-4 sm:px-6 md:px-9 lg:px-12 xl:px-16 2xl:px-20;
+  }
+  .baseContainerY {
+    @apply py-4 sm:py-6 md:py-9 lg:py-12 xl:py-16 2xl:py-20;
   }
   .bulletPoint {
     @apply mr-1 mt-2 h-3 w-3 min-w-[12px] max-w-[12px];
   }
   .navBtns {
-    @apply mr-3 flex h-[35px] items-center justify-center whitespace-nowrap rounded border-2 border-slate-400 px-2 text-[18px] text-slate-600 transition-all duration-[150ms] ease-in hover:border-primary hover:text-primary;
+    @apply flex h-9 items-center whitespace-nowrap rounded text-lg transition-all duration-300 ease-in-out hover:border-primary hover:text-primary;
   }
   .bulletPoint {
     @apply mr-1 mt-2 h-3 w-3 min-w-[12px] max-w-[12px];

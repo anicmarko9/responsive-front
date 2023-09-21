@@ -6,11 +6,11 @@ import MainButton from '@Components/features/MainButton';
 const ContentTwo = (): JSX.Element => {
   return (
     // Section container for the second content section with responsive styling.
-    <section className="relative flex h-full flex-col items-center space-y-8 bg-white px-0 py-8 text-start text-lg xl:px-36 xl:pb-0 xl:pt-16 xl:text-center">
-      <h2 className="order-first my-2 w-full px-8 text-3xl tracking-wide sm:px-16 xl:order-none xl:my-4 xl:px-0 xl:text-4xl">
+    <section className="baseContainerX baseContainerY relative flex h-full flex-col items-center space-y-4 bg-white text-start text-lg sm:space-y-6 md:space-y-9 lg:space-y-12 xl:pb-0 xl:text-center">
+      <h2 className="order-first w-full text-3xl tracking-wide xl:order-none xl:text-4xl">
         We Can Help You
       </h2>
-      <p className="flex flex-col space-y-4 px-8 sm:space-y-8 sm:px-16 xl:block xl:space-y-0 xl:px-0">
+      <p className="flex flex-col space-y-4 sm:space-y-8 xl:block xl:space-y-0">
         <span className="order-1 text-sm sm:text-base xl:order-none xl:text-lg">
           {/* First part of the message about weight loss challenges and common experiences. */}
           For those of us who struggle with our weight it&apos;s easy to lose
@@ -26,7 +26,7 @@ const ContentTwo = (): JSX.Element => {
         </span>
       </p>
       {/* Additional Information */}
-      <p className="order-4 px-8 text-sm sm:px-16 sm:text-base xl:order-none xl:px-0 xl:text-lg">
+      <p className="order-4 text-sm sm:text-base xl:order-none xl:text-lg">
         You can join the ranks of our over 15,000 satisfied clients who have
         lost weight, regained their confidence and are living happy exuberant
         lives with their family. They did this without: breaking the bank,
@@ -35,7 +35,7 @@ const ContentTwo = (): JSX.Element => {
         favorite foods.
       </p>
       <MainButton overwrite="xl:self-center order-last xl:order-none" />
-      <figure className="xl:pt-10">
+      <figure>
         <img
           src="/images/home/group.png"
           alt="Group of people"

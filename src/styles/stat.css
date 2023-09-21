@@ -2,7 +2,7 @@
 
 @layer components {
   .statCard {
-    @apply mb-4 flex h-40 w-[47%] flex-col items-center justify-center space-y-3 rounded-3xl bg-customWhite px-2 text-center sm:h-48 sm:w-[22%] sm:justify-around sm:space-y-0 sm:rounded-2xl sm:px-4 xl:h-60 xl:justify-center xl:space-y-8 xl:rounded-3xl;
+    @apply flex h-40 w-[47%] flex-col items-center justify-center space-y-3 rounded-3xl bg-customWhite px-2 text-center sm:h-48 sm:w-[22%] sm:justify-around sm:space-y-0 sm:rounded-2xl sm:px-4 xl:h-60 xl:justify-center xl:space-y-8 xl:rounded-3xl [&:nth-child(1)]:mb-4 sm:[&:nth-child(1)]:mb-0 [&:nth-child(2)]:mb-4 sm:[&:nth-child(2)]:mb-0;
   }
   .statCard:hover > .statIconAndTitleContainer > div > svg {
     @apply text-white opacity-100 delay-custom ease-in-expo;

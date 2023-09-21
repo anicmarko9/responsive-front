@@ -12,66 +12,62 @@ import StatCard from '@Components/content/landing-page/stat-cards/StatCard';
 const StatCards = (): JSX.Element => {
   return (
     // Section container for the statistic cards.
-    <section>
-      <div className="relative flex h-full flex-col bg-primary px-8 text-lg sm:px-16 xl:px-36">
-        <div className="mb-6 mt-8 flex flex-wrap justify-between space-x-0 sm:mb-0 xl:mb-8 xl:mt-16">
-          <StatCard
-            key={1}
-            bgColor="hover:bg-secondary"
-            icon={<RiSuitcaseLine className="statIconSize text-secondary" />}
-            description="years of experience"
-          >
-            <>
-              10
-              <span className="statPlusIcon">
-                <FaPlus className="plusIcon" />
-              </span>
-            </>
-          </StatCard>
-          <StatCard
-            key={2}
-            bgColor="hover:bg-tertiary"
-            icon={<VscSmiley className="statIconSize text-tertiary" />}
-            description="positive reviews"
-          >
-            <>
-              2000
-              <span className="statPlusIcon">
-                <FaPlus className="plusIcon" />
-              </span>
-            </>
-          </StatCard>
-          <StatCard
-            key={3}
-            bgColor="hover:bg-primary hover:border hover:border-slate-50"
-            icon={<FiMessageCircle className="statIconSize text-primary" />}
-            description="satisfied clients"
-          >
-            <>
-              15.000
-              <span className="statPlusIcon">
-                <FaPlus className="plusIcon" />
-              </span>
-            </>
-          </StatCard>
-          <StatCard
-            key={4}
-            bgColor="hover:bg-green-500"
-            icon={
-              <TbActivityHeartbeat className="statIconSize text-green-600" />
-            }
-            description=" nurses and physician assistants on staff"
-          >
-            <>
-              Many
-              <span className="statPlusIcon">
-                <FaPlus className="plusIcon" />
-              </span>
-            </>
-          </StatCard>
-        </div>
-        <MainButton overwrite="bg-tertiary xl:self-center mb-8 xl:mb-8 xl:mt-0 border-tertiary hover:text-tertiary hover:bg-white" />
+    <section className="baseContainerX baseContainerY relative flex h-full flex-col space-y-4 bg-primary text-lg sm:space-y-6 md:space-y-9 lg:space-y-12 xl:space-y-16 2xl:space-y-20">
+      <div className="flex flex-wrap justify-between space-x-0">
+        <StatCard
+          key={1}
+          bgColor="hover:bg-secondary"
+          icon={<RiSuitcaseLine className="statIconSize text-secondary" />}
+          description="years of experience"
+        >
+          <>
+            10
+            <span className="statPlusIcon">
+              <FaPlus className="plusIcon" />
+            </span>
+          </>
+        </StatCard>
+        <StatCard
+          key={2}
+          bgColor="hover:bg-tertiary"
+          icon={<VscSmiley className="statIconSize text-tertiary" />}
+          description="positive reviews"
+        >
+          <>
+            2000
+            <span className="statPlusIcon">
+              <FaPlus className="plusIcon" />
+            </span>
+          </>
+        </StatCard>
+        <StatCard
+          key={3}
+          bgColor="hover:bg-primary hover:border hover:border-slate-50"
+          icon={<FiMessageCircle className="statIconSize text-primary" />}
+          description="satisfied clients"
+        >
+          <>
+            15.000
+            <span className="statPlusIcon">
+              <FaPlus className="plusIcon" />
+            </span>
+          </>
+        </StatCard>
+        <StatCard
+          key={4}
+          bgColor="hover:bg-green-500"
+          icon={<TbActivityHeartbeat className="statIconSize text-green-600" />}
+          description=" nurses and physician assistants on staff"
+        >
+          <>
+            Many
+            <span className="statPlusIcon">
+              <FaPlus className="plusIcon" />
+            </span>
+          </>
+        </StatCard>
       </div>
+      <MainButton overwrite="bg-tertiary xl:self-center border-tertiary hover:text-tertiary hover:bg-white" />
     </section>
   );
 };
