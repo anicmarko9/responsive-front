@@ -12,7 +12,7 @@ const ContentThree = (): JSX.Element => {
         What You&apos;ll Get At Your <span className="text-primary">Free</span>{' '}
         Consultation
       </h2>
-      <div className="flex flex-wrap justify-around space-y-8 xl:space-y-0">
+      <div className="flex flex-wrap justify-around space-y-8 md:w-full md:space-y-0">
         <div className="contentThreeContainer popUpAnimation">
           <h2 className="text-center text-2xl text-secondary xl:text-3xl">
             Body Mass Index
