@@ -37,8 +37,7 @@ const Header = (): JSX.Element => {
 
   return (
     <header
-      //                                        px-4 sm:px-16
-      className={`sticky top-0 z-50 flex h-20 w-full items-center justify-between bg-white bg-opacity-100 px-8 sm:px-16 xl:px-36`}
+      className={`baseContainerX sticky top-0 z-50 flex h-20 w-full items-center justify-between bg-white bg-opacity-100`}
     >
       <a className="sm:w-1/5 md:w-full" href="/">
         <img
@@ -48,8 +47,8 @@ const Header = (): JSX.Element => {
         />
       </a>
       {windowWidth >= 1024 ? (
-        <div className="flex h-full w-full items-center justify-end sm:px-3">
-          <nav className="flex">
+        <div className="flex h-full w-full items-center justify-end sm:pl-6">
+          <nav className="flex space-x-6">
             {NavLinks.map(
               (link: INavLink, index: number): JSX.Element => (
                 <a key={index} href={link.href} className="navBtns">

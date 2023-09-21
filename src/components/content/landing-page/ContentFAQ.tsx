@@ -7,10 +7,8 @@ import MainButton from '@Components/features/MainButton';
 const ContentFAQ = (): JSX.Element => {
   return (
     // Section container for FAQs with responsive styling.
-    <section className="relative flex h-full flex-col bg-white px-8 py-8 text-lg sm:px-16 xl:px-36 xl:py-16">
-      <h2 className="mb-8 text-2xl tracking-wide sm:text-4xl xl:mb-12 xl:mt-4">
-        Frequently Asked Questions
-      </h2>
+    <section className="baseContainerX baseContainerY relative flex h-full flex-col space-y-4 bg-white text-lg  sm:space-y-6 md:space-y-9 lg:space-y-12 xl:space-y-16 2xl:space-y-20">
+      <h2 className="text-2xl tracking-wide">Frequently Asked Questions</h2>
       <FAQ question="Why is it free?" />
       <FAQ
         question="Do I need this if I've had my yearly medical check? What is the
@@ -26,7 +24,7 @@ const ContentFAQ = (): JSX.Element => {
       <FAQ question="What's the catch?" />
       <FAQ question="Will I have to exhaust myself in the gym to make it work?" />
       <FAQ question="Where are you located?" />
-      <MainButton overwrite="self-center mt-8 xl:mt-12 sm:mb-0 max-sm:hidden" />
+      <MainButton overwrite="self-center max-sm:hidden" />
     </section>
   );
 };
