@@ -7,16 +7,16 @@ import { AiFillInstagram } from 'react-icons/ai';
 // Footer Component: Represents the footer section of the web page.
 export default function Footer() {
   return (
-    <footer className="baseContainerX baseContainerY relative flex h-full flex-col bg-customWhite text-base sm:text-lg">
+    <footer className="baseContainerX baseContainerY relative  flex h-full flex-col space-y-4 bg-customWhite text-base sm:space-y-6 sm:text-lg md:space-y-9 lg:space-y-12 xl:space-y-16 2xl:space-y-20">
       <div className="flex flex-wrap justify-between">
-        <section className="w-full space-y-8 pb-8 sm:w-1/2 xl:w-5/12">
+        <section className="mr-4 w-full space-y-4 sm:w-1/2 xl:w-5/12">
           <a className="block hover:cursor-pointer" href="/">
             <img
               className="relative origin-center transition duration-300 ease-in-out hover:opacity-70"
               src="/logo.png"
               alt="Logo"
               width={140}
-              height={65}
+              height={64}
               loading="lazy"
             />
           </a>
@@ -27,7 +27,7 @@ export default function Footer() {
             dedicated to helping you achieve long term weight loss success with
             the use of FDA approved medication.
           </p>
-          <address>
+          <address className="space-y-4">
             <div className="flex">
               <IoLocationSharp className="contactIcon" />
               <div className="pl-1 pt-[2px] font-bold xl:flex xl:flex-wrap">
@@ -35,7 +35,6 @@ export default function Footer() {
                 <p>1931 W 95th Street Chicago IL, 60643</p>
               </div>
             </div>
-            <br />
             <div className="flex">
               <FaPhoneAlt className="contactIcon" />
               <div className="pl-1 pt-[2px] font-bold xl:flex xl:space-x-1">
@@ -45,9 +44,9 @@ export default function Footer() {
             </div>
           </address>
         </section>
-        <div className="flex flex-wrap xl:space-x-16">
-          <section className="mr-8 py-4 xl:px-4">
-            <h5 className="mb-4 text-3xl xl:mb-8">About</h5>
+        <div className="flex flex-wrap">
+          <section className="mr-4 space-y-4">
+            <h5 className="h-16 text-3xl">About</h5>
             <ul className="relative space-y-4">
               <li>
                 <a className="hoverUnderline" href="/about-us">
@@ -76,8 +75,8 @@ export default function Footer() {
               </li>
             </ul>
           </section>
-          <section className="py-4 xl:px-4">
-            <h5 className="mb-4 text-3xl xl:mb-8">More Links</h5>
+          <section className="space-y-4">
+            <h5 className="h-16 text-3xl">More Links</h5>
             <ul className="space-y-4">
               <li>
                 <a className="hoverUnderline" href="/franchise-opportunities">
@@ -108,8 +107,8 @@ export default function Footer() {
           </section>
         </div>
       </div>
-      <section className="flex flex-wrap items-center justify-between xl:space-y-0">
-        <div className="mr-4 flex space-x-6">
+      <section className="flex flex-wrap items-center justify-between">
+        <nav className="mr-4 flex space-x-4">
           <a href="/callback-ig" className="footerIcon">
             <AiFillInstagram className="socialMediaIcon" />
           </a>
@@ -119,8 +118,8 @@ export default function Footer() {
           <a href="/callback-fb" className="footerIcon">
             <FaFacebookF className="socialMediaIcon" />
           </a>
-        </div>
-        <p className="py-4">A Better Weigh Inc&copy;. All rights reserved.</p>
+        </nav>
+        <p className="">A Better Weigh Inc&copy;. All rights reserved.</p>
       </section>
     </footer>
   );
