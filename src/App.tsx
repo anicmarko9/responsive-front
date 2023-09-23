@@ -32,7 +32,6 @@ function App(): JSX.Element {
   }, [initBodyOverlayScrollbars]);
 
   return (
-    <div className="relative font-heebo">
       <BrowserRouter>
         <Routes>
           <Route path="/not-found" element={<NotFound />} />
@@ -48,7 +47,6 @@ function App(): JSX.Element {
           <Route path="*" element={<Navigate to="/not-found" />} />
         </Routes>
       </BrowserRouter>
-    </div>
   );
 }
 
