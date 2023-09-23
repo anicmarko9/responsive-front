@@ -2,12 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;600&display=swap');
-
-* {
-    font-family: Heebo, sans-serif;
-    position: relative;
-}
+/* font-Heebo: 400 700 */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
 
 @import './scrollbar.css';
 @import 'counter.css';

@@ -8,7 +8,7 @@ const Layout = ({ children }: { children: ReactNode }): React.ReactElement => {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main className='font-heebo'>{children}</main>
       <Footer />
     </>
   );
