@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;600&display=swap');
+
 * {
     font-family: Heebo, sans-serif;
     position: relative;
