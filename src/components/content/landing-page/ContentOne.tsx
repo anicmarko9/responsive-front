@@ -6,9 +6,9 @@ import MainButton from '@Components/features/MainButton';
 const ContentOne = (): JSX.Element => {
   return (
     // Section container for the first content section with responsive styling.
-    <section className="baseContainerX baseContainerY relative flex h-full flex-col justify-between space-y-8 bg-secondary text-lg text-customWhite sm:space-y-12 xl:flex-row xl:space-y-0">
+    <section className="baseContainerX baseContainerY relative flex h-full flex-col justify-between space-y-8 bg-secondary text-lg text-customWhite sm:space-y-0 xl:flex-row xl:-space-y-9">
       <div className="flex flex-col space-y-8 sm:space-y-12 xl:w-1/2 xl:space-y-16">
-        <div className="space-y-4 sm:space-y-6">
+        <div className="space-y-16 sm:space-y-16">
           <h2 className="contentOneTitle">Who Is The Consultation For?</h2>
           <p className="contentOneDescription">
             {/* Description of the target audience for the consultation. */}
@@ -18,7 +18,7 @@ const ContentOne = (): JSX.Element => {
             breaking the bank.
           </p>
         </div>
-        <div className="space-y-4 sm:space-y-6">
+        <div className="space-y-16 sm:space-y-16">
           <h2 className="contentOneTitle">How Does It Work?</h2>
           <p className="contentOneDescription">
             {/* Description of how the consultation works and its process. */}
@@ -29,11 +29,11 @@ const ContentOne = (): JSX.Element => {
         </div>
         <MainButton overwrite="" />
       </div>
-      <figure className="flex h-80 w-3/4 justify-center self-center sm:h-full sm:w-full xl:w-1/2">
+      <figure className="flex w-3/4 justify-center self-center sm:w-full xl:w-1/2">
         <img
           src="/images/home/trainer.png"
           alt="Trainer"
-          className="h-full xl:lg:md:h-[70%]"
+          className="h-full max-sm:h-32 sm:h-40 md:h-60 lg:h-80 xl:h-[70%]"
         />
       </figure>
     </section>
