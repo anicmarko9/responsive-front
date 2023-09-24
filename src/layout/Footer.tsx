@@ -7,9 +7,9 @@ import { AiFillInstagram } from 'react-icons/ai';
 // Footer Component: Represents the footer section of the web page.
 export default function Footer() {
   return (
-    <footer className="baseContainerX baseContainerY relative  flex h-full flex-col space-y-4 bg-customWhite text-base sm:space-y-6 sm:text-lg md:space-y-9 lg:space-y-12 xl:space-y-16 2xl:space-y-20">
+    <footer className="baseContainerX baseContainerY relative  flex h-full flex-col space-y-4 bg-customWhite text-base sm:space-y-6 sm:text-lg md:space-y-9 lg:space-y-12 xl:px-12 xl:py-12">
       <div className="flex flex-wrap justify-between">
-        <section className="mr-4 w-full space-y-4 sm:w-1/2 xl:w-5/12">
+        <section className="mr-4 w-full space-y-4 pb-8 sm:w-1/2 lg:pb-0 xl:w-5/12">
           <a className="block hover:cursor-pointer" href="/">
             <img
               className="relative origin-center transition duration-300 ease-in-out hover:opacity-70"
@@ -45,7 +45,7 @@ export default function Footer() {
           </address>
         </section>
         <div className="flex flex-wrap">
-          <section className="mr-4 space-y-4">
+          <section className="mr-4 pb-8 lg:mr-12 lg:pb-0">
             <h5 className="h-16 text-3xl">About</h5>
             <ul className="relative space-y-4">
               <li>
@@ -75,7 +75,7 @@ export default function Footer() {
               </li>
             </ul>
           </section>
-          <section className="space-y-4">
+          <section>
             <h5 className="h-16 text-3xl">More Links</h5>
             <ul className="space-y-4">
               <li>
