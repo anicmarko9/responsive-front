@@ -7,7 +7,7 @@ import MainButton from '@Components/features/MainButton';
 const ContentFAQ = (): JSX.Element => {
   return (
     // Section container for FAQs with responsive styling.
-    <section className="baseContainerX baseContainerY relative flex h-full flex-col space-y-4 bg-white text-lg  sm:space-y-6 md:space-y-9 lg:space-y-9 xl:space-y-12 2xl:space-y-12">
+    <section className="baseContainerX baseContainerY relative flex h-full flex-col space-y-4 bg-white text-lg  sm:space-y-6 md:space-y-9 xl:space-y-12">
       <h2 className="text-2xl tracking-wide">Frequently Asked Questions</h2>
       <FAQ question="Why is it free?" />
       <FAQ
