@@ -27,14 +27,11 @@ const ContentOne = (): JSX.Element => {
             physician-supervised weight loss program will work best for you.
           </p>
         </div>
+
         <MainButton overwrite="" />
       </div>
       <figure className="flex w-3/4 justify-center self-center sm:w-full xl:w-1/2">
-        <img
-          src="/images/home/trainer.png"
-          alt="Trainer"
-          className="h-full max-sm:h-32 sm:h-40 md:h-60 lg:h-80 xl:h-[70%]"
-        />
+        <img src="/images/home/trainer.png" alt="Trainer" className="" />
       </figure>
     </section>
   );
