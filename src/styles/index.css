@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* font-Heebo: 400 700 */
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
-
 @import './scrollbar.css';
 @import 'counter.css';
 @import 'stat.css';
