@@ -6,8 +6,8 @@ import MainButton from '@Components/features/MainButton';
 const ContentOne = (): JSX.Element => {
   return (
     // Section container for the first content section with responsive styling.
-    <section className="baseContainerX baseContainerY relative flex h-full flex-col justify-between space-y-8 bg-secondary text-lg text-customWhite sm:space-y-12 lg:h-[78vh] lg:flex-row xl:space-y-0">
-      <div className="flex flex-col space-y-8 sm:space-y-12 lg:w-1/2 lg:pl-16 xl:space-y-16">
+    <section className="baseContainerX baseContainerY relative flex h-full flex-col justify-between space-y-8 bg-secondary text-lg text-customWhite sm:space-y-12 xl:flex-row xl:space-y-0">
+      <div className="flex flex-col space-y-8 sm:space-y-12 xl:w-1/2 xl:space-y-16">
         <div className="space-y-4 sm:space-y-6">
           <h2 className="contentOneTitle">Who Is The Consultation For?</h2>
           <p className="contentOneDescription">
@@ -27,10 +27,11 @@ const ContentOne = (): JSX.Element => {
             physician-supervised weight loss program will work best for you.
           </p>
         </div>
+
         <MainButton overwrite="" />
       </div>
-      <figure className="flex h-80 w-3/4 justify-center self-center lg:h-[70%] lg:w-1/2 lg:items-start xl:h-full">
-        <img src="/images/home/trainer.png" alt="Trainer" className="h-full" />
+      <figure className="flex h-80 w-3/4 justify-center self-center bg-contain sm:h-[300px] sm:w-[300px] xl:h-[600px] xl:w-1/2">
+        <img src="/images/home/trainer.png" alt="Trainer" />
       </figure>
     </section>
   );
