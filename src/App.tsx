@@ -32,23 +32,21 @@ function App(): JSX.Element {
   }, [initBodyOverlayScrollbars]);
 
   return (
-    <div className="relative font-heebo">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/not-found" element={<NotFound />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/locations" element={<Locations />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/weight-loss" element={<WeightLossProgram />} />
-          <Route path="/blogs" element={<Blog />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/subscription" element={<Subscription />} />
-          <Route path="/stories" element={<Stories />} />
-          <Route path="/bookings" element={<Booking />} />
-          <Route path="*" element={<Navigate to="/not-found" />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/not-found" element={<NotFound />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/locations" element={<Locations />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/weight-loss" element={<WeightLossProgram />} />
+        <Route path="/blogs" element={<Blog />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/subscription" element={<Subscription />} />
+        <Route path="/stories" element={<Stories />} />
+        <Route path="/bookings" element={<Booking />} />
+        <Route path="*" element={<Navigate to="/not-found" />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
