@@ -72,7 +72,7 @@ const AboutUs = (): JSX.Element => {
             />
           </figure>
         </section>
-        <section className="baseContainerX baseContainerY flex flex-col gap-2">
+        <section className="baseContainerX baseContainerY flex flex-col gap-2 bg-customWhite">
           <div className="flex w-full justify-center">
             <h2 className="w-4/5 rounded-2xl bg-blue-400 p-3 text-center text-4xl font-bold text-yellow-300 md:w-[200px]">
               Our people
