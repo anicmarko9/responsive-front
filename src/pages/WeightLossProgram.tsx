@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Lenis from '@studio-freight/lenis';
 
 import Program from '@Components/content/programs/Program';
 import Testimony from '@Components/content/programs/Testimony';
@@ -9,39 +10,48 @@ import { IProgram, ITestimony } from '@Types/interfaces';
 
 // WeightLossProgram Component: Represents the weight loss programs page
 const WeightLossProgram = (): JSX.Element => {
+  useEffect(() => {
+    const lenis: Lenis = new Lenis({
+      lerp: 0.075,
+      easing: (t: number): number => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    });
+
+    const raf = (time: number): void => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
+    requestAnimationFrame(raf);
+  }, []);
+
   return (
     <Layout>
-      <section className="mt-3 h-auto w-full bg-primary py-10">
-        <div className=" mx-auto flex w-5/6 flex-row flex-wrap items-center justify-center gap-5 md:w-3/5">
-          {/* Displaying different weight loss programs using the Program component */}
-          {WeightLossProgramData.map(
-            (program: IProgram, index: number): JSX.Element => (
-              <Program
-                key={index}
-                programName={program.programName}
-                duration={program.duration}
-                description={program.description}
-                imgSrc={program.imgSrc}
-              />
-            ),
-          )}
-        </div>
+      <section className="baseContainerX baseContainerY flex flex-wrap items-center justify-evenly sm:justify-center">
+        {/* Displaying different weight loss programs using the Program component */}
+        {WeightLossProgramData.map(
+          (program: IProgram, index: number): JSX.Element => (
+            <Program
+              key={index}
+              programName={program.programName}
+              duration={program.duration}
+              description={program.description}
+              imgSrc={program.imgSrc}
+            />
+          ),
+        )}
       </section>
 
-      <section className="w-full bg-secondary py-10">
-        <div className="m-auto flex w-full flex-row flex-wrap justify-center gap-2 md:w-3/5 md:justify-between">
-          {/* Displaying testimonials using the Testimony component */}
-          {TestimonyData.map(
-            (testimony: ITestimony, index: number): JSX.Element => (
-              <Testimony
-                key={index}
-                imgSrc={testimony.imgSrc}
-                name={testimony.name}
-                testimony={testimony.testimony}
-              />
-            ),
-          )}
-        </div>
+      <section className="baseContainerX baseContainerY flex flex-wrap">
+        {/* Displaying testimonials using the Testimony component */}
+        {TestimonyData.map(
+          (testimony: ITestimony, index: number): JSX.Element => (
+            <Testimony
+              key={index}
+              imgSrc={testimony.imgSrc}
+              name={testimony.name}
+              testimony={testimony.testimony}
+            />
+          ),
+        )}
       </section>
     </Layout>
   );
