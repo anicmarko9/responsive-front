@@ -12,19 +12,19 @@ const Locations = (): JSX.Element => {
           imgSrc={'/images/store/store1.jpg'}
           name={'name'}
           schedule={'09-17h'}
-          address={'Some address 122'}
+          address={'Serbia'}
         ></Location>
         <Location
           imgSrc={'/images/store/store2.jpg'}
           name={'name'}
           schedule={'09-17h'}
-          address={'Some address 122'}
+          address={'Romania'}
         ></Location>
         <Location
           imgSrc={'/images/store/store3.jpg'}
           name={'name'}
           schedule={'09-17h'}
-          address={'Some address 122'}
+          address={'Croatia'}
         ></Location>
       </section>
     </Layout>
