@@ -2,10 +2,10 @@
 
 @layer components {
   .inputStyle {
-    @apply w-full rounded-md border border-[#e0e0e0] bg-white px-8 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md;
+    @apply w-full rounded-md bg-white px-8 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md;
   }
 
   .labelStyle {
-    @apply mb-3 block text-base font-medium text-white;
+    @apply my-3 block text-base font-medium;
   }
 }
