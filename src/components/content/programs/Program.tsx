@@ -1,5 +1,6 @@
 import React from 'react';
 import { IProgram } from '@Types/interfaces';
+import MainButton from '@/components/features/MainButton';
 
 const Program: React.FC<IProgram> = ({
   programName,
@@ -11,26 +12,23 @@ const Program: React.FC<IProgram> = ({
   const notFound = '/images/NotFound.svg';
 
   return (
-    <div className="m-auto flex h-auto w-full flex-col items-center justify-between rounded-lg bg-customWhite shadow-md shadow-slate-700 backdrop-blur-xl md:w-[500px] md:p-5">
+    <section className="m-2 flex w-full flex-wrap items-center justify-center rounded-lg bg-customWhite shadow-md shadow-slate-700 backdrop-blur-xl sm:m-6 sm:w-1/3 md:p-5 lg:m-8">
       <figure className="relative mt-3 flex w-[95%] flex-col transition-all ease-in-out hover:scale-[0.98] md:w-full">
         <img
-          className="mx-auto w-full rounded-lg md:h-[300px]"
+          className="w-full rounded-lg md:h-[300px]"
           src={imgSrc || notFound}
           alt={programName}
         />
-        <figcaption className="font-libre-baskerville absolute bottom-0 left-0 flex w-full flex-col items-center justify-center bg-black/60 px-3 py-1 text-sm text-white transition-all ease-in-out hover:text-yellow-300">
+        <figcaption className="absolute bottom-0 left-0 flex w-full flex-col items-center justify-center bg-black/60 px-3 py-1 text-sm text-white transition-all ease-in-out">
           {description}
         </figcaption>
-        <div className="font-libre-baskerville absolute left-0 top-0 flex w-full flex-row items-center justify-between bg-black/60 p-1 uppercase text-white transition-all ease-in-out hover:text-yellow-300">
+        <div className="absolute left-0 top-0 flex w-full flex-row items-center justify-between bg-black/60 p-1 uppercase text-white transition-all ease-in-out">
           <h2 className="ml-1 font-bold">{programName}</h2>
           <p className="mr-1 text-center text-sm">{duration}</p>
         </div>
       </figure>
-
-      <button className="font-libre-baskerville mb-3 mt-2 w-[95%] rounded-md bg-[--violet] p-3 font-bold text-secondary transition-all ease-in-out hover:scale-[0.98] hover:bg-[--purple] md:w-[450px]">
-        ROLL IN!
-      </button>
-    </div>
+      <MainButton overwrite="self-center sm:m-0 sm:my-4 m-2" />
+    </section>
   );
 };
 
