@@ -28,7 +28,7 @@ const Modal = ({ children, isOpen, handleClose }: ModalProps) => {
   return (
     <ReactPortal wrapperId="react-portal-modal-container">
       <>
-        <div className="fixed left-0 top-0 z-40 h-screen w-screen bg-gray-500 ">
+        <div className="fixed left-0 top-0 z-40 h-screen w-screen bg-gray-500">
           <div className="fixed inset-x-16 inset-y-32 box-border flex  min-w-fit flex-col overflow-hidden rounded bg-gray-500 p-5">
             <button
               onClick={handleClose}
