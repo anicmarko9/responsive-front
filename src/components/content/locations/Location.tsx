@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { ILocation } from '@Types/interfaces';
+import Modal from '@/components/content/locations/Modal';
 
 const Location = ({
   name,
@@ -9,8 +10,25 @@ const Location = ({
   address,
 }: ILocation): JSX.Element => {
   const notFound = '/images/NotFound.svg';
+
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <article className="group flex flex-col items-center rounded-lg border border-gray-200 bg-gray-900 px-3 py-2 shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 md:max-w-xl md:flex-row xl:h-1/4">
+      {modalOpen && (
+        <Modal isOpen={modalOpen} handleClose={() => setModalOpen(!modalOpen)}>
+          <div className="flex flex-col justify-between">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613507864!3d-6.194741395493371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5390917b759%3A0x6b45e67356080477!2sPT%20Kulkul%20Teknologi%20Internasional!5e0!3m2!1sen!2sid!4v1601138221085!5m2!1sen!2sid"
+              className="m-5 h-60 w-auto"
+            />
+            <iframe
+              src={`https://www.google.com/maps/search/?api=1&query=${address}`}
+              className="h-60 w-auto"
+            />
+          </div>
+        </Modal>
+      )}
       <img
         className="h-96 w-full rounded-l-md object-cover md:h-auto md:w-48 md:rounded-l-md"
         src={imgSrc || notFound}
@@ -45,6 +63,9 @@ const Location = ({
           </button>
 
           <button
+            onClick={() => {
+              setModalOpen(!modalOpen);
+            }}
             className="mb-1 mr-1 w-14 rounded-full bg-amber-500 px-4 py-2 text-xs font-bold uppercase text-white shadow outline-none transition-all duration-150 ease-linear hover:bg-opacity-50 hover:shadow-md focus:outline-none active:bg-amber-600"
             type="button"
           >

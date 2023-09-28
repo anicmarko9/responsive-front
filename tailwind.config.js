@@ -7,6 +7,9 @@ module.exports = {
       fontFamily: {
         heebo: ['Heebo', 'sans-serif'],
       },
+      screens: {
+        xs: { max: '639px' }, // max-width
+      },
       transitionTimingFunction: {
         'in-expo': 'cubic-bezier(0.95, 0.05, 0.795, 0.035)',
         'out-expo': 'cubic-bezier(0.465, 0.183, 0.153, 0.946)',
