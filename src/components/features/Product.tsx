@@ -11,10 +11,10 @@ const Product = ({
   // A fallback image source in case the provided image is not found.
   const notFound = '/images/NotFound.svg';
   return (
-    <section className="max-w-sm space-y-2 overflow-hidden rounded-lg bg-green-100 px-2 pt-3 text-center shadow-lg">
+    <section className="mb-4 max-w-sm space-y-2 overflow-hidden rounded-lg bg-green-100 p-3 text-center shadow-lg">
       <figure>
         <img
-          className="mx-auto w-9/12 rounded-lg md:h-[300px]"
+          className="mx-auto w-3/4 rounded-lg md:h-[300px]"
           src={imgSrc || notFound}
           alt={title}
         />
