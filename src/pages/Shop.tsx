@@ -9,7 +9,7 @@ import { IProduct } from '@Types/interfaces';
 const Shop = (): JSX.Element => {
   return (
     <Layout>
-      <section className="mx-auto mt-3 flex w-screen flex-row flex-wrap justify-center gap-5 bg-primary py-10">
+      <section className="baseContainerX baseContainerY flex flex-wrap justify-evenly xl:justify-between">
         {ProductData.map(
           (product: IProduct, index: number): JSX.Element => (
             <Product
