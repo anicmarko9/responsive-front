@@ -1,0 +1,19 @@
+version: '3.8'
+name: development
+services:
+  responsive-front:
+    container_name: responsive-front
+    image: anicmarko9/responsive-front:1.0
+    restart: on-failure
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    networks:
+      - dev
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=development
+networks:
+  dev:
+    name: dev
