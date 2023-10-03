@@ -6,7 +6,7 @@
   }
 
   .hoverUnderline::after {
-    @apply absolute bottom-[-4px] left-0 h-[2px] w-full origin-bottom-right scale-x-0 transform rounded bg-primary transition duration-[0.35s] ease-[out-expo] content-[''];
+    @apply absolute bottom-[-4px] left-0 h-[2px] w-full origin-bottom-right scale-x-0 transform rounded bg-secondary transition duration-[0.35s] ease-[out-expo] content-[''];
   }
 
   .hoverUnderline:hover::after {
