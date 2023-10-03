@@ -1,82 +1,91 @@
 import React from 'react';
 import { ISubscription } from '@Types/interfaces';
 
-const Subscriptions = ({ price, plan }: ISubscription): JSX.Element => {
+const Subscriptions = ({ price, plan, highlighted }: ISubscription): JSX.Element => {
   return (
-    <div className="container mx-auto my-24 basis-3 md:px-6">
-      <div className="block h-full rounded-lg bg-gray-800 p-4 text-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-        <p className="mb-4 text-sm uppercase">
-          <strong>{plan}</strong>
-        </p>
-        <h3 className="mb-6 text-3xl">
-          <strong>{price}</strong>
-          <small className="text-base text-neutral-500 dark:text-neutral-300">
-            /year
-          </small>
-        </h3>
+    <div
+      className={`p-6 my-5 transition-all duration-300 shadow-md md:my-12 rounded-2xl hover:ring-4 hover:ring-primary sm:order-last sm:p-10 bg-neutral-900 ${highlighted && 'md:scale-105 ring-4 ring-primary'}`}
+    >
+      <div className="text-center">
+        <h2 className="text-xl font-medium text-white md:text-2xl">
+          {plan}
+          <span className="sr-only">Plan</span>
+        </h2>
 
-        <button
-          type="button"
-          className="hover:bg-primary-600 focus:bg-primary-600 active:bg-primary-700 inline-block w-full rounded bg-cyan-500 px-6 pb-2 pt-2.5 text-xs font-medium  uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-          data-te-ripple-init
-          data-te-ripple-color="light"
-        >
-          Buy
-        </button>
-        <ol className="mt-4 list-inside bg-yellow-400">
-          <li className="mb-4 flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="2"
-              stroke="currentColor"
-              className="dark:text-primary-400 mr-3 h-5 w-5 text-primary"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4.5 12.75l6 6 9-13.5"
-              />
-            </svg>
-            Unlimited updates
-          </li>
-          <li className="mb-4 flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="2"
-              stroke="currentColor"
-              className="dark:text-primary-400 mr-3 h-5 w-5 text-primary"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4.5 12.75l6 6 9-13.5"
-              />
-            </svg>
-            Git repository
-          </li>
-          <li className="mb-4 flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="2"
-              stroke="currentColor"
-              className="dark:text-primary-400 mr-3 h-5 w-5 text-primary"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4.5 12.75l6 6 9-13.5"
-              />
-            </svg>
-            npm installation
-          </li>
-        </ol>
+        <p className="mt-2 sm:mt-4">
+          <strong className="text-4xl font-bold text-white sm:text-5xl">
+            {price}
+          </strong>
+
+          <span className="text-base font-medium text-neutral-500 dark:text-neutral-300">/month</span>
+        </p>
       </div>
+
+      <ul className="mt-6 space-y-3">
+        <li className="flex items-center gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="w-5 h-5 text-green-500"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4.5 12.75l6 6 9-13.5"
+            />
+          </svg>
+
+          <span className="text-gray-300">Unlimited updates</span>
+        </li>
+
+        <li className="flex items-center gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="w-5 h-5 text-green-500"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4.5 12.75l6 6 9-13.5"
+            />
+          </svg>
+
+          <span className="text-gray-300">Git repository</span>
+        </li>
+
+        <li className="flex items-center gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="w-5 h-5 text-green-500"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4.5 12.75l6 6 9-13.5"
+            />
+          </svg>
+
+          <span className="text-gray-300">Npm installation</span>
+        </li>
+      </ul>
+
+      <button
+        type='button'
+        className="block w-full px-12 py-3 mt-5 text-base font-bold text-center text-white duration-300 ease-in-out rounded-xl bg-primary focus:outline-none hover:bg-gray-200 hover:text-primary"
+      >
+        Get Started
+      </button>
     </div>
   );
 };

@@ -44,6 +44,7 @@ export interface ILocation {
 export interface ISubscription {
   price: string;
   plan: string;
+  highlighted?: boolean;
 }
 
 export interface IStories {
