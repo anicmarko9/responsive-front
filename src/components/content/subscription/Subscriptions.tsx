@@ -1,7 +1,14 @@
 import React from 'react';
 import { ISubscription } from '@Types/interfaces';
+import SubscriptionsBenefits from './SubscriptionBenefits';
 
 const Subscriptions = ({ price, plan, highlighted }: ISubscription): JSX.Element => {
+  const benefits = [
+    { id: 1, benefit: 'Unlimited updates' },
+    { id: 2, benefit: 'Git repository' },
+    { id: 3, benefit: 'Npm installation' },
+  ]
+
   return (
     <div
       className={`p-6 my-5 transition-all duration-300 shadow-md md:my-12 rounded-2xl hover:ring-4 hover:ring-primary sm:order-last sm:p-10 bg-neutral-900 ${highlighted && 'md:scale-105 ring-4 ring-primary'}`}
@@ -22,62 +29,11 @@ const Subscriptions = ({ price, plan, highlighted }: ISubscription): JSX.Element
       </div>
 
       <ul className="mt-6 space-y-3">
-        <li className="flex items-center gap-1">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="w-5 h-5 text-green-500"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M4.5 12.75l6 6 9-13.5"
-            />
-          </svg>
-
-          <span className="text-gray-300">Unlimited updates</span>
-        </li>
-
-        <li className="flex items-center gap-1">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="w-5 h-5 text-green-500"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M4.5 12.75l6 6 9-13.5"
-            />
-          </svg>
-
-          <span className="text-gray-300">Git repository</span>
-        </li>
-
-        <li className="flex items-center gap-1">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="w-5 h-5 text-green-500"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M4.5 12.75l6 6 9-13.5"
-            />
-          </svg>
-
-          <span className="text-gray-300">Npm installation</span>
-        </li>
+        {benefits.map(({ id, benefit }) => (
+          <li key={id}>
+            <SubscriptionsBenefits benefits={benefit} />
+          </li>
+        ))}
       </ul>
 
       <button
